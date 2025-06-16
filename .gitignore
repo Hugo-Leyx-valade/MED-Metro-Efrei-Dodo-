@@ -6,3 +6,4 @@ npm-debug.log*
 # Dependency directories
 jspm_packages/
 # Optional npm cache directory
+*.txt
