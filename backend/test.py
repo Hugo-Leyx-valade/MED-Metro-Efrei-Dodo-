@@ -10,7 +10,7 @@ stops = pd.read_csv("data/stops.txt")
 ligne_7 = routes[
     (routes["agency_id"] == "IDFM:Operator_100") &
     (routes["route_type"] == 1) &
-    (routes["route_short_name"] == "6")
+    (routes["route_short_name"] == "7")
 ]
 print(ligne_7)
 route_id = ligne_7.iloc[0]["route_id"]
@@ -29,3 +29,11 @@ arrets_ligne_7 = arrets_trip.merge(stops, on="stop_id")[["stop_sequence", "stop_
 
 # Résultat
 print(arrets_ligne_7)
+
+
+# Remplace chaque espace par un point-virgule, sauf si déjà un point-virgule
+with open('data/version 1/metro.txt', 'r') as infile, open('output.txt', 'w') as outfile:
+    for line in infile:
+        parts = line.strip().split()
+        if parts:
+            outfile.write(';'.join(parts) + '\n')
