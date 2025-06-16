@@ -1,10 +1,14 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true,
-  },
-})
+import { onMounted, ref } from 'vue'
+
+
+const msg = ref('Bienvenue')
+
+onMounted(async () => {
+  const response = await fetch('http://localhost:3001/run-python');
+  const data = await response.json();
+  console.log('Résultat du script Python :', data.output);
+});
 </script>
 
 <template>
