@@ -3,9 +3,9 @@ const express = require('express');
 const router = express.Router();
 const api = require('../API/V1API');
 const { getMapPoints } = require('../API/V1API');
-const { getIntersections } = require('../API/V1API');
-
-
+const { getLinks } = require('../API/V1API');
+const { parseGraph } = require('../API/V1API');
+const { parsePointPositions } = require('../API/V1API');
 
 router.get('/map-points', (req, res) => {
   try {
@@ -19,15 +19,34 @@ router.get('/map-points', (req, res) => {
   }
 });
 
-router.get('/intersections', (req, res) => {
+router.get('/links', (req, res) => {
   try {
-    const filePath = 'data/version 1/metro.txt'; // adapte le chemin
-    const intersections = getIntersections(filePath);
-    res.json(intersections);
+    const graphPath = 'data/version 1/output.txt';
+    const pointPath = 'data/version 1/pospoints.txt';
+
+    const { nodes, edges } = parseGraph(graphPath);
+    const coordMap = parsePointPositions(pointPath);
+
+    const nodeMap = {};
+    nodes.forEach((node, index) => {
+      const pos = coordMap.get(node.name);
+      nodeMap[index] = {
+        name: node.name,
+        line: node.line,
+        ...(pos || {}) // { x, y }
+      }
+    });
+    console.log('Node Map:', nodeMap);
+    console.log('Node Map:', edges);
+    const links = getLinks(edges, nodeMap);
+    console.log('Links:', links);
+    res.json(links);
   } catch (err) {
-    console.error('Erreur API intersections:', err);
-    res.status(500).json({ error: 'Erreur lors du traitement des intersections.' });
+    console.error('Erreur /links:', err);
+    res.status(500).json({ error: 'Erreur lors du traitement des liens.' });
   }
 });
+
+
 
 module.exports = router;
