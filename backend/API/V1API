@@ -1,0 +1,91 @@
+const e = require('express');
+const db = require('../index');
+
+
+exports.getAllEvents = (req, res) => {
+    db.query('SELECT * FROM Evenement', (err, results) => {
+        if (err) {
+        return res.status(500).json({ error: 'Erreur MySQL' });
+        }
+        res.json(results);
+    });
+}
+
+const fs = require('fs');
+const path = require('path');
+
+function getMapPoints(filePath) {
+  const rawData = fs.readFileSync(filePath, 'utf-8');
+  const lines = rawData.trim().split('\n');
+
+  const points = lines.map(line => {
+    const [xStr, yStr, rawName] = line.split(';');
+    return {
+      x: parseInt(xStr, 10),
+      y: parseInt(yStr, 10),
+      name: rawName.replace(/@/g, ' ')
+    };
+  });
+
+  return points;
+}
+
+function parseGraph(filePath) {
+  const fullPath = path.join(__dirname, '..', filePath);
+  const data = fs.readFileSync(fullPath, 'utf-8');
+  const lines = data.split('\n').filter(line => line.trim() !== '');
+
+  const nodes = [];
+  const edges = [];
+
+  for (const line of lines) {
+    const parts = line.split(';').map(p => p.trim());
+    if (line.startsWith('V')) {
+      const id = parts[0].split(' ')[1];
+      const name = parts[1];
+      const lineNumber = parts[2];
+      const terminus = parts[3] === 'True';
+      const branch = parseInt(parts[4]);
+
+      nodes.push({ id, name, line: lineNumber, terminus, branch });
+    } else if (line.startsWith('E')) {
+      const parts = line.split(' ');
+      edges.push({
+        from: parts[1],
+        to: parts[2],
+        time: parseInt(parts[3])
+      });
+    }
+  }
+
+  return { nodes, edges };
+}
+
+function getIntersections(filePath) {
+  const { nodes } = parseGraph(filePath);
+
+  // Group by station name
+  const stationMap = new Map();
+  for (const node of nodes) {
+    if (!stationMap.has(node.name)) {
+      stationMap.set(node.name, []);
+    }
+    stationMap.get(node.name).push(node.line);
+  }
+
+  // Keep only stations with multiple distinct lines
+  const intersections = [];
+  for (const [name, lines] of stationMap.entries()) {
+    const uniqueLines = [...new Set(lines)];
+    if (uniqueLines.length > 1) {
+      intersections.push({ name, lines: uniqueLines });
+    }
+  }
+
+  return intersections;
+}
+
+module.exports = {
+  getMapPoints,
+  getIntersections
+};
