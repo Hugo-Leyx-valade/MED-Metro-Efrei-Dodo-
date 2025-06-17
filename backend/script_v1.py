@@ -29,6 +29,32 @@ def to_graph(txt_file):
     f.close()
     return tab_arretes , tab_noeuds
 
-arretes = to_graph('data/version 1/output.txt')[0]
-noeuds = to_graph('data/version 1/output.txt')[1]
-print(noeuds)
+
+
+def get_map_points(file_path):
+    points = []
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+
+            parts = line.split(";")
+            if len(parts) != 3:
+                continue
+
+            x = int(parts[0])
+            y = int(parts[1])
+            name = parts[2].replace("@", " ")
+            points.append({
+                "x": x,
+                "y": y,
+                "name": name
+            })
+
+    return points
+
+
+print(get_map_points("data/version 1/pospoints.txt"))
+

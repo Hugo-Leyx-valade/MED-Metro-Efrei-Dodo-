@@ -36,3 +36,6 @@ app.get('/run-python', (req, res) => {
 app.listen(3001, () => {
   console.log('✅ Backend en écoute sur http://localhost:3001');
 });
+
+const version1 = require('./routes/VA.js');
+app.use('/V1', version1);
