@@ -40,7 +40,7 @@ function parseGraph(filePath) {
   for (const line of lines) {
     const parts = line.split(';').map(p => p.trim());
     if (line.startsWith('V')) {
-      const id = parts[0].split(' ')[1];
+      const id = parts[1];
       const name = parts.slice(2, parts.length-5).join(' ');
       const lineNumber = parts[parts.length-4];
       const terminus = parts[parts.length-2] === 'True';
@@ -88,82 +88,39 @@ function getLinks(edges, nodeMap) {
     }));
 }
 
-function computeShortestPath(from, to, links) {
-    // Création de la liste des noeuds uniques
-    const nodes = {};
-    links.forEach(link => {
-        nodes[link.from.id] = link.from;
-        nodes[link.to.id] = link.to;
-    });
-
-    // Création du graphe sous forme d'adjacence
-    const graph = {};
-    Object.values(nodes).forEach(node => {
-        graph[node.id] = [];
-    });
-    links.forEach(link => {
-        graph[link.from.id].push({ id: link.to.id, time: link.time, edge: link });
-        graph[link.to.id].push({ id: link.from.id, time: link.time, edge: link }); // non orienté
-    });
-
-    // Initialisation des distances, précédents et file
-    const distances = {};
-    const previous = {};
-    const visited = new Set();
-    Object.keys(nodes).forEach(id => {
-        distances[id] = Infinity;
-        previous[id] = null;
-    });
-    distances[from.id] = 0;
-
-    const queue = [from.id];
-
-    while (queue.length > 0) {
-        // Trouver le noeud avec la plus petite distance
-        let minNode = queue.reduce((a, b) =>
-            distances[a] < distances[b] ? a : b
-        );
-
-        queue.splice(queue.indexOf(minNode), 1);
-        visited.add(minNode);
-
-        if (minNode === to.id) break;
-
-        graph[minNode].forEach(neighbor => {
-            if (visited.has(neighbor.id)) return;
-            const alt = distances[minNode] + neighbor.time;
-            if (alt < distances[neighbor.id]) {
-                distances[neighbor.id] = alt;
-                previous[neighbor.id] = {
-                    id: minNode,
-                    edge: neighbor.edge
-                };
-                if (!queue.includes(neighbor.id)) {
-                    queue.push(neighbor.id);
-                }
-            }
-        });
+function dijkstra(nodes,edges, start, end) {
+  var visited_node = [];
+  var min_dist = [];
+  for(let i = 0; i < nodes.length; i++) {
+    min_dist[i] = Infinity;
+  }
+  min_dist[nodes.findIndex(node => parseInt(node.id) === parseInt(start))] = 0;
+  while(visited_node.length < nodes.length) {
+    var min = Infinity;
+    var noeud_courant = -1;
+    for(let i = 0; i < nodes.length; i++) {
+      if(!visited_node.includes(i) && min_dist[i] < min) {
+        min = min_dist[i];
+        noeud_courant = i;
+      }
     }
-    console.log('Précédents:', previous);
-
-    // Reconstruire le chemin sous forme de liste de liens
-    const path = [];
-    let current = to.id;
-    while (previous[current]) {
-        path.unshift(previous[current].edge);
-        current = previous[current].id;
+    visited_node.push(min_index);
+    for(let edge of edges) {
+      if(edge.from === nodes[min_index].id && !visited_node.includes(nodes.findIndex(node => node.id === edge.to))) {
+        const toIndex = nodes.findIndex(node => node.id === edge.to);
+        if(min_dist[min_index] + edge.time < min_dist[toIndex]) {
+          min_dist[toIndex] = min_dist[min_index] + edge.time;
+        }
+      }
     }
-    console.log('Chemin trouvé:', path);
-    return path; // tableau de liens (edges)
+  }
+  return min_dist;
 }
-
-
-
 
 module.exports = {
   getMapPoints,
   getLinks,
   parseGraph,
   parsePointPositions,
-  computeShortestPath
+  dijkstra
 };

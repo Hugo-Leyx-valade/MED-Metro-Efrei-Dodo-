@@ -29,7 +29,7 @@
     <!-- Image utilisée pour le placement, invisible -->
     <img ref="imageRef" src="../assets/metrof_r.png" class="map-image" />
 
-    <!-- Lignes entre les points -->
+  <!-- Lignes entre les points -->
     <svg class="map-svg">
       <line
         v-for="(edge, index) in edges"

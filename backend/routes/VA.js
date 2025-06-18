@@ -6,7 +6,7 @@ const { getMapPoints } = require('../API/V1API');
 const { getLinks } = require('../API/V1API');
 const { parseGraph } = require('../API/V1API');
 const { parsePointPositions } = require('../API/V1API');
-const { computeShortestPath } = require('../API/V1API');
+const { dijkstra } = require('../API/V1API');
 
 router.get('/map-points', (req, res) => {
   try {
@@ -51,28 +51,14 @@ router.get('/shortest-path', async (req, res) => {
   try {
     const graphPath = 'data/version 1/output.txt';
     const pointPath = 'data/version 1/pospoints.txt';
-
     const { nodes, edges } = parseGraph(graphPath);
-    const coordMap = parsePointPositions(pointPath);
-
-    const nodeMap = {};
-    nodes.forEach((node, index) => {
-      const pos = coordMap.get(node.name);
-      nodeMap[index] = {
-        name: node.name,
-        line: node.line,
-        ...(pos || {}) // { x, y }
-      }
-    });
-  const links = getLinks(edges, nodeMap);
-
   if (!from || !to) {
     return res.status(400).json({ error: 'Paramètres "from" et "to" requis' });
   }
 
   try {
     // Appelle ici ta fonction de calcul de chemin
-    const path = await computeShortestPath(nodeMap[from], nodeMap[to], links); // à adapter selon ton implémentation
+    const path = await dijkstra(nodes,edges,from,to); // à adapter selon ton implémentation
     res.json(path);
   } catch (error) {
     console.error('Erreur calcul du chemin :', error);
