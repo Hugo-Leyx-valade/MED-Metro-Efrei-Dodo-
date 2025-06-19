@@ -1,38 +1,38 @@
+import heapq
+from collections import defaultdict
 
-
-def to_graph(txt_file):
+def to_graph():
     """
     Converts a text file to a graph representation.
     """
+    txt_file = "C:/Users/hugol/Documents/projet/mastercamp/MED-Metro-Efrei-Dodo-/flask_back/data/version 1/output.txt"
     with open(txt_file, 'r') as f:
         lines = f.readlines()
-    
+
     tab_arretes = []
     tab_noeuds = []
-    noeuds = {}
+
     for line in lines:
         parts = line.strip().split(';')
-        arretes = {}
-        noeuds = {}
-        if len(parts) < 5:
-            arretes["node0"] = parts[1]
-            arretes["node1"]= parts[2]
-            arretes["weight"] = parts[3]
+
+        if len(parts) <= 4:  # Ensure there are enough parts to form an edge
+            arretes = {
+                "node0": parts[1],
+                "node1": parts[2],
+                "weight": parts[3]
+            }
             tab_arretes.append(arretes)
-        elif len(parts) > 5:
-            noeuds["node_number"] = parts[1]
-            noeuds["name"] = " ".join(parts[2:-5])
-            noeuds["line"] = parts[-3]
-            noeuds["terminus"] = parts[-2]
-            noeuds["branchement"] = parts[-1]
-            tab_noeuds.append(noeuds)
-    f.close()
-    return tab_arretes , tab_noeuds
+
+
+    return tab_arretes, tab_noeuds
 
 
 
-def get_map_points(file_path):
+
+def get_map_points():
     points = []
+    file_path = txt_file = "C:/Users/hugol/Documents/projet/mastercamp/MED-Metro-Efrei-Dodo-/flask_back/data/version 1/pospoints.txt"
+
 
     with open(file_path, 'r', encoding='utf-8') as f:
         for line in f:
@@ -55,6 +55,5 @@ def get_map_points(file_path):
 
     return points
 
-
-print(get_map_points("data/version 1/pospoints.txt"))
+print(to_graph())
 

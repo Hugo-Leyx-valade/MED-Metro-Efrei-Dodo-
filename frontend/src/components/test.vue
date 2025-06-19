@@ -76,9 +76,10 @@ const imageRef = ref(null)
 
 async function fetchData() {
   try {
-    const res = await axios.get('http://localhost:3001/V1/links')
+    const res = await axios.get('http://localhost:5000/api/edges')
     const links = res.data
     edges.value = links
+    console.log('Edges:', edges.value)
 
     // Extraire les points uniques des edges
     const seen = new Set()
