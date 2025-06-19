@@ -54,6 +54,42 @@ def get_map_points():
             })
 
     return points
+import heapq
+from collections import defaultdict
+
+def to_graph_nodes():
+    """
+    Converts a text file to a graph representation.
+    """
+    txt_file_nodes = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
+    txt_file_positions = "C:\\Users\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
+
+    station_positions = load_station_positions(txt_file_positions)
+
+    with open(txt_file_nodes, 'r') as f:
+        lines = f.readlines()
+
+    tab_noeuds = []
+    for line in lines:
+        parts = line.strip().split(';')
+        if len(parts) > 5:
+            node = {
+                "id": parts[1],
+                "name": " ".join(parts[2:-5]),
+                "line": parts[-3],
+                "terminus": parts[-2],
+                "branchement": parts[-1]
+            }
+            # Ajouter les coordonnées x et y si disponibles
+            station_name = " ".join(parts[2:-5])
+            if station_name in station_positions:
+                node["x"] = station_positions[station_name]['x']
+                node["y"] = station_positions[station_name]['y']
+            else:
+                node["x"] = None
+                node["y"] = None
+            tab_noeuds.append(node)
+
+    return jsonify(tab_noeuds)
 
 print(to_graph())
-

@@ -23,22 +23,23 @@
       </option>
     </select>
   </label>
-
   <button @click="computeShortestPath">Calculer</button>
 </div>
+
     <!-- Image utilisée pour le placement, invisible -->
     <img ref="imageRef" src="../assets/metrof_r.png" class="map-image" />
 
   <!-- Lignes entre les points -->
     <svg class="map-svg">
       <line
-        v-for="(edge, index) in edges"
-        :key="index"
-        :x1="getPoint(edge.from.id)?.x/1.5"
-        :y1="getPoint(edge.from.id)?.y/1.5"
-        :x2="getPoint(edge.to.id)?.x/1.5"
-        :y2="getPoint(edge.to.id)?.y/1.5"
-        :stroke="getLineColor(edge.from.line)"
+        v-for="edge in edges"
+        :key="'path-' + index"
+        :x1="points[parseInt(edge.node0)].x / 1.5"
+        :y1="points[parseInt(edge.node0)].y / 1.5"
+        :x2="points[parseInt(edge.node1)].x / 1.5"
+        :y2="points[parseInt(edge.node1)].y / 1.5"
+        :console.log="hugo"
+        :stroke="getLineColor(points[parseInt(edge.node0)].line)"
         stroke-width="2"
       />
 
@@ -46,15 +47,23 @@
       <line
         v-for="(edge, index) in shortestPathEdges"
         :key="'path-' + index"
-        :x1="getPoint(edge.from.id)?.x / 1.5"
-        :y1="getPoint(edge.from.id)?.y / 1.5"
-        :x2="getPoint(edge.to.id)?.x / 1.5"
-        :y2="getPoint(edge.to.id)?.y / 1.5"
+        :x1="points.value[parseInt(edges.value[0].node0)].x / 1.5"
+        :y1="points.value[parseInt(edges.value[0].node0)].y / 1.5"
+        :x2="points.value[parseInt(edges.value[0].node1)].x / 1.5"
+        :y2="points.value[parseInt(edges.value[0].node1)].y / 1.5"
         stroke="red"
         stroke-width="4"
       />
     </svg>
 
+      <div class="controls">
+      <h3>Calcul de chemin</h3>
+      <!-- Autres éléments existants -->
+
+      <!-- Bouton pour calculer l'ACPM -->
+      <button @click="computeACPM">Calculer ACPM</button>
+      <p v-if="totalWeight !== null">Poids total de l'ACPM : {{ totalWeight }}</p>
+    </div>
     <!-- Points -->
     <div
       v-for="(point, index) in points"
@@ -74,37 +83,33 @@ const points = ref([])
 const edges = ref([])
 const imageRef = ref(null)
 
+const totalWeight = ref(null)
+
 async function fetchData() {
   try {
-    const res = await axios.get('http://localhost:5000/api/edges')
-    const links = res.data
-    edges.value = links
-    console.log('Edges:', edges.value)
+    const res1 = await axios.get('http://localhost:5000/api/edges')
+    edges.value = res1.data
+    console.log('Edges:', edges.value[0].node1)
 
-    // Extraire les points uniques des edges
-    const seen = new Set()
-    const uniquePoints = []
-
-    for (const link of links) {
-      console.log(link)
-      if (!seen.has(link.from.id)) {
-        uniquePoints.push({ id: link.from.id, name: link.from.name,line:link.from.line, x: link.from.x, y: link.from.y })
-        seen.add(link.from.id)
-      }
-      if (!seen.has(link.to.id)) {
-        uniquePoints.push({ id: link.to.id, name: link.to.name,line:link.to.line, x: link.to.x, y: link.to.y })
-        seen.add(link.to.id)
-      }
-    }
-
-    points.value = uniquePoints
-    console.log('Points chargés:', points.value)
+    const res2 = await axios.get('http://localhost:5000/api/nodes')
+    points.value = res2.data
+    console.log("Coordonnées des points :")
   } catch (error) {
-    console.error('Erreur chargement données:', error)
+    console.error('Erreur lors de la récupération des données:', error)
+  }
+}
+
+async function computeACPM() {
+  try {
+    const res = await axios.get('http://localhost:5000/api/acpm')
+    totalWeight.value = res.data.total_weight
+  } catch (error) {
+    console.error('Erreur lors du calcul de l\'ACPM :', error)
   }
 }
 
 function getLineColor(line) {
+  console.log('Ligne:', line)
   const colors = {
     '1': '#ffcd00',
     '2': '#0055c8',
@@ -190,10 +195,10 @@ async function computeShortestPath() {
 
 .point {
   position: fixed;
-  width: 3px;
-  height: 3px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  transform: translate(-50%, -210%);
+  transform: translate(-50%, -50%);
   margin-top: 5%;
   margin-left: 60%;
   border-color: aqua;
