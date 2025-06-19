@@ -88,34 +88,72 @@ function getLinks(edges, nodeMap) {
     }));
 }
 
-function dijkstra(nodes,edges, start, end) {
+function dijkstra(nodes, edges, start, end) {
   var visited_node = [];
   var min_dist = [];
-  for(let i = 0; i < nodes.length; i++) {
+  var prev_nodes = [];
+
+  // Initialiser les distances minimales et les nœuds précédents
+  for (let i = 0; i < nodes.length; i++) {
     min_dist[i] = Infinity;
+    prev_nodes[i] = null;
   }
-  min_dist[nodes.findIndex(node => parseInt(node.id) === parseInt(start))] = 0;
-  while(visited_node.length < nodes.length) {
+
+  // La distance du nœud de départ à lui-même est zéro
+  let startIndex = nodes.findIndex(node => parseInt(node.id) === parseInt(start));
+  min_dist[startIndex] = 0;
+
+  while (visited_node.length < nodes.length) {
     var min = Infinity;
     var noeud_courant = -1;
-    for(let i = 0; i < nodes.length; i++) {
-      if(!visited_node.includes(i) && min_dist[i] < min) {
+
+    // Trouver le nœud non visité avec la plus petite distance
+    for (let i = 0; i < nodes.length; i++) {
+      if (!visited_node.includes(i) && min_dist[i] < min) {
         min = min_dist[i];
         noeud_courant = i;
       }
     }
-    visited_node.push(min_index);
-    for(let edge of edges) {
-      if(edge.from === nodes[min_index].id && !visited_node.includes(nodes.findIndex(node => node.id === edge.to))) {
-        const toIndex = nodes.findIndex(node => node.id === edge.to);
-        if(min_dist[min_index] + edge.time < min_dist[toIndex]) {
-          min_dist[toIndex] = min_dist[min_index] + edge.time;
+
+    // Si aucun nœud n'est trouvé, sortir de la boucle
+    if (noeud_courant === -1) break;
+
+    // Marquer le nœud courant comme visité
+    visited_node.push(noeud_courant);
+
+    // Mettre à jour les distances des nœuds voisins
+    for (let i = 0; i < edges.length; i++) {
+      let edge = edges[i];
+      if (parseInt(edge.source) === parseInt(nodes[noeud_courant].id)) {
+        let neighborIndex = nodes.findIndex(node => parseInt(node.id) === parseInt(edge.target));
+        let alt = min_dist[noeud_courant] + parseInt(edge.weight);
+        if (alt < min_dist[neighborIndex]) {
+          min_dist[neighborIndex] = alt;
+          prev_nodes[neighborIndex] = noeud_courant;
         }
       }
     }
   }
-  return min_dist;
+
+  // Retracer le chemin le plus court
+  let path = [];
+  let current = nodes.findIndex(node => parseInt(node.id) === parseInt(end));
+  while (prev_nodes[current] !== null) {
+    path.unshift(nodes[current].id);
+    current = prev_nodes[current];
+  }
+  path.unshift(nodes[startIndex].id);
+
+  console.log('Chemin le plus court:', {
+    distance: min_dist[nodes.findIndex(node => parseInt(node.id) === parseInt(end))],
+    path: path
+  });
+  return {
+    distance: min_dist[nodes.findIndex(node => parseInt(node.id) === parseInt(end))],
+    path: path
+  };
 }
+
 
 module.exports = {
   getMapPoints,

@@ -7,3 +7,4 @@ npm-debug.log*
 jspm_packages/
 # Optional npm cache directory
 *.txt
+venv/

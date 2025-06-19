@@ -192,9 +192,10 @@ async function computeShortestPath() {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -210%);
   margin-top: 5%;
   margin-left: 60%;
+  border-color: aqua;
   cursor: pointer;
 }
 
