@@ -45,12 +45,12 @@
 
       <!-- Chemin le plus court en rouge -->
       <line
-        v-for="(edge, index) in shortestPathEdges"
-        :key="'path-' + index"
-        :x1="points.value[parseInt(edges.value[0].node0)].x / 1.5"
-        :y1="points.value[parseInt(edges.value[0].node0)].y / 1.5"
-        :x2="points.value[parseInt(edges.value[0].node1)].x / 1.5"
-        :y2="points.value[parseInt(edges.value[0].node1)].y / 1.5"
+        v-for="(edge, index) in visiblePathEdges"
+        :key="'animated-path-' + index"
+        :x1="points[parseInt(edge.node0)].x / 1.5"
+        :y1="points[parseInt(edge.node0)].y / 1.5"
+        :x2="points[parseInt(edge.node1)].x / 1.5"
+        :y2="points[parseInt(edge.node1)].y / 1.5"
         stroke="red"
         stroke-width="4"
       />
@@ -84,16 +84,16 @@ const edges = ref([])
 const imageRef = ref(null)
 
 const totalWeight = ref(null)
-
+const acpm = ref([])
+const visiblePathEdges = ref([])
 async function fetchData() {
   try {
     const res1 = await axios.get('http://localhost:5000/api/edges')
     edges.value = res1.data
-    console.log('Edges:', edges.value[0].node1)
 
     const res2 = await axios.get('http://localhost:5000/api/nodes')
     points.value = res2.data
-    console.log("Coordonnées des points :")
+    console.log('Points:', points.value)
   } catch (error) {
     console.error('Erreur lors de la récupération des données:', error)
   }
@@ -102,14 +102,16 @@ async function fetchData() {
 async function computeACPM() {
   try {
     const res = await axios.get('http://localhost:5000/api/acpm')
+    shortestPathEdges.value = res.data
+    animatePathDisplay()  
     totalWeight.value = res.data.total_weight
+    console.log('ACPM:', acpm.value, 'Poids total:', totalWeight.value)
   } catch (error) {
     console.error('Erreur lors du calcul de l\'ACPM :', error)
   }
 }
 
 function getLineColor(line) {
-  console.log('Ligne:', line)
   const colors = {
     '1': '#ffcd00',
     '2': '#0055c8',
@@ -129,9 +131,6 @@ function getLineColor(line) {
   return colors[line] || 'white'
 }
 
-function getPoint(id) {
-  return points.value.find(p => p.id === id)
-}
 
 onMounted(() => {
   fetchData()
@@ -156,6 +155,19 @@ async function computeShortestPath() {
   } catch (error) {
     console.error('Erreur calcul chemin :', error)
   }
+}
+
+function animatePathDisplay() {
+  visiblePathEdges.value = []
+  let i = 0
+  const interval = setInterval(() => {
+    if (i < shortestPathEdges.value.length) {
+      visiblePathEdges.value.push(shortestPathEdges.value[i])
+      i++
+    } else {
+      clearInterval(interval)
+    }
+  }, 300) // délai entre chaque segment en ms
 }
 
 </script>

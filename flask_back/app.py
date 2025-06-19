@@ -33,7 +33,6 @@ def to_graph_edges():
             arretes["weight"] = parts[3]
             tab_arretes.append(arretes)
     f.close()
-    print(tab_arretes)
     return tab_arretes
 
 def load_station_positions(file_path):
@@ -80,8 +79,8 @@ def to_graph_nodes():
                 node["x"] = None
                 node["y"] = None
             tab_noeuds.append(node)
-
-    return jsonify(tab_noeuds)
+    f.close()
+    return tab_noeuds
 
 
 
@@ -104,21 +103,52 @@ class UnionFind:
         return True
 
 @app.route('/api/acpm', methods=['GET'])
-def kruskal_mst():
-    edges = to_graph_edges()
-    print(max(max(int(edge['node0']), int(edge['node1'])) for edge in edges) + 1)
-    n = max(max(int(edge['node0']), int(edge['node1'])) for edge in edges) + 1
-    uf = UnionFind(n)
+def kruskal():
+    stations = to_graph_nodes()  # Récupérer les noeuds
+    connections = to_graph_edges()
+    # Nombre de noeuds
+    n = len(stations)
 
-    mst = []
+    # Union-Find (Disjoint Set Union) structure pour détecter les cycles
+    parent = [i for i in range(n)]
+    rank = [0 for _ in range(n)]
+
+    def find(u):
+        if parent[u] != u:
+            parent[u] = find(parent[u])  # Path compression
+        return parent[u]
+
+    def union(u, v):
+        ru, rv = find(u), find(v)
+        if ru == rv:
+            return False  # déjà connectés
+        # union par rang
+        if rank[ru] < rank[rv]:
+            parent[ru] = rv
+        else:
+            parent[rv] = ru
+            if rank[ru] == rank[rv]:
+                rank[ru] += 1
+        return True
+
+    # Tri des connexions par poids croissant
+    sorted_connections = sorted(connections, key=lambda c: int(c["weight"]))
+
+    mst = []  # Arbre couvrant minimal (ACPM)
     total_weight = 0
 
-    for weight, a, b in sorted(edges):
-        if uf.union(a, b):
-            mst.append((a, b, weight))
-            total_weight += weight
-
-    return mst, total_weight
+    for conn in sorted_connections:
+        u = int(conn["node0"])
+        v = int(conn["node1"])
+        w = int(conn["weight"])
+        if union(u, v):
+            mst.append(conn)
+            total_weight += w
+        # Stop si on a ajouté n - 1 arêtes
+        if len(mst) == n - 1:
+            break
+    print("MST:", mst, total_weight)
+    return {"mst": mst, "total_weight": total_weight}
 
 
 
