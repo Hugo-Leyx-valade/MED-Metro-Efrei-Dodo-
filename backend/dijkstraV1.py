@@ -95,7 +95,7 @@ def get_shortest_path(start_name, end_name, file_path):
 
 # Exemple d'utilisation
 if __name__ == "__main__":
-    chemin_fichier = "C:\\Users\\Hugo\\Documents\\Projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
+    chemin_fichier = "../data/version 1/output.txt"  # Remplacez par le chemin réel de votre fichier
 
     get_shortest_path("Saint-Lazare", "Villejuif, Louis Aragon", chemin_fichier)
 

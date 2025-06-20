@@ -38,22 +38,11 @@
         :y1="points[parseInt(edge.node0)].y / 1.5"
         :x2="points[parseInt(edge.node1)].x / 1.5"
         :y2="points[parseInt(edge.node1)].y / 1.5"
-        :console.log="hugo"
         :stroke="getLineColor(points[parseInt(edge.node0)].line)"
         stroke-width="2"
       />
 
-      <!-- Chemin le plus court en rouge -->
-      <line
-        v-for="(edge, index) in visiblePathEdges"
-        :key="'animated-path-' + index"
-        :x1="points[parseInt(edge.node0)].x / 1.5"
-        :y1="points[parseInt(edge.node0)].y / 1.5"
-        :x2="points[parseInt(edge.node1)].x / 1.5"
-        :y2="points[parseInt(edge.node1)].y / 1.5"
-        stroke="red"
-        stroke-width="4"
-      />
+
     </svg>
 
       <div class="controls">
@@ -82,7 +71,8 @@ import axios from 'axios'
 const points = ref([])
 const edges = ref([])
 const imageRef = ref(null)
-
+const shortestPath = ref([])
+const shortestweight = ref(null)
 const totalWeight = ref(null)
 const acpm = ref([])
 const visiblePathEdges = ref([])
@@ -103,9 +93,10 @@ async function computeACPM() {
   try {
     const res = await axios.get('http://localhost:5000/api/acpm')
     shortestPathEdges.value = res.data
-    animatePathDisplay()  
     totalWeight.value = res.data.total_weight
-    console.log('ACPM:', acpm.value, 'Poids total:', totalWeight.value)
+    console.log('ACPM:', shortestPathEdges.value, 'Poids total:', totalWeight.value)
+    alert(`ACPM calculé avec succès ! Poids total : ${totalWeight.value/3600}`)
+    animatePathDisplay()  
   } catch (error) {
     console.error('Erreur lors du calcul de l\'ACPM :', error)
   }
@@ -141,19 +132,27 @@ const selectedTo = ref('')
 const shortestPathEdges = ref([])
 
 async function computeShortestPath() {
-  console.log('Calcul du chemin de', selectedFrom.value, 'à', selectedTo.value)
-  if (!selectedFrom.value || !selectedTo.value) return
+  if (!selectedFrom.value || !selectedTo.value) {
+    alert("Veuillez sélectionner une station de départ et d'arrivée.");
+    return;
+  }
+
+  const startId = selectedFrom.value.id;
+  const endId = selectedTo.value.id;
 
   try {
-    const res = await axios.get('http://localhost:3001/V1/shortest-path', {
-  params: {
-    from: selectedFrom.value.id,
-    to: selectedTo.value.id
-  }
-})
-    shortestPathEdges.value = res.data
+    const response = await fetch(`http://localhost:5000/api/path?start_id=${startId}&end_id=${endId}`);
+    if (!response.ok) {
+      throw new Error(`Erreur serveur: ${response.status}`);
+    }
+    const data = await response.json();
+    shortestPath.value = data.path;
+    shortestweight.value = data.total_weight;
+    console.log('Chemin le plus court:', shortestPath.value, 'Poids:', shortestweight.value);
+    alert(`Chemin le plus court calculé avec succès ! Poids total : ${shortestweight.value/3600}`);
+
   } catch (error) {
-    console.error('Erreur calcul chemin :', error)
+    console.error('Erreur calcul chemin :', error);
   }
 }
 
