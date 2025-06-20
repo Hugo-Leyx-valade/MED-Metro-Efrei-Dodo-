@@ -199,7 +199,7 @@ def api_shortest_path():
     
     result = dijkstra_shortest_path(start_id, end_id, nodes, edges)
     for id in result["path"]:
-        print(nodes[int(id)]["name"])
+        print(nodes[int(id)]["name"] + " and " + nodes[int(id)]["line"])
     return result
 
 
