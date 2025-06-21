@@ -83,7 +83,7 @@ async function fetchData() {
 
     const res2 = await axios.get('http://localhost:5000/api/nodes')
     points.value = res2.data
-    console.log('Points:', points.value)
+    console.log('Points:', edges.value.length)
   } catch (error) {
     console.error('Erreur lors de la récupération des données:', error)
   }
