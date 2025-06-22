@@ -204,5 +204,210 @@ def api_shortest_path():
 
 
 
+#================================= VERSION 2 =================================
+
+import pandas as pd
+
+# Dictionnaire de correspondance entre mode de transport et code GTFS
+GTFS_ROUTE_TYPE = {
+    "tram": 0,
+    "metro": 1,
+    "rer": 2,
+    "bus": 3,
+    "ferry": 4,
+    "cablecar": 5,
+    "funicular": 7,
+}
+
+def afficher_stations_par_ligne(gtfs_folder, nom_ligne, mode_transport):
+    # Vérifie si le mode est valide
+    route_type = GTFS_ROUTE_TYPE.get(mode_transport.lower())
+    if route_type is None:
+        print(f"Mode de transport invalide : {mode_transport}")
+        print(f"Modes valides : {list(GTFS_ROUTE_TYPE.keys())}")
+        return
+
+    # Chargement des fichiers GTFS
+    routes = pd.read_csv(f"{gtfs_folder}/routes.txt")
+    trips = pd.read_csv(f"{gtfs_folder}/trips.txt")
+    stop_times = pd.read_csv(f"{gtfs_folder}/stop_times.txt")
+    stops = pd.read_csv(f"{gtfs_folder}/stops.txt")
+
+    # Recherche des lignes correspondant au nom + type de transport
+    lignes_trouvees = routes[
+        (routes['route_short_name'].astype(str).str.lower() == nom_ligne.lower()) &
+        (routes['route_type'] == route_type)
+    ]
+
+    if lignes_trouvees.empty:
+        print(f"Aucune ligne trouvée pour '{nom_ligne}' avec le mode '{mode_transport}'")
+        return
+
+    for _, ligne in lignes_trouvees.iterrows():
+        print(f"\nLigne trouvée : {ligne['route_short_name']} ({ligne['route_long_name']})")
+
+        # Récupération des trips liés à la ligne
+        trips_ligne = trips[trips['route_id'] == ligne['route_id']]
+
+        # Récupération des stop_ids liés à ces trips
+        stop_ids = stop_times[stop_times['trip_id'].isin(trips_ligne['trip_id'])]['stop_id'].unique()
+
+        # Recherche des noms de stations
+        stations = stations = (
+            stops[stops['stop_id'].isin(stop_ids)][['stop_name', 'stop_id']]
+            .groupby('stop_name')
+            .first()
+            .reset_index()
+            .sort_values('stop_name')
+        )
+
+
+# Exemple d’appel :
+#afficher_stations_par_ligne("backend/data", "7", "metro")
+
+
+import pandas as pd
+def charger_stations():
+    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
+    stops = pd.read_csv(f"{gtfs_folder}stops.txt")
+    stop_times = pd.read_csv(f"{gtfs_folder}stop_times.txt")
+    trips = pd.read_csv(f"{gtfs_folder}trips.txt")
+    routes = pd.read_csv(f"{gtfs_folder}routes.txt")
+
+    # Filtrer les lignes métro
+    routes_metro = routes[routes['route_type'] == 1]
+    trips_metro = trips[trips['route_id'].isin(routes_metro['route_id'])]
+    stop_times_metro = stop_times[stop_times['trip_id'].isin(trips_metro['trip_id'])]
+
+    # Associer stop_id -> trip_id -> route_id -> route_short_name
+    trip_route = trips_metro[['trip_id', 'route_id']].merge(
+        routes_metro[['route_id', 'route_short_name']], on='route_id'
+    )
+    stop_trip_route = stop_times_metro[['stop_id', 'trip_id']].merge(trip_route, on='trip_id')
+
+    # Regrouper lignes par stop_id
+    stop_lignes = stop_trip_route.groupby('stop_id')['route_short_name'].unique()
+
+    # Filtrer stops métro
+    stops_metro = stops[stops['stop_id'].isin(stop_lignes.index)].copy()
+
+    # Ajouter les lignes par stop_id
+    stops_metro['lignes'] = stops_metro['stop_id'].map(lambda sid: sorted(list(stop_lignes.get(sid, []))))
+
+    # Construire dictionnaire stations, clé = stop_id (unique)
+    dico_stations = {}
+    for _, row in stops_metro.iterrows():
+        dico_stations[row['stop_id']] = {
+            'nom': row['stop_name'],
+            'lignes': row['lignes'],
+            'latitude': row['stop_lat'],
+            'longitude': row['stop_lon']
+        }
+    print(f"Nombre de stations trouvées : {len(dico_stations)}")
+    return dico_stations
+
+# Exemple d'utilisation
+
+
+
+import pandas as pd
+
+def compter_stations():
+    # Chargement des fichiers
+    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"  # Chemin vers le dossier GTFS
+    stops = pd.read_csv(f"{gtfs_folder}stops.txt")
+    stop_times = pd.read_csv(f"{gtfs_folder}/stop_times.txt")
+    trips = pd.read_csv(f"{gtfs_folder}/trips.txt")
+    routes = pd.read_csv(f"{gtfs_folder}/routes.txt")
+
+    # Total de stops
+    total_stops = stops['stop_id'].nunique()
+
+    # Filtrer les routes de type métro
+    routes_metro = routes[routes['route_type'] == 1]
+    trips_metro = trips[trips['route_id'].isin(routes_metro['route_id'])]
+    stop_times_metro = stop_times[stop_times['trip_id'].isin(trips_metro['trip_id'])]
+
+    # Stops utilisés par le métro
+    metro_stop_ids = stop_times_metro['stop_id'].unique()
+    metro_stops = stops[stops['stop_id'].isin(metro_stop_ids)]
+
+    # Nombre de stop_id (arrêts) utilisés pour le métro
+    nb_stops_metro = len(metro_stops)
+
+    # Nombre de noms uniques (stations sans doublon de direction)
+    nb_stations_metro_uniques = metro_stops['stop_name'].nunique()
+
+    # Affichage
+# Exemple d'utilisation
+#compter_stations("backend/data")
+
+
+import pandas as pd
+import os
+from collections import defaultdict
+
+def recuperer_edges_metro_sans_doublons():
+    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
+    stop_times = pd.read_csv(os.path.join(gtfs_folder, "stop_times.txt"))
+    trips = pd.read_csv(os.path.join(gtfs_folder, "trips.txt"))
+    routes = pd.read_csv(os.path.join(gtfs_folder, "routes.txt"))
+
+    metro_routes = routes[routes['route_type'] == 1]['route_id'].unique()
+    metro_trips = trips[trips['route_id'].isin(metro_routes)]
+
+    stop_times = stop_times[stop_times['trip_id'].isin(metro_trips['trip_id'])]
+    stop_times.sort_values(by=["trip_id", "stop_sequence"], inplace=True)
+
+    edge_weights = defaultdict(list)
+
+    for trip_id, group in stop_times.groupby("trip_id"):
+        group = group.reset_index(drop=True)
+        for i in range(len(group) - 1):
+            current_stop = group.iloc[i]
+            next_stop = group.iloc[i + 1]
+
+            node_a = str(current_stop["stop_id"])
+            node_b = str(next_stop["stop_id"])
+
+            try:
+                t0 = pd.to_timedelta(current_stop["departure_time"])
+                t1 = pd.to_timedelta(next_stop["arrival_time"])
+                weight = int((t1 - t0).total_seconds())
+                if weight <= 0 or weight > 3600:
+                    continue
+            except:
+                continue
+
+            # Clé non orientée (min, max)
+            key = tuple(sorted([node_a, node_b]))
+            edge_weights[key].append(weight)
+
+    # Construction finale (moyenne ou min pour chaque paire)
+    edges = []
+    for (node0, node1), weights in edge_weights.items():
+        avg_weight = int(sum(weights) / len(weights))
+        edges.append({
+            "node0": node0,
+            "node1": node1,
+            "weight": avg_weight
+        })
+    return edges
+
+import json
+@app.route('/api/edgesV2', methods=['GET'])
+def charger_json_edges():
+    with open("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\edges.json", 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data
+
+@app.route('/api/nodesV2', methods=['GET'])
+def charger_json_nodes():
+    with open("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodes.json", 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    return data
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)

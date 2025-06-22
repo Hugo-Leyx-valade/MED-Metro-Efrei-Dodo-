@@ -95,7 +95,7 @@ def charger_stations_metro_sans_doublons(gtfs_folder):
     # Créer un dictionnaire final
     dico_stations = {}
     for _, row in grouped.iterrows():
-        dico_stations[row['stop_name']] = {
+        dico_stations[row['stop_id']] = {
             'nom': row['stop_name'],
             'lignes': row['lignes'],
             'latitude': row['stop_lat'],
@@ -145,18 +145,34 @@ import os
 from collections import defaultdict
 
 def recuperer_edges_metro_sans_doublons(gtfs_folder):
-    stop_times = pd.read_csv(os.path.join(gtfs_folder, "stop_times.txt"))
-    trips = pd.read_csv(os.path.join(gtfs_folder, "trips.txt"))
-    routes = pd.read_csv(os.path.join(gtfs_folder, "routes.txt"))
+    # Charger uniquement les colonnes nécessaires
+    stop_times = pd.read_csv(os.path.join(gtfs_folder, "stop_times.txt"), usecols=["trip_id", "stop_id", "stop_sequence", "departure_time", "arrival_time"])
+    trips = pd.read_csv(os.path.join(gtfs_folder, "trips.txt"), usecols=["trip_id", "route_id"])
+    routes = pd.read_csv(os.path.join(gtfs_folder, "routes.txt"), usecols=["route_id", "route_type"])
 
-    metro_routes = routes[routes['route_type'] == 1]['route_id'].unique()
-    metro_trips = trips[trips['route_id'].isin(metro_routes)]
+    # Filtrer les routes métro
+    metro_route_ids = routes.loc[routes['route_type'] == 1, 'route_id'].unique()
+    metro_trips = trips.loc[trips['route_id'].isin(metro_route_ids), 'trip_id']
 
-    stop_times = stop_times[stop_times['trip_id'].isin(metro_trips['trip_id'])]
+    # Filtrer stop_times pour ne garder que les trips métro
+    stop_times = stop_times[stop_times['trip_id'].isin(metro_trips)].copy()
     stop_times.sort_values(by=["trip_id", "stop_sequence"], inplace=True)
+
+    # Convertir les temps en timedelta une fois pour toutes
+    # fonction auxiliaire pour convertir hh:mm:ss en secondes
+    def to_seconds(t):
+        try:
+            h, m, s = t.split(':')
+            return int(h)*3600 + int(m)*60 + int(float(s))
+        except:
+            return None
+
+    stop_times['dep_sec'] = stop_times['departure_time'].map(to_seconds)
+    stop_times['arr_sec'] = stop_times['arrival_time'].map(to_seconds)
 
     edge_weights = defaultdict(list)
 
+    # Regrouper par trip_id
     for trip_id, group in stop_times.groupby("trip_id"):
         group = group.reset_index(drop=True)
         for i in range(len(group) - 1):
@@ -166,20 +182,19 @@ def recuperer_edges_metro_sans_doublons(gtfs_folder):
             node_a = str(current_stop["stop_id"])
             node_b = str(next_stop["stop_id"])
 
-            try:
-                t0 = pd.to_timedelta(current_stop["departure_time"])
-                t1 = pd.to_timedelta(next_stop["arrival_time"])
-                weight = int((t1 - t0).total_seconds())
-                if weight <= 0 or weight > 3600:
-                    continue
-            except:
+            t0 = current_stop["dep_sec"]
+            t1 = next_stop["arr_sec"]
+
+            if t0 is None or t1 is None:
                 continue
 
-            # Clé non orientée (min, max)
+            weight = t1 - t0
+            if weight <= 0 or weight > 3600:
+                continue
+
             key = tuple(sorted([node_a, node_b]))
             edge_weights[key].append(weight)
 
-    # Construction finale (moyenne ou min pour chaque paire)
     edges = []
     for (node0, node1), weights in edge_weights.items():
         avg_weight = int(sum(weights) / len(weights))
@@ -191,4 +206,47 @@ def recuperer_edges_metro_sans_doublons(gtfs_folder):
 
     return edges
 
+import json
 
+def charger_stations():
+    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\"
+    stops = pd.read_csv(f"{gtfs_folder}stops.txt")
+    stop_times = pd.read_csv(f"{gtfs_folder}stop_times.txt")
+    trips = pd.read_csv(f"{gtfs_folder}trips.txt")
+    routes = pd.read_csv(f"{gtfs_folder}routes.txt")
+
+    # Filtrer les lignes métro
+    routes_metro = routes[routes['route_type'] == 1]
+    trips_metro = trips[trips['route_id'].isin(routes_metro['route_id'])]
+    stop_times_metro = stop_times[stop_times['trip_id'].isin(trips_metro['trip_id'])]
+
+    # Associer stop_id -> trip_id -> route_id -> route_short_name
+    trip_route = trips_metro[['trip_id', 'route_id']].merge(
+        routes_metro[['route_id', 'route_short_name']], on='route_id'
+    )
+    stop_trip_route = stop_times_metro[['stop_id', 'trip_id']].merge(trip_route, on='trip_id')
+
+    # Regrouper lignes par stop_id
+    stop_lignes = stop_trip_route.groupby('stop_id')['route_short_name'].unique()
+
+    # Filtrer stops métro
+    stops_metro = stops[stops['stop_id'].isin(stop_lignes.index)].copy()
+
+    # Ajouter les lignes par stop_id
+    stops_metro['lignes'] = stops_metro['stop_id'].map(lambda sid: sorted(list(stop_lignes.get(sid, []))))
+
+    # Construire dictionnaire stations, clé = stop_id (unique)
+    dico_stations = {}
+    for _, row in stops_metro.iterrows():
+        dico_stations[row['stop_id']] = {
+            'nom': row['stop_name'],
+            'lignes': row['lignes'],
+            'latitude': row['stop_lat'],
+            'longitude': row['stop_lon']
+        }
+    print(f"Nombre de stations trouvées : {len(dico_stations)}")
+    return dico_stations
+
+edges = charger_stations()
+with open('nodes.json', 'w', encoding='utf-8') as f:
+    json.dump(edges, f, ensure_ascii=False, indent=2)
