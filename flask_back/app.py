@@ -16,7 +16,6 @@ def to_graph_edges():
     """
     Converts a text file to a graph representation.
     """
-    txt_file = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
 
     with open(txt_file, 'r') as f:
         lines = f.readlines()
@@ -397,13 +396,13 @@ def recuperer_edges_metro_sans_doublons():
 import json
 @app.route('/api/edgesV2', methods=['GET'])
 def charger_json_edges():
-    with open("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\edges.json", 'r', encoding='utf-8') as f:
+    with open("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodes.json", 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
 @app.route('/api/nodesV2', methods=['GET'])
 def charger_json_nodes():
-    with open("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodes.json", 'r', encoding='utf-8') as f:
+    with open("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodes.json", 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
