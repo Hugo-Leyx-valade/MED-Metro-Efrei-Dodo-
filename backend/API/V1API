@@ -1,16 +1,6 @@
 const e = require('express');
 const db = require('../index');
 
-
-exports.getAllEvents = (req, res) => {
-    db.query('SELECT * FROM Evenement', (err, results) => {
-        if (err) {
-        return res.status(500).json({ error: 'Erreur MySQL' });
-        }
-        res.json(results);
-    });
-}
-
 const fs = require('fs');
 const path = require('path');
 
@@ -40,7 +30,7 @@ function parseGraph(filePath) {
   for (const line of lines) {
     const parts = line.split(';').map(p => p.trim());
     if (line.startsWith('V')) {
-      const id = parts[0].split(' ')[1];
+      const id = parts[1];
       const name = parts.slice(2, parts.length-5).join(' ');
       const lineNumber = parts[parts.length-4];
       const terminus = parts[parts.length-2] === 'True';
@@ -88,76 +78,60 @@ function getLinks(edges, nodeMap) {
     }));
 }
 
-function computeShortestPath(from, to, links) {
-    // Création de la liste des noeuds uniques
-    const nodes = {};
-    links.forEach(link => {
-        nodes[link.from.id] = link.from;
-        nodes[link.to.id] = link.to;
-    });
+function computeShortestPath(nodes, edges, start, end) {
+  var visited_node = [];
+  var min_dist = [];
+  var prev_nodes = [];
 
-    // Création du graphe sous forme d'adjacence
-    const graph = {};
-    Object.values(nodes).forEach(node => {
-        graph[node.id] = [];
-    });
-    links.forEach(link => {
-        graph[link.from.id].push({ id: link.to.id, time: link.time, edge: link });
-        graph[link.to.id].push({ id: link.from.id, time: link.time, edge: link }); // non orienté
-    });
+  // Initialiser les distances minimales et les nœuds précédents
+  for (let i = 0; i < nodes.length; i++) {
+    min_dist[i] = Infinity;
+    prev_nodes[i] = null;
+  }
 
-    // Initialisation des distances, précédents et file
-    const distances = {};
-    const previous = {};
-    const visited = new Set();
-    Object.keys(nodes).forEach(id => {
-        distances[id] = Infinity;
-        previous[id] = null;
-    });
-    distances[from.id] = 0;
+  // La distance du nœud de départ à lui-même est zéro
+  let startIndex = nodes.findIndex(node => String(node.id).trim() === String(start).trim());
 
-    const queue = [from.id];
+  min_dist[startIndex] = 0;
 
-    while (queue.length > 0) {
-        // Trouver le noeud avec la plus petite distance
-        let minNode = queue.reduce((a, b) =>
-            distances[a] < distances[b] ? a : b
-        );
+  while (visited_node.length < nodes.length) {
+    let min = Infinity;
+    let noeud_courant = null;
 
-        queue.splice(queue.indexOf(minNode), 1);
-        visited.add(minNode);
-
-        if (minNode === to.id) break;
-
-        graph[minNode].forEach(neighbor => {
-            if (visited.has(neighbor.id)) return;
-            const alt = distances[minNode] + neighbor.time;
-            if (alt < distances[neighbor.id]) {
-                distances[neighbor.id] = alt;
-                previous[neighbor.id] = {
-                    id: minNode,
-                    edge: neighbor.edge
-                };
-                if (!queue.includes(neighbor.id)) {
-                    queue.push(neighbor.id);
-                }
-            }
-        });
+    for (let i = 0; i < nodes.length; i++) {
+      if (!visited_node.includes(i) && min_dist[i] < min) {
+        min = min_dist[i];
+        noeud_courant = i;
+      }
     }
-    console.log('Précédents:', previous);
-
-    // Reconstruire le chemin sous forme de liste de liens
-    const path = [];
-    let current = to.id;
-    while (previous[current]) {
-        path.unshift(previous[current].edge);
-        current = previous[current].id;
+    if (noeud_courant === null) {
+      break; // Tous les nœuds visités ou plus de connexions
     }
-    console.log('Chemin trouvé:', path);
-    return path; // tableau de liens (edges)
+    visited_node.push(noeud_courant);
+    if (nodes[noeud_courant].id === end) {
+      break; // Arrêter si on atteint le nœud de destination
+    }
+    // Mettre à jour les distances minimales et les nœuds précédents
+    for (let i = 0; i < edges.length; i++) {
+      if (edges[i].from === nodes[noeud_courant].id && !visited_node.includes(nodes.findIndex(node => node.id === edges[i].to))) {
+        let neighborIndex = nodes.findIndex(node => node.id === edges[i].to);
+        let newDist = min_dist[noeud_courant] + edges[i].time;
+        if (newDist < min_dist[neighborIndex]) {
+          min_dist[neighborIndex] = newDist;
+          prev_nodes[neighborIndex] = noeud_courant;
+        }
+      }
+    }
+  }
+  // Reconstruire le chemin le plus court
+  let path = [];
+  let currentIndex = nodes.findIndex(node => node.id === end);
+  while (currentIndex !== null) {
+    path.unshift(nodes[currentIndex].id);
+    currentIndex = prev_nodes[currentIndex];
+  }
+  return path;
 }
-
-
 
 
 module.exports = {
