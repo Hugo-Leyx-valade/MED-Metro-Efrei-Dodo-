@@ -209,7 +209,7 @@ function animatePathDisplay() {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, -100%);
   margin-top: 5%;
   margin-left: 60%;
   border-color: aqua;
