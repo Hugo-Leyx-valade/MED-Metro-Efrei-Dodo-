@@ -7,26 +7,19 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route('/api/data', methods=['GET'])
-def get_data():
-    return jsonify({"message": "Hello from Flask!"})
 
+#================================= VERSION 1 =================================
 @app.route('/api/edges', methods=['GET'])
 def to_graph_edges():
-    """
-    Converts a text file to a graph representation.
-    """
     txt_file = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
 
     with open(txt_file, 'r') as f:
         lines = f.readlines()
     
     tab_arretes = []
-    noeuds = {}
     for line in lines:
         parts = line.strip().split(';')
         arretes = {}
-        noeuds = {}
         if len(parts) < 5:
             arretes["node0"] = parts[1]
             arretes["node1"]= parts[2]
@@ -35,7 +28,8 @@ def to_graph_edges():
     f.close()
     return tab_arretes
 
-def load_station_positions(file_path):
+
+def load_station_positions(file_path):#Utilisé dans to_graph_nodes() pour ajouter la positions du noeud dans son objet
     station_positions = {}
     with open(file_path, 'r') as f:
         for line in f:
@@ -46,20 +40,17 @@ def load_station_positions(file_path):
                 station_positions[station_name] = {'x': x, 'y': y}
     return station_positions
 
+
+
 @app.route('/api/nodes', methods=['GET'])
 def to_graph_nodes():
-    """
-    Converts a text file to a graph representation.
-    """
     txt_file_nodes = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
     txt_file_positions = "C:\\Users\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
-
     station_positions = load_station_positions(txt_file_positions)
-
     with open(txt_file_nodes, 'r') as f:
         lines = f.readlines()
-
     tab_noeuds = []
+    # Récupération des noeuds depuis le fichier output.txt en tableau d'objets
     for line in lines:
         parts = line.strip().split(';')
         if len(parts) > 5:
@@ -85,26 +76,34 @@ def to_graph_nodes():
 
 @app.route('/api/acpm', methods=['GET'])
 def kruskal():
-    stations = to_graph_nodes()  # Récupérer les noeuds
+    # Récupère les noeuds (stations) du graphe
+    stations = to_graph_nodes()
+    # Récupère les arêtes (connexions) du graphe
     connections = to_graph_edges()
+
+    # Vérifie si le graphe est connexe avant d'appliquer l'algorithme de Kruskal
     if connexity(stations, connections):
         # Nombre de noeuds
         n = len(stations)
 
-        # Union-Find (Disjoint Set Union) structure pour détecter les cycles
+        # Initialisation des structures de l'union-find :
+        # Chaque noeud est son propre parent
         parent = [i for i in range(n)]
+        # Chaque ensemble a un rang initial de 0
         rank = [0 for _ in range(n)]
 
+        # Fonction de recherche avec compression de chemin
         def find(u):
             if parent[u] != u:
-                parent[u] = find(parent[u])  # Path compression
+                parent[u] = find(parent[u])  # Compression du chemin
             return parent[u]
 
+        # Fonction d'union par rang
         def union(u, v):
             ru, rv = find(u), find(v)
             if ru == rv:
-                return False  # déjà connectés
-            # union par rang
+                return False  # u et v sont déjà dans le même composant
+            # Union par rang pour garder l'arbre aussi plat que possible
             if rank[ru] < rank[rv]:
                 parent[ru] = rv
             else:
@@ -113,23 +112,27 @@ def kruskal():
                     rank[ru] += 1
             return True
 
-        # Tri des connexions par poids croissant
+        # Trie les connexions par poids croissant
         sorted_connections = sorted(connections, key=lambda c: int(c["weight"]))
 
-        mst = []  # Arbre couvrant minimal (ACPM)
-        total_weight = 0
+        mst = []  # Liste pour stocker les arêtes de l'arbre couvrant minimal
+        total_weight = 0  # Poids total de l'arbre couvrant
 
+        # Parcourt les connexions triées
         for conn in sorted_connections:
-            u = int(conn["node0"])
-            v = int(conn["node1"])
-            w = int(conn["weight"])
+            u = int(conn["node0"])  # Noeud de départ
+            v = int(conn["node1"])  # Noeud d'arrivée
+            w = int(conn["weight"]) # Poids de l'arête
             if union(u, v):
-                mst.append(conn)
+                mst.append(conn)  # Ajoute l'arête à l'ACM
                 total_weight += w
-            # Stop si on a ajouté n - 1 arêtes
+            # Si on a ajouté n - 1 arêtes, on peut s'arrêter (car l'ACM est complet)
             if len(mst) == n - 1:
                 break
+
+        # Retourne l'arbre couvrant minimal et son poids total
         return {"mst": mst, "total_weight": total_weight}
+
 
 
 def connexity(stations, connections):
@@ -147,45 +150,63 @@ def connexity(stations, connections):
 
 
 def dijkstra_shortest_path(start_id, end_id, nodes, edges):
-    import heapq
+    import heapq  # Module pour gérer la file de priorité (tas binaire)
 
-    # Conversion des IDs en int partout
+    # Construction du graphe sous forme d'un dictionnaire d'adjacence
     graph = {int(node["id"]): [] for node in nodes}
     for edge in edges:
         node0 = int(edge["node0"])
         node1 = int(edge["node1"])
         weight = int(edge["weight"])
+        # Ajout de l'arête dans les deux sens (graphe non orienté)
         graph[node0].append((node1, weight))
-        graph[node1].append((node0, weight))  # Si le graphe est non orienté
+        graph[node1].append((node0, weight))
 
-    # Initialisation
+    # Initialisation des distances à l'infini et des prédecesseurs à None
     distances = {int(node["id"]): float('inf') for node in nodes}
     previous = {int(node["id"]): None for node in nodes}
+
+    # Conversion des IDs de départ et d'arrivée en entiers
     start_id = int(start_id)
     end_id = int(end_id)
+
+    # La distance du point de départ à lui-même est 0
     distances[start_id] = 0
-    queue = [(0, start_id)]
+
+    # File de priorité initialisée avec le noeud de départ
+    queue = [(0, start_id)]  # (distance, node_id)
 
     while queue:
+        # Récupère le noeud avec la plus petite distance actuelle
         current_dist, current_id = heapq.heappop(queue)
+
+        # Arrêt anticipé si on atteint la destination
         if current_id == end_id:
             break
+
+        # Parcourt tous les voisins du noeud actuel
         for neighbor_id, weight in graph[current_id]:
             distance = current_dist + weight
+            # Mise à jour si on a trouvé un chemin plus court
             if distance < distances[neighbor_id]:
                 distances[neighbor_id] = distance
                 previous[neighbor_id] = current_id
                 heapq.heappush(queue, (distance, neighbor_id))
 
-    # Reconstruction du chemin
+    # Reconstruction du chemin le plus court depuis end_id vers start_id
     path = []
     current = end_id
     while current is not None:
         path.insert(0, current)
         current = previous[current]
+
+    # Si aucun chemin n'existe (déconnecté), retourne un résultat vide
     if not path or path[0] != start_id:
         return {"path": [], "total_weight": float('inf')}
+
+    # Retourne le chemin trouvé et son poids total
     return {"path": path, "total_weight": distances[end_id]}
+
 
 
 @app.route('/api/path', methods=['GET'])
