@@ -23,38 +23,36 @@
       </option>
     </select>
   </label>
-
   <button @click="computeShortestPath">Calculer</button>
 </div>
+
     <!-- Image utilisée pour le placement, invisible -->
     <img ref="imageRef" src="../assets/metrof_r.png" class="map-image" />
 
-    <!-- Lignes entre les points -->
+  <!-- Lignes entre les points -->
     <svg class="map-svg">
       <line
-        v-for="(edge, index) in edges"
-        :key="index"
-        :x1="getPoint(edge.from.id)?.x/1.5"
-        :y1="getPoint(edge.from.id)?.y/1.5"
-        :x2="getPoint(edge.to.id)?.x/1.5"
-        :y2="getPoint(edge.to.id)?.y/1.5"
-        :stroke="getLineColor(edge.from.line)"
+        v-for="edge in edges"
+        :key="'path-' + index"
+        :x1="points[parseInt(edge.node0)].x / 1.5"
+        :y1="points[parseInt(edge.node0)].y / 1.5"
+        :x2="points[parseInt(edge.node1)].x / 1.5"
+        :y2="points[parseInt(edge.node1)].y / 1.5"
+        :stroke="getLineColor(points[parseInt(edge.node0)].line)"
         stroke-width="2"
       />
 
-      <!-- Chemin le plus court en rouge -->
-      <line
-        v-for="(edge, index) in shortestPathEdges"
-        :key="'path-' + index"
-        :x1="getPoint(edge.from.id)?.x / 1.5"
-        :y1="getPoint(edge.from.id)?.y / 1.5"
-        :x2="getPoint(edge.to.id)?.x / 1.5"
-        :y2="getPoint(edge.to.id)?.y / 1.5"
-        stroke="red"
-        stroke-width="4"
-      />
+
     </svg>
 
+      <div class="controls">
+      <h3>Calcul de chemin</h3>
+      <!-- Autres éléments existants -->
+
+      <!-- Bouton pour calculer l'ACPM -->
+      <button @click="computeACPM">Calculer ACPM</button>
+      <p v-if="totalWeight !== null">Poids total de l'ACPM : {{ totalWeight }}</p>
+    </div>
     <!-- Points -->
     <div
       v-for="(point, index) in points"
@@ -73,33 +71,34 @@ import axios from 'axios'
 const points = ref([])
 const edges = ref([])
 const imageRef = ref(null)
-
+const shortestPath = ref([])
+const shortestweight = ref(null)
+const totalWeight = ref(null)
+const acpm = ref([])
+const visiblePathEdges = ref([])
 async function fetchData() {
   try {
-    const res = await axios.get('http://localhost:3001/V1/links')
-    const links = res.data
-    edges.value = links
+    const res1 = await axios.get('http://localhost:5000/api/edges')
+    edges.value = res1.data
 
-    // Extraire les points uniques des edges
-    const seen = new Set()
-    const uniquePoints = []
-
-    for (const link of links) {
-      console.log(link)
-      if (!seen.has(link.from.id)) {
-        uniquePoints.push({ id: link.from.id, name: link.from.name,line:link.from.line, x: link.from.x, y: link.from.y })
-        seen.add(link.from.id)
-      }
-      if (!seen.has(link.to.id)) {
-        uniquePoints.push({ id: link.to.id, name: link.to.name,line:link.to.line, x: link.to.x, y: link.to.y })
-        seen.add(link.to.id)
-      }
-    }
-
-    points.value = uniquePoints
-    console.log('Points chargés:', points.value)
+    const res2 = await axios.get('http://localhost:5000/api/nodes')
+    points.value = res2.data
+    console.log('Points:', edges.value.length)
   } catch (error) {
-    console.error('Erreur chargement données:', error)
+    console.error('Erreur lors de la récupération des données:', error)
+  }
+}
+
+async function computeACPM() {
+  try {
+    const res = await axios.get('http://localhost:5000/api/acpm')
+    shortestPathEdges.value = res.data
+    totalWeight.value = res.data.total_weight
+    console.log('ACPM:', shortestPathEdges.value, 'Poids total:', totalWeight.value)
+    alert(`ACPM calculé avec succès ! Poids total : ${totalWeight.value/3600}`)
+    animatePathDisplay()  
+  } catch (error) {
+    console.error('Erreur lors du calcul de l\'ACPM :', error)
   }
 }
 
@@ -123,9 +122,6 @@ function getLineColor(line) {
   return colors[line] || 'white'
 }
 
-function getPoint(id) {
-  return points.value.find(p => p.id === id)
-}
 
 onMounted(() => {
   fetchData()
@@ -136,20 +132,41 @@ const selectedTo = ref('')
 const shortestPathEdges = ref([])
 
 async function computeShortestPath() {
-  console.log('Calcul du chemin de', selectedFrom.value, 'à', selectedTo.value)
-  if (!selectedFrom.value || !selectedTo.value) return
+  if (!selectedFrom.value || !selectedTo.value) {
+    alert("Veuillez sélectionner une station de départ et d'arrivée.");
+    return;
+  }
+
+  const startId = selectedFrom.value.id;
+  const endId = selectedTo.value.id;
 
   try {
-    const res = await axios.get('http://localhost:3001/V1/shortest-path', {
-  params: {
-    from: selectedFrom.value.id,
-    to: selectedTo.value.id
-  }
-})
-    shortestPathEdges.value = res.data
+    const response = await fetch(`http://localhost:5000/api/path?start_id=${startId}&end_id=${endId}`);
+    if (!response.ok) {
+      throw new Error(`Erreur serveur: ${response.status}`);
+    }
+    const data = await response.json();
+    shortestPath.value = data.path;
+    shortestweight.value = data.total_weight;
+    console.log('Chemin le plus court:', shortestPath.value, 'Poids:', shortestweight.value);
+    alert(`Chemin le plus court calculé avec succès ! Poids total : ${shortestweight.value/3600}`);
+
   } catch (error) {
-    console.error('Erreur calcul chemin :', error)
+    console.error('Erreur calcul chemin :', error);
   }
+}
+
+function animatePathDisplay() {
+  visiblePathEdges.value = []
+  let i = 0
+  const interval = setInterval(() => {
+    if (i < shortestPathEdges.value.length) {
+      visiblePathEdges.value.push(shortestPathEdges.value[i])
+      i++
+    } else {
+      clearInterval(interval)
+    }
+  }, 300) // délai entre chaque segment en ms
 }
 
 </script>
@@ -189,12 +206,13 @@ async function computeShortestPath() {
 
 .point {
   position: fixed;
-  width: 3px;
-  height: 3px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   margin-top: 5%;
   margin-left: 60%;
+  border-color: aqua;
   cursor: pointer;
 }
 

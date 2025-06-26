@@ -1,0 +1,4688 @@
+{
+  "Campo-Formio::5": {
+    "nom": "Campo-Formio",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.83559543123327,
+    "longitude": 2.358468834639247,
+    "ids_originaux": [
+      "IDFM:22009",
+      "IDFM:463020"
+    ]
+  },
+  "Crimée::7": {
+    "nom": "Crimée",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.8908857589288,
+    "longitude": 2.37693573698238,
+    "ids_originaux": [
+      "IDFM:22392",
+      "IDFM:463155"
+    ]
+  },
+  "Marcel Sembat::9": {
+    "nom": "Marcel Sembat",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.83380810724753,
+    "longitude": 2.24346821405889,
+    "ids_originaux": [
+      "IDFM:21940",
+      "IDFM:462914"
+    ]
+  },
+  "Simplon::4": {
+    "nom": "Simplon",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.8938152613519,
+    "longitude": 2.347794968187123,
+    "ids_originaux": [
+      "IDFM:22133",
+      "IDFM:463310"
+    ]
+  },
+  "Concorde::12": {
+    "nom": "Concorde",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.86615003482594,
+    "longitude": 2.323181449571859,
+    "ids_originaux": [
+      "IDFM:22057",
+      "IDFM:463164"
+    ]
+  },
+  "Bonne Nouvelle::8": {
+    "nom": "Bonne Nouvelle",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.87048144580479,
+    "longitude": 2.348496122542364,
+    "ids_originaux": [
+      "IDFM:463115",
+      "IDFM:22198"
+    ]
+  },
+  "Glacière::6": {
+    "nom": "Glacière",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.831115947616446,
+    "longitude": 2.343438236678704,
+    "ids_originaux": [
+      "IDFM:463186",
+      "IDFM:22173"
+    ]
+  },
+  "Daumesnil::6": {
+    "nom": "Daumesnil",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.839434008053175,
+    "longitude": 2.396148628489371,
+    "ids_originaux": [
+      "IDFM:22181",
+      "IDFM:463169"
+    ]
+  },
+  "Bréguet-Sabin::5": {
+    "nom": "Bréguet-Sabin",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.8562178110506,
+    "longitude": 2.3703346849773035,
+    "ids_originaux": [
+      "IDFM:463138",
+      "IDFM:22008"
+    ]
+  },
+  "Félix Faure::8": {
+    "nom": "Félix Faure",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.84274672574357,
+    "longitude": 2.291751809719901,
+    "ids_originaux": [
+      "IDFM:463163",
+      "IDFM:22189"
+    ]
+  },
+  "Balard::8": {
+    "nom": "Balard",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.83666789483108,
+    "longitude": 2.2783626618092008,
+    "ids_originaux": [
+      "IDFM:463051",
+      "IDFM:22186"
+    ]
+  },
+  "Malakoff - Rue Etienne Dolet::13": {
+    "nom": "Malakoff - Rue Etienne Dolet",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.81533836595972,
+    "longitude": 2.2971240100835835,
+    "ids_originaux": [
+      "IDFM:463214",
+      "IDFM:22236"
+    ]
+  },
+  "Ternes::2": {
+    "nom": "Ternes",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.8782007528283,
+    "longitude": 2.2981136521983068,
+    "ids_originaux": [
+      "IDFM:22108",
+      "IDFM:463266"
+    ]
+  },
+  "Jaurès::7B": {
+    "nom": "Jaurès",
+    "lignes": [
+      "7B"
+    ],
+    "latitude": 48.882326316477965,
+    "longitude": 2.370465586581431,
+    "ids_originaux": [
+      "IDFM:463074",
+      "IDFM:24680"
+    ]
+  },
+  "Château Landon::7": {
+    "nom": "Château Landon",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.87844145573239,
+    "longitude": 2.3620179355106075,
+    "ids_originaux": [
+      "IDFM:22367",
+      "IDFM:463006"
+    ]
+  },
+  "Ranelagh::9": {
+    "nom": "Ranelagh",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.855306214887065,
+    "longitude": 2.270032697561899,
+    "ids_originaux": [
+      "IDFM:21915",
+      "IDFM:463290"
+    ]
+  },
+  "Louise Michel::3": {
+    "nom": "Louise Michel",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.88853900119613,
+    "longitude": 2.2882778490679767,
+    "ids_originaux": [
+      "IDFM:22034",
+      "IDFM:463210"
+    ]
+  },
+  "Place d'Italie::7": {
+    "nom": "Place d'Italie",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.83154938471729,
+    "longitude": 2.355330902236442,
+    "ids_originaux": [
+      "IDFM:463026",
+      "IDFM:22365"
+    ]
+  },
+  "Boulogne Jean Jaurès::10": {
+    "nom": "Boulogne Jean Jaurès",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.842063301935575,
+    "longitude": 2.239042669312605,
+    "ids_originaux": [
+      "IDFM:21988",
+      "IDFM:463137"
+    ]
+  },
+  "Michel-Ange - Molitor::9": {
+    "nom": "Michel-Ange - Molitor",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.844880488259605,
+    "longitude": 2.261631583355701,
+    "ids_originaux": [
+      "IDFM:463239",
+      "IDFM:21923"
+    ]
+  },
+  "Dupleix::6": {
+    "nom": "Dupleix",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.85038448621434,
+    "longitude": 2.2936368390558783,
+    "ids_originaux": [
+      "IDFM:463099",
+      "IDFM:22171"
+    ]
+  },
+  "Barbara::4": {
+    "nom": "Barbara",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.80979025430712,
+    "longitude": 2.3174992240284045,
+    "ids_originaux": [
+      "IDFM:483277",
+      "IDFM:483313"
+    ]
+  },
+  "Place d'Italie::6": {
+    "nom": "Place d'Italie",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.830991153013954,
+    "longitude": 2.3560502682264337,
+    "ids_originaux": [
+      "IDFM:463003",
+      "IDFM:22168"
+    ]
+  },
+  "Miromesnil::9": {
+    "nom": "Miromesnil",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.87369210197914,
+    "longitude": 2.3146768238242688,
+    "ids_originaux": [
+      "IDFM:462957",
+      "IDFM:21924"
+    ]
+  },
+  "Charles Michels::10": {
+    "nom": "Charles Michels",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84660453239739,
+    "longitude": 2.2856210133667174,
+    "ids_originaux": [
+      "IDFM:463076",
+      "IDFM:21986"
+    ]
+  },
+  "Europe::3": {
+    "nom": "Europe",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.878780759649736,
+    "longitude": 2.322294641649836,
+    "ids_originaux": [
+      "IDFM:22032",
+      "IDFM:463069"
+    ]
+  },
+  "Saint-Marcel::5": {
+    "nom": "Saint-Marcel",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.83847698406796,
+    "longitude": 2.3608176665940044,
+    "ids_originaux": [
+      "IDFM:463097",
+      "IDFM:22000"
+    ]
+  },
+  "Trocadéro::9": {
+    "nom": "Trocadéro",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.863088061116,
+    "longitude": 2.28683987979629,
+    "ids_originaux": [
+      "IDFM:21917",
+      "IDFM:463318"
+    ]
+  },
+  "Botzaris::7B": {
+    "nom": "Botzaris",
+    "lignes": [
+      "7B"
+    ],
+    "latitude": 48.87943610160117,
+    "longitude": 2.388908111185046,
+    "ids_originaux": [
+      "IDFM:24686",
+      "IDFM:463134"
+    ]
+  },
+  "Pont de Sèvres::9": {
+    "nom": "Pont de Sèvres",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.82968726438348,
+    "longitude": 2.2305185727726955,
+    "ids_originaux": [
+      "IDFM:21938",
+      "IDFM:463233"
+    ]
+  },
+  "Strasbourg - Saint-Denis::4": {
+    "nom": "Strasbourg - Saint-Denis",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.86966773787259,
+    "longitude": 2.3543411093711257,
+    "ids_originaux": [
+      "IDFM:463313",
+      "IDFM:22134"
+    ]
+  },
+  "Nation::6": {
+    "nom": "Nation",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.84789064769285,
+    "longitude": 2.3957883190257903,
+    "ids_originaux": [
+      "IDFM:463028",
+      "IDFM:22073"
+    ]
+  },
+  "Pyrénées::11": {
+    "nom": "Pyrénées",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.87381879018058,
+    "longitude": 2.385202915569532,
+    "ids_originaux": [
+      "IDFM:463287",
+      "IDFM:21991"
+    ]
+  },
+  "Bir-Hakeim::6": {
+    "nom": "Bir-Hakeim",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.85392536837598,
+    "longitude": 2.2894007376346,
+    "ids_originaux": [
+      "IDFM:463005",
+      "IDFM:22179"
+    ]
+  },
+  "Vaneau::10": {
+    "nom": "Vaneau",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84889457005888,
+    "longitude": 2.321351242354736,
+    "ids_originaux": [
+      "IDFM:462959",
+      "IDFM:21977"
+    ]
+  },
+  "Strasbourg - Saint-Denis::9": {
+    "nom": "Strasbourg - Saint-Denis",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.86950305730265,
+    "longitude": 2.3538223820093616,
+    "ids_originaux": [
+      "IDFM:463264",
+      "IDFM:21920"
+    ]
+  },
+  "Nation::1": {
+    "nom": "Nation",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.848084289973976,
+    "longitude": 2.3958439887237373,
+    "ids_originaux": [
+      "IDFM:22080",
+      "IDFM:462943"
+    ]
+  },
+  "Cambronne::6": {
+    "nom": "Cambronne",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.84749339701438,
+    "longitude": 2.302898786915822,
+    "ids_originaux": [
+      "IDFM:463140",
+      "IDFM:22176"
+    ]
+  },
+  "Rome::2": {
+    "nom": "Rome",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.882256139435015,
+    "longitude": 2.3214039779193896,
+    "ids_originaux": [
+      "IDFM:22110",
+      "IDFM:463296"
+    ]
+  },
+  "La Chapelle::2": {
+    "nom": "La Chapelle",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88447648340964,
+    "longitude": 2.360430336162137,
+    "ids_originaux": [
+      "IDFM:462982",
+      "IDFM:22119"
+    ]
+  },
+  "Alexandre Dumas::2": {
+    "nom": "Alexandre Dumas",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.85624467843737,
+    "longitude": 2.3947127337554788,
+    "ids_originaux": [
+      "IDFM:463117",
+      "IDFM:22122"
+    ]
+  },
+  "Montgallet::8": {
+    "nom": "Montgallet",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.84400507570895,
+    "longitude": 2.3904000136353645,
+    "ids_originaux": [
+      "IDFM:463241",
+      "IDFM:22205"
+    ]
+  },
+  "Lamarck - Caulaincourt::12": {
+    "nom": "Lamarck - Caulaincourt",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.8896991322768,
+    "longitude": 2.338463589982122,
+    "ids_originaux": [
+      "IDFM:22055",
+      "IDFM:463205"
+    ]
+  },
+  "Pernety::13": {
+    "nom": "Pernety",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.834078679774976,
+    "longitude": 2.318393706614701,
+    "ids_originaux": [
+      "IDFM:22222",
+      "IDFM:463229"
+    ]
+  },
+  "Mairie de Saint-Ouen::13": {
+    "nom": "Mairie de Saint-Ouen",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.911958864732505,
+    "longitude": 2.333893080685357,
+    "ids_originaux": [
+      "IDFM:463212",
+      "IDFM:22243"
+    ]
+  },
+  "Saint-Lazare::3": {
+    "nom": "Saint-Lazare",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.875025603040974,
+    "longitude": 2.32460677606968,
+    "ids_originaux": [
+      "IDFM:21963",
+      "IDFM:462971"
+    ]
+  },
+  "Sully - Morland::7": {
+    "nom": "Sully - Morland",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.85120791254347,
+    "longitude": 2.3617517381263218,
+    "ids_originaux": [
+      "IDFM:22369",
+      "IDFM:463265"
+    ]
+  },
+  "Montparnasse Bienvenue::6": {
+    "nom": "Montparnasse Bienvenue",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.84205447194666,
+    "longitude": 2.321273396249205,
+    "ids_originaux": [
+      "IDFM:22156",
+      "IDFM:462955"
+    ]
+  },
+  "Réaumur - Sébastopol::4": {
+    "nom": "Réaumur - Sébastopol",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.866077771215046,
+    "longitude": 2.352381731140252,
+    "ids_originaux": [
+      "IDFM:463072",
+      "IDFM:22142"
+    ]
+  },
+  "Anatole France::3": {
+    "nom": "Anatole France",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.892206617614,
+    "longitude": 2.28498169634032,
+    "ids_originaux": [
+      "IDFM:22036",
+      "IDFM:463119"
+    ]
+  },
+  "Villiers::2": {
+    "nom": "Villiers",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88130644704797,
+    "longitude": 2.3157165772440385,
+    "ids_originaux": [
+      "IDFM:22106",
+      "IDFM:462988"
+    ]
+  },
+  "Place des Fêtes::7B": {
+    "nom": "Place des Fêtes",
+    "lignes": [
+      "7B"
+    ],
+    "latitude": 48.87693859004261,
+    "longitude": 2.392959616507311,
+    "ids_originaux": [
+      "IDFM:24682"
+    ]
+  },
+  "Gare d'Austerlitz::10": {
+    "nom": "Gare d'Austerlitz",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84228236697996,
+    "longitude": 2.364395394600644,
+    "ids_originaux": [
+      "IDFM:463024",
+      "IDFM:21967"
+    ]
+  },
+  "Brochant::13": {
+    "nom": "Brochant",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.89065187119005,
+    "longitude": 2.3199048172093666,
+    "ids_originaux": [
+      "IDFM:462978",
+      "IDFM:22231"
+    ]
+  },
+  "Gare de l'Est::7": {
+    "nom": "Gare de l'Est",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.87627121454162,
+    "longitude": 2.358120525273069,
+    "ids_originaux": [
+      "IDFM:463001",
+      "IDFM:22387"
+    ]
+  },
+  "Porte de Vanves::13": {
+    "nom": "Porte de Vanves",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.82761346400429,
+    "longitude": 2.305332386657473,
+    "ids_originaux": [
+      "IDFM:463260",
+      "IDFM:22221"
+    ]
+  },
+  "Iéna::9": {
+    "nom": "Iéna",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.864780022257456,
+    "longitude": 2.2938642256822708,
+    "ids_originaux": [
+      "IDFM:463190",
+      "IDFM:21927"
+    ]
+  },
+  "Bel-Air::6": {
+    "nom": "Bel-Air",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.84142733223358,
+    "longitude": 2.400867131995259,
+    "ids_originaux": [
+      "IDFM:22177",
+      "IDFM:463127"
+    ]
+  },
+  "Miromesnil::13": {
+    "nom": "Miromesnil",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.87344791579522,
+    "longitude": 2.3160106931210245,
+    "ids_originaux": [
+      "IDFM:22224",
+      "IDFM:474397"
+    ]
+  },
+  "George V::1": {
+    "nom": "George V",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.87203776458909,
+    "longitude": 2.300759784978918,
+    "ids_originaux": [
+      "IDFM:22084",
+      "IDFM:463185"
+    ]
+  },
+  "Pyramides::7": {
+    "nom": "Pyramides",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.86583012818995,
+    "longitude": 2.33429208315197,
+    "ids_originaux": [
+      "IDFM:463283",
+      "IDFM:22375"
+    ]
+  },
+  "Alésia::4": {
+    "nom": "Alésia",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.82820106421924,
+    "longitude": 2.3270932349484528,
+    "ids_originaux": [
+      "IDFM:22154",
+      "IDFM:463118"
+    ]
+  },
+  "Ecole Vétérinaire de Maisons-Alfort::8": {
+    "nom": "Ecole Vétérinaire de Maisons-Alfort",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.81483550210013,
+    "longitude": 2.422399525054415,
+    "ids_originaux": [
+      "IDFM:463047",
+      "IDFM:22214"
+    ]
+  },
+  "Raspail::4": {
+    "nom": "Raspail",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.83915635952557,
+    "longitude": 2.330466993719873,
+    "ids_originaux": [
+      "IDFM:22131",
+      "IDFM:463291"
+    ]
+  },
+  "Abbesses::12": {
+    "nom": "Abbesses",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.884383574623314,
+    "longitude": 2.338367478180517,
+    "ids_originaux": [
+      "IDFM:22059",
+      "IDFM:463116"
+    ]
+  },
+  "Havre-Caumartin::9": {
+    "nom": "Havre-Caumartin",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.8737568325288,
+    "longitude": 2.327677208279404,
+    "ids_originaux": [
+      "IDFM:463188",
+      "IDFM:21926"
+    ]
+  },
+  "Solférino::12": {
+    "nom": "Solférino",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.85853194972854,
+    "longitude": 2.323075964251541,
+    "ids_originaux": [
+      "IDFM:463311",
+      "IDFM:22045"
+    ]
+  },
+  "Cour Saint-Emilion::14": {
+    "nom": "Cour Saint-Emilion",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.83331930384343,
+    "longitude": 2.386617850214058,
+    "ids_originaux": [
+      "IDFM:463165",
+      "IDFM:21956"
+    ]
+  },
+  "Chaussée d'Antin - La Fayette::7": {
+    "nom": "Chaussée d'Antin - La Fayette",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.87313420577469,
+    "longitude": 2.333738594408701,
+    "ids_originaux": [
+      "IDFM:22388",
+      "IDFM:463145"
+    ]
+  },
+  "Charenton - Écoles::8": {
+    "nom": "Charenton - Écoles",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.82148073316996,
+    "longitude": 2.413844709558796,
+    "ids_originaux": [
+      "IDFM:463142",
+      "IDFM:22210"
+    ]
+  },
+  "Les Gobelins::7": {
+    "nom": "Les Gobelins",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.83589170669027,
+    "longitude": 2.3525311653622043,
+    "ids_originaux": [
+      "IDFM:463216",
+      "IDFM:22383"
+    ]
+  },
+  "Gare de l'Est::5": {
+    "nom": "Gare de l'Est",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.87616299446643,
+    "longitude": 2.35806459441865,
+    "ids_originaux": [
+      "IDFM:22013",
+      "IDFM:463021"
+    ]
+  },
+  "Madeleine::12": {
+    "nom": "Madeleine",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.8700546880179,
+    "longitude": 2.325039317039756,
+    "ids_originaux": [
+      "IDFM:21965",
+      "IDFM:463081"
+    ]
+  },
+  "Grands Boulevards::9": {
+    "nom": "Grands Boulevards",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.871558801223806,
+    "longitude": 2.3432202183423976,
+    "ids_originaux": [
+      "IDFM:463049",
+      "IDFM:21909"
+    ]
+  },
+  "Montparnasse Bienvenue::12": {
+    "nom": "Montparnasse Bienvenue",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.84374228942691,
+    "longitude": 2.32392211008296,
+    "ids_originaux": [
+      "IDFM:462980",
+      "IDFM:22038"
+    ]
+  },
+  "Créteil - Université::8": {
+    "nom": "Créteil - Université",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.78994285432577,
+    "longitude": 2.4505697455342568,
+    "ids_originaux": [
+      "IDFM:463167",
+      "IDFM:22212"
+    ]
+  },
+  "Maubert - Mutualité::10": {
+    "nom": "Maubert - Mutualité",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.85019546606951,
+    "longitude": 2.3482804131694897,
+    "ids_originaux": [
+      "IDFM:463237",
+      "IDFM:21975"
+    ]
+  },
+  "Jacques Bonsergent::5": {
+    "nom": "Jacques Bonsergent",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.87066646803471,
+    "longitude": 2.3611315892483544,
+    "ids_originaux": [
+      "IDFM:22011",
+      "IDFM:463191"
+    ]
+  },
+  "Saint-Ouen::14": {
+    "nom": "Saint-Ouen",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.90516956991565,
+    "longitude": 2.3227559546697414,
+    "ids_originaux": [
+      "IDFM:480341",
+      "IDFM:480288"
+    ]
+  },
+  "Chaussée d'Antin - La Fayette::9": {
+    "nom": "Chaussée d'Antin - La Fayette",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.87280723715393,
+    "longitude": 2.333970457594147,
+    "ids_originaux": [
+      "IDFM:463144",
+      "IDFM:21932"
+    ]
+  },
+  "Cadet::7": {
+    "nom": "Cadet",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.87596328507557,
+    "longitude": 2.344446309702274,
+    "ids_originaux": [
+      "IDFM:22390",
+      "IDFM:463139"
+    ]
+  },
+  "Robespierre::9": {
+    "nom": "Robespierre",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.85567380855032,
+    "longitude": 2.422973086496352,
+    "ids_originaux": [
+      "IDFM:21942",
+      "IDFM:463053"
+    ]
+  },
+  "Nation::9": {
+    "nom": "Nation",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.84888521841715,
+    "longitude": 2.3959437210498136,
+    "ids_originaux": [
+      "IDFM:21919",
+      "IDFM:462942"
+    ]
+  },
+  "Pré-Saint-Gervais::7B": {
+    "nom": "Pré-Saint-Gervais",
+    "lignes": [
+      "7B"
+    ],
+    "latitude": 48.8801595806643,
+    "longitude": 2.398580770693528,
+    "ids_originaux": [
+      "IDFM:24684",
+      "IDFM:463282"
+    ]
+  },
+  "Jaurès::5": {
+    "nom": "Jaurès",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.88311355416086,
+    "longitude": 2.371383333112514,
+    "ids_originaux": [
+      "IDFM:463095",
+      "IDFM:21952"
+    ]
+  },
+  "Saint-Sébastien - Froissart::8": {
+    "nom": "Saint-Sébastien - Froissart",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.86098670797991,
+    "longitude": 2.367370357789606,
+    "ids_originaux": [
+      "IDFM:22201",
+      "IDFM:463309"
+    ]
+  },
+  "Place de Clichy::13": {
+    "nom": "Place de Clichy",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.88373789022764,
+    "longitude": 2.327398345647013,
+    "ids_originaux": [
+      "IDFM:22129",
+      "IDFM:463253"
+    ]
+  },
+  "Hôtel de Ville::11": {
+    "nom": "Hôtel de Ville",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.85757442237991,
+    "longitude": 2.35154698561547,
+    "ids_originaux": [
+      "IDFM:21990",
+      "IDFM:463061"
+    ]
+  },
+  "Porte des Lilas::3B": {
+    "nom": "Porte des Lilas",
+    "lignes": [
+      "3B"
+    ],
+    "latitude": 48.87663999703494,
+    "longitude": 2.4069512666209,
+    "ids_originaux": [
+      "IDFM:463262",
+      "IDFM:21947"
+    ]
+  },
+  "Franklin D. Roosevelt::1": {
+    "nom": "Franklin D. Roosevelt",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.8691648256349,
+    "longitude": 2.309359666519628,
+    "ids_originaux": [
+      "IDFM:22082",
+      "IDFM:463181"
+    ]
+  },
+  "Père Lachaise::2": {
+    "nom": "Père Lachaise",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.86244984493746,
+    "longitude": 2.387579891254445,
+    "ids_originaux": [
+      "IDFM:463285",
+      "IDFM:22112"
+    ]
+  },
+  "Ledru-Rollin::8": {
+    "nom": "Ledru-Rollin",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.85133776679838,
+    "longitude": 2.376141223318593,
+    "ids_originaux": [
+      "IDFM:22203",
+      "IDFM:463195"
+    ]
+  },
+  "Olympiades::14": {
+    "nom": "Olympiades",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.82694415504304,
+    "longitude": 2.367034270941924,
+    "ids_originaux": [
+      "IDFM:463045",
+      "IDFM:21954"
+    ]
+  },
+  "La Motte-Picquet - Grenelle::10": {
+    "nom": "La Motte-Picquet - Grenelle",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84963080443241,
+    "longitude": 2.2985257262366363,
+    "ids_originaux": [
+      "IDFM:21969",
+      "IDFM:463202"
+    ]
+  },
+  "Barbès - Rochechouart::2": {
+    "nom": "Barbès - Rochechouart",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88377608955688,
+    "longitude": 2.3506070793550977,
+    "ids_originaux": [
+      "IDFM:22127",
+      "IDFM:463094"
+    ]
+  },
+  "Barbès - Rochechouart::4": {
+    "nom": "Barbès - Rochechouart",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.88342517173516,
+    "longitude": 2.3497455480753806,
+    "ids_originaux": [
+      "IDFM:463093",
+      "IDFM:22130"
+    ]
+  },
+  "Vaugirard::12": {
+    "nom": "Vaugirard",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.83953628376544,
+    "longitude": 2.300977822126098,
+    "ids_originaux": [
+      "IDFM:463321",
+      "IDFM:22047"
+    ]
+  },
+  "Argentine::1": {
+    "nom": "Argentine",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.87566737659971,
+    "longitude": 2.289435418542214,
+    "ids_originaux": [
+      "IDFM:463121",
+      "IDFM:22088"
+    ]
+  },
+  "Saint-Fargeau::3B": {
+    "nom": "Saint-Fargeau",
+    "lignes": [
+      "3B"
+    ],
+    "latitude": 48.87184337222297,
+    "longitude": 2.4044981831688688,
+    "ids_originaux": [
+      "IDFM:21946",
+      "IDFM:463071"
+    ]
+  },
+  "Trocadéro::6": {
+    "nom": "Trocadéro",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.86348766501957,
+    "longitude": 2.2874927969664416,
+    "ids_originaux": [
+      "IDFM:463268",
+      "IDFM:22164"
+    ]
+  },
+  "Malesherbes::3": {
+    "nom": "Malesherbes",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.88284002257779,
+    "longitude": 2.309487846960011,
+    "ids_originaux": [
+      "IDFM:463068",
+      "IDFM:22031"
+    ]
+  },
+  "Buzenval::9": {
+    "nom": "Buzenval",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.85176243983227,
+    "longitude": 2.401170769368413,
+    "ids_originaux": [
+      "IDFM:25084",
+      "IDFM:463039"
+    ]
+  },
+  "Reuilly - Diderot::8": {
+    "nom": "Reuilly - Diderot",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.847094767969466,
+    "longitude": 2.3869585404965377,
+    "ids_originaux": [
+      "IDFM:463293",
+      "IDFM:22098"
+    ]
+  },
+  "Saint-Paul (Le Marais)::1": {
+    "nom": "Saint-Paul (Le Marais)",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.85518742160445,
+    "longitude": 2.3608852562751967,
+    "ids_originaux": [
+      "IDFM:22074",
+      "IDFM:463307"
+    ]
+  },
+  "Télégraphe::11": {
+    "nom": "Télégraphe",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.875519513947125,
+    "longitude": 2.3986752529487725,
+    "ids_originaux": [
+      "IDFM:463319",
+      "IDFM:21993"
+    ]
+  },
+  "Arts et Métiers::3": {
+    "nom": "Arts et Métiers",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86553459885931,
+    "longitude": 2.3567233472754983,
+    "ids_originaux": [
+      "IDFM:21994",
+      "IDFM:463122"
+    ]
+  },
+  "Opéra::7": {
+    "nom": "Opéra",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.87032626085252,
+    "longitude": 2.332572085877118,
+    "ids_originaux": [
+      "IDFM:463245",
+      "IDFM:22381"
+    ]
+  },
+  "République::9": {
+    "nom": "République",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.86751235781114,
+    "longitude": 2.3633023407804536,
+    "ids_originaux": [
+      "IDFM:462963",
+      "IDFM:21918"
+    ]
+  },
+  "Notre-Dame des Champs::12": {
+    "nom": "Notre-Dame des Champs",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.84508150807547,
+    "longitude": 2.328564944227944,
+    "ids_originaux": [
+      "IDFM:22051",
+      "IDFM:462965"
+    ]
+  },
+  "Mairie de Montrouge::4": {
+    "nom": "Mairie de Montrouge",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.81847190007368,
+    "longitude": 2.319523835754741,
+    "ids_originaux": [
+      "IDFM:26602",
+      "IDFM:463222"
+    ]
+  },
+  "Corvisart::6": {
+    "nom": "Corvisart",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.82986001331238,
+    "longitude": 2.350611225926166,
+    "ids_originaux": [
+      "IDFM:22175",
+      "IDFM:463105"
+    ]
+  },
+  "Jourdain::11": {
+    "nom": "Jourdain",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.875247348641416,
+    "longitude": 2.389325378910096,
+    "ids_originaux": [
+      "IDFM:463192",
+      "IDFM:21995"
+    ]
+  },
+  "Esplanade de la Défense::1": {
+    "nom": "Esplanade de la Défense",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.88833173800946,
+    "longitude": 2.2499040727323307,
+    "ids_originaux": [
+      "IDFM:22102",
+      "IDFM:463170"
+    ]
+  },
+  "Château Rouge::4": {
+    "nom": "Château Rouge",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.88724193064896,
+    "longitude": 2.3495819680256598,
+    "ids_originaux": [
+      "IDFM:22152",
+      "IDFM:463148"
+    ]
+  },
+  "Varenne::13": {
+    "nom": "Varenne",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.85662498274656,
+    "longitude": 2.315113930509657,
+    "ids_originaux": [
+      "IDFM:22226",
+      "IDFM:463320"
+    ]
+  },
+  "Bastille::8": {
+    "nom": "Bastille",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.853425461693256,
+    "longitude": 2.3695064282002,
+    "ids_originaux": [
+      "IDFM:22097",
+      "IDFM:463000"
+    ]
+  },
+  "Villejuif Paul Vaillant-Couturier::7": {
+    "nom": "Villejuif Paul Vaillant-Couturier",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.79631793416014,
+    "longitude": 2.3683316015776423,
+    "ids_originaux": [
+      "IDFM:22401",
+      "IDFM:463324"
+    ]
+  },
+  "Chemin Vert::8": {
+    "nom": "Chemin Vert",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.85708736782028,
+    "longitude": 2.368095085385991,
+    "ids_originaux": [
+      "IDFM:463146",
+      "IDFM:22202"
+    ]
+  },
+  "Rennes::12": {
+    "nom": "Rennes",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.84833282904063,
+    "longitude": 2.3277871847873874,
+    "ids_originaux": [
+      "IDFM:22049",
+      "IDFM:462968"
+    ]
+  },
+  "Rambuteau::11": {
+    "nom": "Rambuteau",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.86119015695036,
+    "longitude": 2.353273948594772,
+    "ids_originaux": [
+      "IDFM:21992",
+      "IDFM:462945"
+    ]
+  },
+  "Richelieu - Drouot::9": {
+    "nom": "Richelieu - Drouot",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.87213587031796,
+    "longitude": 2.3385912215385414,
+    "ids_originaux": [
+      "IDFM:21921",
+      "IDFM:463036"
+    ]
+  },
+  "Cité::4": {
+    "nom": "Cité",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.85493384910671,
+    "longitude": 2.3472322349319112,
+    "ids_originaux": [
+      "IDFM:22150",
+      "IDFM:463161"
+    ]
+  },
+  "Guy Môquet::13": {
+    "nom": "Guy Môquet",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.8930014419616,
+    "longitude": 2.327483258626126,
+    "ids_originaux": [
+      "IDFM:22228",
+      "IDFM:462952"
+    ]
+  },
+  "La Motte-Picquet - Grenelle::6": {
+    "nom": "La Motte-Picquet - Grenelle",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.84876544812232,
+    "longitude": 2.298957096977008,
+    "ids_originaux": [
+      "IDFM:463194",
+      "IDFM:22162"
+    ]
+  },
+  "Porte de Clichy::14": {
+    "nom": "Porte de Clichy",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.89428867785142,
+    "longitude": 2.313431869544054,
+    "ids_originaux": [
+      "IDFM:480541",
+      "IDFM:480531"
+    ]
+  },
+  "Wagram::3": {
+    "nom": "Wagram",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.8838463907272,
+    "longitude": 2.304673087584434,
+    "ids_originaux": [
+      "IDFM:463070",
+      "IDFM:22028"
+    ]
+  },
+  "Louvre - Rivoli::1": {
+    "nom": "Louvre - Rivoli",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.86090733426327,
+    "longitude": 2.3409964272720227,
+    "ids_originaux": [
+      "IDFM:463218",
+      "IDFM:22081"
+    ]
+  },
+  "Château de Vincennes::1": {
+    "nom": "Château de Vincennes",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.84431751431355,
+    "longitude": 2.440540095406114,
+    "ids_originaux": [
+      "IDFM:22104",
+      "IDFM:463149"
+    ]
+  },
+  "Gare de l'Est::4": {
+    "nom": "Gare de l'Est",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.87628351188479,
+    "longitude": 2.3578981321043053,
+    "ids_originaux": [
+      "IDFM:463022",
+      "IDFM:22148"
+    ]
+  },
+  "Porte de Pantin::5": {
+    "nom": "Porte de Pantin",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.888535337600175,
+    "longitude": 2.3920607143419303,
+    "ids_originaux": [
+      "IDFM:22003",
+      "IDFM:463280"
+    ]
+  },
+  "Edgar Quinet::6": {
+    "nom": "Edgar Quinet",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.84090350169825,
+    "longitude": 2.3252865779432965,
+    "ids_originaux": [
+      "IDFM:463100",
+      "IDFM:22172"
+    ]
+  },
+  "Le Kremlin-Bicêtre::7": {
+    "nom": "Le Kremlin-Bicêtre",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.81025257278989,
+    "longitude": 2.362130413802561,
+    "ids_originaux": [
+      "IDFM:22398",
+      "IDFM:463107"
+    ]
+  },
+  "Temple::3": {
+    "nom": "Temple",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86675662943444,
+    "longitude": 2.361561234526356,
+    "ids_originaux": [
+      "IDFM:22026",
+      "IDFM:463316"
+    ]
+  },
+  "Assemblée Nationale::12": {
+    "nom": "Assemblée Nationale",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.861122050080816,
+    "longitude": 2.3206896796944263,
+    "ids_originaux": [
+      "IDFM:463123",
+      "IDFM:22060"
+    ]
+  },
+  "Trinité - d'Estienne d'Orves::12": {
+    "nom": "Trinité - d'Estienne d'Orves",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.87633650730735,
+    "longitude": 2.333049172418236,
+    "ids_originaux": [
+      "IDFM:463317",
+      "IDFM:22046"
+    ]
+  },
+  "Gaîté::13": {
+    "nom": "Gaîté",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.83854469308166,
+    "longitude": 2.322463569405974,
+    "ids_originaux": [
+      "IDFM:22230",
+      "IDFM:463184"
+    ]
+  },
+  "Goncourt::11": {
+    "nom": "Goncourt",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.8700070178386,
+    "longitude": 2.3707644347484003,
+    "ids_originaux": [
+      "IDFM:21996",
+      "IDFM:463187"
+    ]
+  },
+  "Oberkampf::9": {
+    "nom": "Oberkampf",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.86477709852134,
+    "longitude": 2.3681558453945515,
+    "ids_originaux": [
+      "IDFM:21925",
+      "IDFM:463054"
+    ]
+  },
+  "République::5": {
+    "nom": "République",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.867732931981166,
+    "longitude": 2.3641925544688656,
+    "ids_originaux": [
+      "IDFM:462961",
+      "IDFM:21903"
+    ]
+  },
+  "Porte Maillot::1": {
+    "nom": "Porte Maillot",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.87816265364455,
+    "longitude": 2.2825838473615496,
+    "ids_originaux": [
+      "IDFM:22078",
+      "IDFM:463257"
+    ]
+  },
+  "Les Sablons::1": {
+    "nom": "Les Sablons",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.88129083793358,
+    "longitude": 2.271904762259129,
+    "ids_originaux": [
+      "IDFM:22100",
+      "IDFM:463217"
+    ]
+  },
+  "Opéra::3": {
+    "nom": "Opéra",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.87143742899726,
+    "longitude": 2.331047286711241,
+    "ids_originaux": [
+      "IDFM:22030",
+      "IDFM:463246"
+    ]
+  },
+  "Bastille::5": {
+    "nom": "Bastille",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.85330031648217,
+    "longitude": 2.3687984466220384,
+    "ids_originaux": [
+      "IDFM:463018",
+      "IDFM:22010"
+    ]
+  },
+  "Richelieu - Drouot::8": {
+    "nom": "Richelieu - Drouot",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.87173920910264,
+    "longitude": 2.3384190255427955,
+    "ids_originaux": [
+      "IDFM:22196",
+      "IDFM:463037"
+    ]
+  },
+  "Gare du Nord::5": {
+    "nom": "Gare du Nord",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.87970181695894,
+    "longitude": 2.3572164888604563,
+    "ids_originaux": [
+      "IDFM:22007",
+      "IDFM:463182"
+    ]
+  },
+  "Aubervilliers-Pantin Quatre Chemins::7": {
+    "nom": "Aubervilliers-Pantin Quatre Chemins",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.90379699038963,
+    "longitude": 2.392114382497849,
+    "ids_originaux": [
+      "IDFM:22394",
+      "IDFM:463031"
+    ]
+  },
+  "Etienne Marcel::4": {
+    "nom": "Etienne Marcel",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.86370301202431,
+    "longitude": 2.3489761968791085,
+    "ids_originaux": [
+      "IDFM:463171",
+      "IDFM:22147"
+    ]
+  },
+  "Blanche::2": {
+    "nom": "Blanche",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88376635447715,
+    "longitude": 2.3324843754343627,
+    "ids_originaux": [
+      "IDFM:22125",
+      "IDFM:463113"
+    ]
+  },
+  "Riquet::7": {
+    "nom": "Riquet",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.88810829453359,
+    "longitude": 2.373764152701256,
+    "ids_originaux": [
+      "IDFM:22371",
+      "IDFM:463295"
+    ]
+  },
+  "Mabillon::10": {
+    "nom": "Mabillon",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.85284373829949,
+    "longitude": 2.335142819346476,
+    "ids_originaux": [
+      "IDFM:21973",
+      "IDFM:462994"
+    ]
+  },
+  "Quai de la Rapée::5": {
+    "nom": "Quai de la Rapée",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.846427325479766,
+    "longitude": 2.365884650750405,
+    "ids_originaux": [
+      "IDFM:463289",
+      "IDFM:22004"
+    ]
+  },
+  "Colonel Fabien::2": {
+    "nom": "Colonel Fabien",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.87764980852146,
+    "longitude": 2.370467574793864,
+    "ids_originaux": [
+      "IDFM:462984",
+      "IDFM:22120"
+    ]
+  },
+  "Réaumur - Sébastopol::3": {
+    "nom": "Réaumur - Sébastopol",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86628268363084,
+    "longitude": 2.3520239377964742,
+    "ids_originaux": [
+      "IDFM:463091",
+      "IDFM:22018"
+    ]
+  },
+  "Gambetta::3": {
+    "nom": "Gambetta",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86488271295642,
+    "longitude": 2.397353102563538,
+    "ids_originaux": [
+      "IDFM:21950",
+      "IDFM:462991"
+    ]
+  },
+  "Ménilmontant::2": {
+    "nom": "Ménilmontant",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.86639014014544,
+    "longitude": 2.3834303882303045,
+    "ids_originaux": [
+      "IDFM:463243",
+      "IDFM:22116"
+    ]
+  },
+  "Madeleine::8": {
+    "nom": "Madeleine",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.86956561611772,
+    "longitude": 2.3260272117729994,
+    "ids_originaux": [
+      "IDFM:22194",
+      "IDFM:463063"
+    ]
+  },
+  "Ourcq::5": {
+    "nom": "Ourcq",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.88714990283661,
+    "longitude": 2.3866765356019912,
+    "ids_originaux": [
+      "IDFM:22005",
+      "IDFM:463027"
+    ]
+  },
+  "Porte Dorée::8": {
+    "nom": "Porte Dorée",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.8350662204656,
+    "longitude": 2.405749381400099,
+    "ids_originaux": [
+      "IDFM:22207",
+      "IDFM:463050"
+    ]
+  },
+  "Mairie d'Ivry::7": {
+    "nom": "Mairie d'Ivry",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.811210093393306,
+    "longitude": 2.383498053635828,
+    "ids_originaux": [
+      "IDFM:22396",
+      "IDFM:463220"
+    ]
+  },
+  "Les Halles::4": {
+    "nom": "Les Halles",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.86252665962869,
+    "longitude": 2.34600573656331,
+    "ids_originaux": [
+      "IDFM:22146",
+      "IDFM:463208"
+    ]
+  },
+  "Falguière::12": {
+    "nom": "Falguière",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.84444335195695,
+    "longitude": 2.3175087114640447,
+    "ids_originaux": [
+      "IDFM:463173",
+      "IDFM:22056"
+    ]
+  },
+  "Kléber::6": {
+    "nom": "Kléber",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.87130161203911,
+    "longitude": 2.2933259179892325,
+    "ids_originaux": [
+      "IDFM:463102",
+      "IDFM:22170"
+    ]
+  },
+  "Marx Dormoy::12": {
+    "nom": "Marx Dormoy",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.89060729278663,
+    "longitude": 2.359945883178033,
+    "ids_originaux": [
+      "IDFM:22053",
+      "IDFM:463236"
+    ]
+  },
+  "Bagneux - Lucie Aubrac::4": {
+    "nom": "Bagneux - Lucie Aubrac",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.80356582047439,
+    "longitude": 2.3173900542429133,
+    "ids_originaux": [
+      "IDFM:483279",
+      "IDFM:483314"
+    ]
+  },
+  "Porte de Choisy::7": {
+    "nom": "Porte de Choisy",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.8201320892324,
+    "longitude": 2.3646245490007405,
+    "ids_originaux": [
+      "IDFM:22373",
+      "IDFM:463030"
+    ]
+  },
+  "Anvers::2": {
+    "nom": "Anvers",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.882868568843925,
+    "longitude": 2.344154840330292,
+    "ids_originaux": [
+      "IDFM:22123",
+      "IDFM:463120"
+    ]
+  },
+  "Concorde::1": {
+    "nom": "Concorde",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.86655799294972,
+    "longitude": 2.3229614457982586,
+    "ids_originaux": [
+      "IDFM:463150",
+      "IDFM:22085"
+    ]
+  },
+  "Église d'Auteuil::10": {
+    "nom": "Église d'Auteuil",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84714336145718,
+    "longitude": 2.269111389021892,
+    "ids_originaux": [
+      "IDFM:21971"
+    ]
+  },
+  "Sentier::3": {
+    "nom": "Sentier",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86728343166051,
+    "longitude": 2.347513710821989,
+    "ids_originaux": [
+      "IDFM:462986",
+      "IDFM:22029"
+    ]
+  },
+  "Avron::2": {
+    "nom": "Avron",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.85161645805963,
+    "longitude": 2.3980666384995177,
+    "ids_originaux": [
+      "IDFM:463125",
+      "IDFM:22124"
+    ]
+  },
+  "Ségur::10": {
+    "nom": "Ségur",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84716726999503,
+    "longitude": 2.307137849403385,
+    "ids_originaux": [
+      "IDFM:463315",
+      "IDFM:21979"
+    ]
+  },
+  "République::3": {
+    "nom": "République",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86712186124499,
+    "longitude": 2.364283168306328,
+    "ids_originaux": [
+      "IDFM:21902",
+      "IDFM:462946"
+    ]
+  },
+  "Saint-Philippe du Roule::9": {
+    "nom": "Saint-Philippe du Roule",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.87215513107743,
+    "longitude": 2.3101372056878247,
+    "ids_originaux": [
+      "IDFM:462915",
+      "IDFM:21912"
+    ]
+  },
+  "Charles de Gaulle - Etoile::2": {
+    "nom": "Charles de Gaulle - Etoile",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.87494579313413,
+    "longitude": 2.295927507409278,
+    "ids_originaux": [
+      "IDFM:463043",
+      "IDFM:22094"
+    ]
+  },
+  "Liège::13": {
+    "nom": "Liège",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.87971082693934,
+    "longitude": 2.3269450274387555,
+    "ids_originaux": [
+      "IDFM:463066",
+      "IDFM:22225"
+    ]
+  },
+  "Reuilly - Diderot::1": {
+    "nom": "Reuilly - Diderot",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.84723403765801,
+    "longitude": 2.386056169673362,
+    "ids_originaux": [
+      "IDFM:22076",
+      "IDFM:463294"
+    ]
+  },
+  "Pigalle::12": {
+    "nom": "Pigalle",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.88202093206733,
+    "longitude": 2.337211164701128,
+    "ids_originaux": [
+      "IDFM:463089",
+      "IDFM:22040"
+    ]
+  },
+  "Pelleport::3B": {
+    "nom": "Pelleport",
+    "lignes": [
+      "3B"
+    ],
+    "latitude": 48.86842046799948,
+    "longitude": 2.40160636134298,
+    "ids_originaux": [
+      "IDFM:21948",
+      "IDFM:462990"
+    ]
+  },
+  "Pont de Neuilly::1": {
+    "nom": "Pont de Neuilly",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.88548938897471,
+    "longitude": 2.258495429369125,
+    "ids_originaux": [
+      "IDFM:22099",
+      "IDFM:463044"
+    ]
+  },
+  "Michel-Ange - Molitor::10": {
+    "nom": "Michel-Ange - Molitor",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84515597018703,
+    "longitude": 2.2618218573220084,
+    "ids_originaux": [
+      "IDFM:21904"
+    ]
+  },
+  "Saint-Lazare::12": {
+    "nom": "Saint-Lazare",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.875594817796994,
+    "longitude": 2.327470237303278,
+    "ids_originaux": [
+      "IDFM:462969",
+      "IDFM:21964"
+    ]
+  },
+  "Maisons-Alfort - Les Juilliottes::8": {
+    "nom": "Maisons-Alfort - Les Juilliottes",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.80321905319987,
+    "longitude": 2.44595647715734,
+    "ids_originaux": [
+      "IDFM:463015",
+      "IDFM:22216"
+    ]
+  },
+  "Pierre et Marie Curie::7": {
+    "nom": "Pierre et Marie Curie",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.81587757774557,
+    "longitude": 2.377362970985953,
+    "ids_originaux": [
+      "IDFM:463251",
+      "IDFM:22397"
+    ]
+  },
+  "Odéon::4": {
+    "nom": "Odéon",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.85210334038093,
+    "longitude": 2.339486020317896,
+    "ids_originaux": [
+      "IDFM:22145",
+      "IDFM:462995"
+    ]
+  },
+  "Invalides::13": {
+    "nom": "Invalides",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.86084865840772,
+    "longitude": 2.3145404484362686,
+    "ids_originaux": [
+      "IDFM:463198",
+      "IDFM:22185"
+    ]
+  },
+  "Jasmin::9": {
+    "nom": "Jasmin",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.85243341872557,
+    "longitude": 2.267933291647067,
+    "ids_originaux": [
+      "IDFM:463038",
+      "IDFM:21928"
+    ]
+  },
+  "Les Agnettes::13": {
+    "nom": "Les Agnettes",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.92308777796361,
+    "longitude": 2.286263202479002,
+    "ids_originaux": [
+      "IDFM:22232",
+      "IDFM:463207"
+    ]
+  },
+  "Pont Neuf::7": {
+    "nom": "Pont Neuf",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.858456031111984,
+    "longitude": 2.3417089232034765,
+    "ids_originaux": [
+      "IDFM:22379",
+      "IDFM:463232"
+    ]
+  },
+  "Denfert-Rochereau::4": {
+    "nom": "Denfert-Rochereau",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.83394869369227,
+    "longitude": 2.332018835216387,
+    "ids_originaux": [
+      "IDFM:463104",
+      "IDFM:22151"
+    ]
+  },
+  "Saint-Denis - Université::13": {
+    "nom": "Saint-Denis - Université",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.9458307173959,
+    "longitude": 2.364530774042862,
+    "ids_originaux": [
+      "IDFM:463302",
+      "IDFM:22242"
+    ]
+  },
+  "Châtelet::4": {
+    "nom": "Châtelet",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.859661211559086,
+    "longitude": 2.3466414308440138,
+    "ids_originaux": [
+      "IDFM:22092",
+      "IDFM:463158"
+    ]
+  },
+  "Invalides::8": {
+    "nom": "Invalides",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.86109201138112,
+    "longitude": 2.3146326604445164,
+    "ids_originaux": [
+      "IDFM:22193",
+      "IDFM:463199"
+    ]
+  },
+  "Gabriel Péri::13": {
+    "nom": "Gabriel Péri",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.91639290208823,
+    "longitude": 2.2946921563609406,
+    "ids_originaux": [
+      "IDFM:22234",
+      "IDFM:462953"
+    ]
+  },
+  "Mairie d'Aubervilliers::12": {
+    "nom": "Mairie d'Aubervilliers",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.91373058592168,
+    "longitude": 2.3808510232809863,
+    "ids_originaux": [
+      "IDFM:483898",
+      "IDFM:483904"
+    ]
+  },
+  "Saint-Ambroise::9": {
+    "nom": "Saint-Ambroise",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.861480218467655,
+    "longitude": 2.373996451922189,
+    "ids_originaux": [
+      "IDFM:463299",
+      "IDFM:21910"
+    ]
+  },
+  "Pereire::3": {
+    "nom": "Pereire",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.88492986463719,
+    "longitude": 2.297701123838181,
+    "ids_originaux": [
+      "IDFM:463228",
+      "IDFM:22021"
+    ]
+  },
+  "Parmentier::3": {
+    "nom": "Parmentier",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86524326053047,
+    "longitude": 2.3747205969196896,
+    "ids_originaux": [
+      "IDFM:22019",
+      "IDFM:463250"
+    ]
+  },
+  "Voltaire::9": {
+    "nom": "Voltaire",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.85766243438601,
+    "longitude": 2.3800316941488044,
+    "ids_originaux": [
+      "IDFM:463325",
+      "IDFM:21916"
+    ]
+  },
+  "École Militaire::8": {
+    "nom": "École Militaire",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.85491966058707,
+    "longitude": 2.3063456838200764,
+    "ids_originaux": [
+      "IDFM:22191",
+      "IDFM:463177"
+    ]
+  },
+  "La Motte-Picquet - Grenelle::8": {
+    "nom": "La Motte-Picquet - Grenelle",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.84967105681514,
+    "longitude": 2.298488389923641,
+    "ids_originaux": [
+      "IDFM:463201",
+      "IDFM:22183"
+    ]
+  },
+  "Créteil - L'Échat::8": {
+    "nom": "Créteil - L'Échat",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.79661083011156,
+    "longitude": 2.4493695956133714,
+    "ids_originaux": [
+      "IDFM:22211",
+      "IDFM:463166"
+    ]
+  },
+  "Liberté::8": {
+    "nom": "Liberté",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.826148180607525,
+    "longitude": 2.4064912314699263,
+    "ids_originaux": [
+      "IDFM:22209",
+      "IDFM:463209"
+    ]
+  },
+  "Belleville::11": {
+    "nom": "Belleville",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.87190897536768,
+    "longitude": 2.376753738418521,
+    "ids_originaux": [
+      "IDFM:21998",
+      "IDFM:463110"
+    ]
+  },
+  "Mairie de Clichy::13": {
+    "nom": "Mairie de Clichy",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.90344880444455,
+    "longitude": 2.305726300569584,
+    "ids_originaux": [
+      "IDFM:463086",
+      "IDFM:22238"
+    ]
+  },
+  "Saint-Georges::12": {
+    "nom": "Saint-Georges",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.87841659490173,
+    "longitude": 2.3375706403796697,
+    "ids_originaux": [
+      "IDFM:22044",
+      "IDFM:463304"
+    ]
+  },
+  "Corentin Cariou::7": {
+    "nom": "Corentin Cariou",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.89467266005628,
+    "longitude": 2.382291557164633,
+    "ids_originaux": [
+      "IDFM:463152",
+      "IDFM:22389"
+    ]
+  },
+  "Porte de Bagnolet::3": {
+    "nom": "Porte de Bagnolet",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86453937293447,
+    "longitude": 2.4087542211895427,
+    "ids_originaux": [
+      "IDFM:463276",
+      "IDFM:22022"
+    ]
+  },
+  "Saint-Mandé::1": {
+    "nom": "Saint-Mandé",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.84622934735893,
+    "longitude": 2.4189897063438077,
+    "ids_originaux": [
+      "IDFM:463040",
+      "IDFM:22103"
+    ]
+  },
+  "Place Monge::7": {
+    "nom": "Place Monge",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.842683564383904,
+    "longitude": 2.3520055901754717,
+    "ids_originaux": [
+      "IDFM:463106",
+      "IDFM:22366"
+    ]
+  },
+  "Saint-Augustin::9": {
+    "nom": "Saint-Augustin",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.874632152132925,
+    "longitude": 2.321031570403537,
+    "ids_originaux": [
+      "IDFM:463300",
+      "IDFM:21911"
+    ]
+  },
+  "Duroc::10": {
+    "nom": "Duroc",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84668027285166,
+    "longitude": 2.3162843486517035,
+    "ids_originaux": [
+      "IDFM:463084",
+      "IDFM:21970"
+    ]
+  },
+  "Bercy::14": {
+    "nom": "Bercy",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.84010199803391,
+    "longitude": 2.3790620152277238,
+    "ids_originaux": [
+      "IDFM:463129",
+      "IDFM:21957"
+    ]
+  },
+  "Courcelles::2": {
+    "nom": "Courcelles",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.87926525411311,
+    "longitude": 2.303294362425212,
+    "ids_originaux": [
+      "IDFM:463154",
+      "IDFM:22121"
+    ]
+  },
+  "Maison Blanche::7": {
+    "nom": "Maison Blanche",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.82214950607496,
+    "longitude": 2.358412946155939,
+    "ids_originaux": [
+      "IDFM:463224",
+      "IDFM:22385"
+    ]
+  },
+  "Poissonnière::7": {
+    "nom": "Poissonnière",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.87716484925024,
+    "longitude": 2.3487397513900734,
+    "ids_originaux": [
+      "IDFM:22377",
+      "IDFM:463255"
+    ]
+  },
+  "Oberkampf::5": {
+    "nom": "Oberkampf",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.86464456516527,
+    "longitude": 2.3686045625807752,
+    "ids_originaux": [
+      "IDFM:463059",
+      "IDFM:21905"
+    ]
+  },
+  "Rue Saint-Maur::3": {
+    "nom": "Rue Saint-Maur",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86413108020325,
+    "longitude": 2.380486332251813,
+    "ids_originaux": [
+      "IDFM:22025",
+      "IDFM:463297"
+    ]
+  },
+  "Pasteur::6": {
+    "nom": "Pasteur",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.842482718285865,
+    "longitude": 2.312792651441268,
+    "ids_originaux": [
+      "IDFM:22166",
+      "IDFM:462948"
+    ]
+  },
+  "Havre-Caumartin::3": {
+    "nom": "Havre-Caumartin",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.87346783937801,
+    "longitude": 2.327462798423509,
+    "ids_originaux": [
+      "IDFM:21906",
+      "IDFM:463189"
+    ]
+  },
+  "Villejuif Léo Lagrange::7": {
+    "nom": "Villejuif Léo Lagrange",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.80436739901952,
+    "longitude": 2.364068547658874,
+    "ids_originaux": [
+      "IDFM:463323",
+      "IDFM:22399"
+    ]
+  },
+  "Volontaires::12": {
+    "nom": "Volontaires",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.84141172841498,
+    "longitude": 2.3079833805768515,
+    "ids_originaux": [
+      "IDFM:22048",
+      "IDFM:462964"
+    ]
+  },
+  "Montparnasse Bienvenue::4": {
+    "nom": "Montparnasse Bienvenue",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.84385251452581,
+    "longitude": 2.3243294607791096,
+    "ids_originaux": [
+      "IDFM:22143",
+      "IDFM:462996"
+    ]
+  },
+  "Cluny - La Sorbonne::10": {
+    "nom": "Cluny - La Sorbonne",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.850793731720536,
+    "longitude": 2.3450218824744566,
+    "ids_originaux": [
+      "IDFM:462944",
+      "IDFM:21983"
+    ]
+  },
+  "La Muette::9": {
+    "nom": "La Muette",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.85809196689865,
+    "longitude": 2.2740962446697224,
+    "ids_originaux": [
+      "IDFM:21929",
+      "IDFM:463203"
+    ]
+  },
+  "Porte de Champerret::3": {
+    "nom": "Porte de Champerret",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.885736266685264,
+    "longitude": 2.291848147336647,
+    "ids_originaux": [
+      "IDFM:22023",
+      "IDFM:463258"
+    ]
+  },
+  "Rue de la Pompe::9": {
+    "nom": "Rue de la Pompe",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.863951708879945,
+    "longitude": 2.2778858979590564,
+    "ids_originaux": [
+      "IDFM:21908",
+      "IDFM:463055"
+    ]
+  },
+  "Aimé Césaire::12": {
+    "nom": "Aimé Césaire",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.90838312983791,
+    "longitude": 2.378035995881576,
+    "ids_originaux": [
+      "IDFM:483903",
+      "IDFM:483900"
+    ]
+  },
+  "Fort d'Aubervilliers::7": {
+    "nom": "Fort d'Aubervilliers",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.91470775289347,
+    "longitude": 2.404187821795194,
+    "ids_originaux": [
+      "IDFM:463179",
+      "IDFM:22393"
+    ]
+  },
+  "Bobigny Pablo Picasso::5": {
+    "nom": "Bobigny Pablo Picasso",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.90636679503056,
+    "longitude": 2.449301336646573,
+    "ids_originaux": [
+      "IDFM:463131",
+      "IDFM:22015"
+    ]
+  },
+  "Saint-Sulpice::4": {
+    "nom": "Saint-Sulpice",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.85113858957915,
+    "longitude": 2.330953550650454,
+    "ids_originaux": [
+      "IDFM:462992",
+      "IDFM:22139"
+    ]
+  },
+  "Porte de Clignancourt::4": {
+    "nom": "Porte de Clignancourt",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.89755778141871,
+    "longitude": 2.3447472731828847,
+    "ids_originaux": [
+      "IDFM:22141",
+      "IDFM:463073"
+    ]
+  },
+  "Mairie de Saint-Ouen::14": {
+    "nom": "Mairie de Saint-Ouen",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.91164217552501,
+    "longitude": 2.333545807213269,
+    "ids_originaux": [
+      "IDFM:480330",
+      "IDFM:480290"
+    ]
+  },
+  "Arts et Métiers::11": {
+    "nom": "Arts et Métiers",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.865380699169286,
+    "longitude": 2.356535223129095,
+    "ids_originaux": [
+      "IDFM:463108",
+      "IDFM:21997"
+    ]
+  },
+  "Palais Royal - Musée du Louvre::7": {
+    "nom": "Palais Royal - Musée du Louvre",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.86276538184415,
+    "longitude": 2.3370872868854398,
+    "ids_originaux": [
+      "IDFM:463249",
+      "IDFM:22376"
+    ]
+  },
+  "Sèvres - Babylone::10": {
+    "nom": "Sèvres - Babylone",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.85112511792463,
+    "longitude": 2.326149066096725,
+    "ids_originaux": [
+      "IDFM:462967",
+      "IDFM:21976"
+    ]
+  },
+  "Charles de Gaulle - Etoile::1": {
+    "nom": "Charles de Gaulle - Etoile",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.87392926445533,
+    "longitude": 2.2951172138230334,
+    "ids_originaux": [
+      "IDFM:463013",
+      "IDFM:22086"
+    ]
+  },
+  "Michel Bizot::8": {
+    "nom": "Michel Bizot",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.83707743103578,
+    "longitude": 2.402366739988004,
+    "ids_originaux": [
+      "IDFM:463226",
+      "IDFM:22206"
+    ]
+  },
+  "Jaurès::2": {
+    "nom": "Jaurès",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88159683079925,
+    "longitude": 2.370269867509251,
+    "ids_originaux": [
+      "IDFM:22118",
+      "IDFM:462981"
+    ]
+  },
+  "Franklin D. Roosevelt::9": {
+    "nom": "Franklin D. Roosevelt",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.86872488799857,
+    "longitude": 2.309488192337113,
+    "ids_originaux": [
+      "IDFM:21931",
+      "IDFM:463180"
+    ]
+  },
+  "Créteil - Préfecture::8": {
+    "nom": "Créteil - Préfecture",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.77975652677895,
+    "longitude": 2.459305169291261,
+    "ids_originaux": [
+      "IDFM:22213",
+      "IDFM:463056"
+    ]
+  },
+  "Bonne Nouvelle::9": {
+    "nom": "Bonne Nouvelle",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.87049007203075,
+    "longitude": 2.348428667867017,
+    "ids_originaux": [
+      "IDFM:463133",
+      "IDFM:21933"
+    ]
+  },
+  "Saint-Placide::4": {
+    "nom": "Saint-Placide",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.84700665158937,
+    "longitude": 2.327054815066312,
+    "ids_originaux": [
+      "IDFM:463308",
+      "IDFM:22138"
+    ]
+  },
+  "Stalingrad::2": {
+    "nom": "Stalingrad",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88432054886986,
+    "longitude": 2.365774370558169,
+    "ids_originaux": [
+      "IDFM:463009",
+      "IDFM:22107"
+    ]
+  },
+  "La Fourche::13": {
+    "nom": "La Fourche",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.88736901850862,
+    "longitude": 2.325414931297021,
+    "ids_originaux": [
+      "IDFM:478395",
+      "IDFM:462975",
+      "IDFM:22227"
+    ]
+  },
+  "Pont Cardinet::14": {
+    "nom": "Pont Cardinet",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.88810340364297,
+    "longitude": 2.3153681405051527,
+    "ids_originaux": [
+      "IDFM:480340",
+      "IDFM:480286"
+    ]
+  },
+  "Maisons-Alfort - Stade::8": {
+    "nom": "Maisons-Alfort - Stade",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.80891847848263,
+    "longitude": 2.434819533389365,
+    "ids_originaux": [
+      "IDFM:22215",
+      "IDFM:463225"
+    ]
+  },
+  "Gare de Lyon::14": {
+    "nom": "Gare de Lyon",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.8442498880687,
+    "longitude": 2.372519782814122,
+    "ids_originaux": [
+      "IDFM:21958",
+      "IDFM:463046"
+    ]
+  },
+  "Odéon::10": {
+    "nom": "Odéon",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.85202455451491,
+    "longitude": 2.340692291066523,
+    "ids_originaux": [
+      "IDFM:462998",
+      "IDFM:21978"
+    ]
+  },
+  "Lourmel::8": {
+    "nom": "Lourmel",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.83866086365992,
+    "longitude": 2.2822419598550767,
+    "ids_originaux": [
+      "IDFM:22187",
+      "IDFM:463211"
+    ]
+  },
+  "Pigalle::2": {
+    "nom": "Pigalle",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88226954222623,
+    "longitude": 2.338257976509587,
+    "ids_originaux": [
+      "IDFM:22114",
+      "IDFM:463088"
+    ]
+  },
+  "Front Populaire::12": {
+    "nom": "Front Populaire",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.90666420278779,
+    "longitude": 2.365792023989413,
+    "ids_originaux": [
+      "IDFM:463082",
+      "IDFM:24679"
+    ]
+  },
+  "Buttes Chaumont::7B": {
+    "nom": "Buttes Chaumont",
+    "lignes": [
+      "7B"
+    ],
+    "latitude": 48.87842297113146,
+    "longitude": 2.381632921459486,
+    "ids_originaux": [
+      "IDFM:463156",
+      "IDFM:24683"
+    ]
+  },
+  "Alma - Marceau::9": {
+    "nom": "Alma - Marceau",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.8647282422178,
+    "longitude": 2.301130527470699,
+    "ids_originaux": [
+      "IDFM:21935",
+      "IDFM:463052"
+    ]
+  },
+  "Porte d'Auteuil::10": {
+    "nom": "Porte d'Auteuil",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84790412362924,
+    "longitude": 2.258280744595537,
+    "ids_originaux": [
+      "IDFM:463234",
+      "IDFM:21974"
+    ]
+  },
+  "Champs-Élysées - Clemenceau::13": {
+    "nom": "Champs-Élysées - Clemenceau",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.86749552078754,
+    "longitude": 2.3138736155952317,
+    "ids_originaux": [
+      "IDFM:463011",
+      "IDFM:22093"
+    ]
+  },
+  "Hôtel de Ville::1": {
+    "nom": "Hôtel de Ville",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.85735240518587,
+    "longitude": 2.3520676701391,
+    "ids_originaux": [
+      "IDFM:463080",
+      "IDFM:22091"
+    ]
+  },
+  "Châtelet::7": {
+    "nom": "Châtelet",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.85695346078533,
+    "longitude": 2.3481609912345776,
+    "ids_originaux": [
+      "IDFM:22364",
+      "IDFM:463060"
+    ]
+  },
+  "Garibaldi::13": {
+    "nom": "Garibaldi",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.90638108007163,
+    "longitude": 2.331907872638921,
+    "ids_originaux": [
+      "IDFM:462977",
+      "IDFM:22244"
+    ]
+  },
+  "Saint-Michel::4": {
+    "nom": "Saint-Michel",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.85359407756809,
+    "longitude": 2.343991799033288,
+    "ids_originaux": [
+      "IDFM:463306",
+      "IDFM:22137"
+    ]
+  },
+  "Gare d'Austerlitz::5": {
+    "nom": "Gare d'Austerlitz",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.84229779662816,
+    "longitude": 2.3656078807625422,
+    "ids_originaux": [
+      "IDFM:21981",
+      "IDFM:463023"
+    ]
+  },
+  "Louis Blanc::7B": {
+    "nom": "Louis Blanc",
+    "lignes": [
+      "7B"
+    ],
+    "latitude": 48.88118341152446,
+    "longitude": 2.364365143550256,
+    "ids_originaux": [
+      "IDFM:463034",
+      "IDFM:24681"
+    ]
+  },
+  "Corentin Celton::12": {
+    "nom": "Corentin Celton",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.82682329515912,
+    "longitude": 2.2789586605256367,
+    "ids_originaux": [
+      "IDFM:22061",
+      "IDFM:463153"
+    ]
+  },
+  "Boucicaut::8": {
+    "nom": "Boucicaut",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.84112235368016,
+    "longitude": 2.287794461321176,
+    "ids_originaux": [
+      "IDFM:463135",
+      "IDFM:22188"
+    ]
+  },
+  "Basilique de Saint-Denis::13": {
+    "nom": "Basilique de Saint-Denis",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.93678306532419,
+    "longitude": 2.3592958408126816,
+    "ids_originaux": [
+      "IDFM:22240",
+      "IDFM:463126"
+    ]
+  },
+  "Pointe du Lac::8": {
+    "nom": "Pointe du Lac",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.76876136434425,
+    "longitude": 2.464317312722042,
+    "ids_originaux": [
+      "IDFM:463057",
+      "IDFM:21784"
+    ]
+  },
+  "Châtelet::1": {
+    "nom": "Châtelet",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.85930591756934,
+    "longitude": 2.3458090025909044,
+    "ids_originaux": [
+      "IDFM:463160",
+      "IDFM:22087"
+    ]
+  },
+  "Saint-Jacques::6": {
+    "nom": "Saint-Jacques",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.832916006219165,
+    "longitude": 2.337154370925007,
+    "ids_originaux": [
+      "IDFM:22160",
+      "IDFM:463305"
+    ]
+  },
+  "Champs-Élysées - Clemenceau::1": {
+    "nom": "Champs-Élysées - Clemenceau",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.86758395955256,
+    "longitude": 2.314397292025236,
+    "ids_originaux": [
+      "IDFM:22090",
+      "IDFM:463010"
+    ]
+  },
+  "Philippe Auguste::2": {
+    "nom": "Philippe Auguste",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.85808942813576,
+    "longitude": 2.390497596745289,
+    "ids_originaux": [
+      "IDFM:463230",
+      "IDFM:22113"
+    ]
+  },
+  "Porte de Versailles::12": {
+    "nom": "Porte de Versailles",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.83230151439446,
+    "longitude": 2.28813294509322,
+    "ids_originaux": [
+      "IDFM:22042",
+      "IDFM:463261"
+    ]
+  },
+  "Marcadet - Poissonniers::12": {
+    "nom": "Marcadet - Poissonniers",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.89154760285429,
+    "longitude": 2.3500246218070155,
+    "ids_originaux": [
+      "IDFM:462973",
+      "IDFM:22052"
+    ]
+  },
+  "République::11": {
+    "nom": "République",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.86794303120089,
+    "longitude": 2.364804805140413,
+    "ids_originaux": [
+      "IDFM:21937",
+      "IDFM:462960"
+    ]
+  },
+  "Bibliothèque François Mitterrand::14": {
+    "nom": "Bibliothèque François Mitterrand",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.829925765928905,
+    "longitude": 2.376487371168301,
+    "ids_originaux": [
+      "IDFM:463112",
+      "IDFM:21955"
+    ]
+  },
+  "Chardon Lagache::10": {
+    "nom": "Chardon Lagache",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84508829917885,
+    "longitude": 2.26690547594029,
+    "ids_originaux": [
+      "IDFM:21985"
+    ]
+  },
+  "Saint-François-Xavier::13": {
+    "nom": "Saint-François-Xavier",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.8512787565696,
+    "longitude": 2.314407403528732,
+    "ids_originaux": [
+      "IDFM:22217",
+      "IDFM:463303"
+    ]
+  },
+  "Gare du Nord::4": {
+    "nom": "Gare du Nord",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.87959170741013,
+    "longitude": 2.356808788205409,
+    "ids_originaux": [
+      "IDFM:463183",
+      "IDFM:22149"
+    ]
+  },
+  "Stalingrad::5": {
+    "nom": "Stalingrad",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.8841445128949,
+    "longitude": 2.367348121277192,
+    "ids_originaux": [
+      "IDFM:463032",
+      "IDFM:22001"
+    ]
+  },
+  "Rue du Bac::12": {
+    "nom": "Rue du Bac",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.85588467848543,
+    "longitude": 2.3256998984524118,
+    "ids_originaux": [
+      "IDFM:462950",
+      "IDFM:22043"
+    ]
+  },
+  "Porte de Saint-Cloud::9": {
+    "nom": "Porte de Saint-Cloud",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.83795840561949,
+    "longitude": 2.2570461929221506,
+    "ids_originaux": [
+      "IDFM:21914",
+      "IDFM:463259"
+    ]
+  },
+  "Porte de Clichy::13": {
+    "nom": "Porte de Clichy",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.89443128801746,
+    "longitude": 2.31320835075881,
+    "ids_originaux": [
+      "IDFM:463278",
+      "IDFM:22219"
+    ]
+  },
+  "Denfert-Rochereau::6": {
+    "nom": "Denfert-Rochereau",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.83431320632965,
+    "longitude": 2.3328724454976864,
+    "ids_originaux": [
+      "IDFM:22158",
+      "IDFM:463103"
+    ]
+  },
+  "Vavin::4": {
+    "nom": "Vavin",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.842242093452064,
+    "longitude": 2.32902391746117,
+    "ids_originaux": [
+      "IDFM:22135",
+      "IDFM:463016"
+    ]
+  },
+  "Jussieu::7": {
+    "nom": "Jussieu",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.84596333903808,
+    "longitude": 2.354798309820857,
+    "ids_originaux": [
+      "IDFM:463078",
+      "IDFM:22386"
+    ]
+  },
+  "Pyramides::14": {
+    "nom": "Pyramides",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.86575552737676,
+    "longitude": 2.3346236060049232,
+    "ids_originaux": [
+      "IDFM:21960",
+      "IDFM:463284"
+    ]
+  },
+  "Hoche::5": {
+    "nom": "Hoche",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.89128939386479,
+    "longitude": 2.4032119887626737,
+    "ids_originaux": [
+      "IDFM:22017",
+      "IDFM:463017"
+    ]
+  },
+  "Porte de la Villette::7": {
+    "nom": "Porte de la Villette",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.89786518171076,
+    "longitude": 2.3857788171360426,
+    "ids_originaux": [
+      "IDFM:463007",
+      "IDFM:22374"
+    ]
+  },
+  "Boissière::6": {
+    "nom": "Boissière",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.8668483434173,
+    "longitude": 2.2900328376074373,
+    "ids_originaux": [
+      "IDFM:463114",
+      "IDFM:22180"
+    ]
+  },
+  "Michel-Ange - Auteuil::9": {
+    "nom": "Michel-Ange - Auteuil",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.84770893216831,
+    "longitude": 2.2638093220226634,
+    "ids_originaux": [
+      "IDFM:463238",
+      "IDFM:21922"
+    ]
+  },
+  "Avenue Émile Zola::10": {
+    "nom": "Avenue Émile Zola",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84695722990175,
+    "longitude": 2.2950459810371475,
+    "ids_originaux": [
+      "IDFM:21987",
+      "IDFM:463124"
+    ]
+  },
+  "Stalingrad::7": {
+    "nom": "Stalingrad",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.88431508830977,
+    "longitude": 2.368996070723285,
+    "ids_originaux": [
+      "IDFM:22368",
+      "IDFM:463008"
+    ]
+  },
+  "Père Lachaise::3": {
+    "nom": "Père Lachaise",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86304099836643,
+    "longitude": 2.3862311113287342,
+    "ids_originaux": [
+      "IDFM:463286",
+      "IDFM:22020"
+    ]
+  },
+  "Bourse::3": {
+    "nom": "Bourse",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86879284393317,
+    "longitude": 2.340678546975881,
+    "ids_originaux": [
+      "IDFM:22033",
+      "IDFM:463090"
+    ]
+  },
+  "Bolivar::7B": {
+    "nom": "Bolivar",
+    "lignes": [
+      "7B"
+    ],
+    "latitude": 48.88078966297506,
+    "longitude": 2.374124871187542,
+    "ids_originaux": [
+      "IDFM:24685",
+      "IDFM:463132"
+    ]
+  },
+  "Commerce::8": {
+    "nom": "Commerce",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.84458485524012,
+    "longitude": 2.293851708440619,
+    "ids_originaux": [
+      "IDFM:463162",
+      "IDFM:22190"
+    ]
+  },
+  "Porte des Lilas::11": {
+    "nom": "Porte des Lilas",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.87723143067265,
+    "longitude": 2.4065226763982275,
+    "ids_originaux": [
+      "IDFM:463263",
+      "IDFM:21949"
+    ]
+  },
+  "Montparnasse Bienvenue::13": {
+    "nom": "Montparnasse Bienvenue",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.84231364506487,
+    "longitude": 2.320983883036087,
+    "ids_originaux": [
+      "IDFM:22157",
+      "IDFM:462954"
+    ]
+  },
+  "Mairie de Montreuil::9": {
+    "nom": "Mairie de Montreuil",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.8622744369706,
+    "longitude": 2.4418193772459085,
+    "ids_originaux": [
+      "IDFM:21941",
+      "IDFM:463221"
+    ]
+  },
+  "Monceau::2": {
+    "nom": "Monceau",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88056877012684,
+    "longitude": 2.309412967374703,
+    "ids_originaux": [
+      "IDFM:463240",
+      "IDFM:22117"
+    ]
+  },
+  "Sèvres-Lecourbe::6": {
+    "nom": "Sèvres-Lecourbe",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.84564768265073,
+    "longitude": 2.309529610430393,
+    "ids_originaux": [
+      "IDFM:463314",
+      "IDFM:22163"
+    ]
+  },
+  "Palais Royal - Musée du Louvre::1": {
+    "nom": "Palais Royal - Musée du Louvre",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.86222226557415,
+    "longitude": 2.336454367754252,
+    "ids_originaux": [
+      "IDFM:22079",
+      "IDFM:463227"
+    ]
+  },
+  "Couronnes::2": {
+    "nom": "Couronnes",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.86919334513237,
+    "longitude": 2.3802889829271936,
+    "ids_originaux": [
+      "IDFM:462983",
+      "IDFM:22126"
+    ]
+  },
+  "Raspail::6": {
+    "nom": "Raspail",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.83908487281128,
+    "longitude": 2.330549660589195,
+    "ids_originaux": [
+      "IDFM:22155",
+      "IDFM:463292"
+    ]
+  },
+  "Tolbiac::7": {
+    "nom": "Tolbiac",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.82613686175372,
+    "longitude": 2.357318439213192,
+    "ids_originaux": [
+      "IDFM:22370",
+      "IDFM:463267"
+    ]
+  },
+  "Malakoff - Plateau de Vanves::13": {
+    "nom": "Malakoff - Plateau de Vanves",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.82214529059278,
+    "longitude": 2.2984111759006174,
+    "ids_originaux": [
+      "IDFM:463213",
+      "IDFM:22235"
+    ]
+  },
+  "Saint-Lazare::14": {
+    "nom": "Saint-Lazare",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.87560743718584,
+    "longitude": 2.324122029700433,
+    "ids_originaux": [
+      "IDFM:21962",
+      "IDFM:462972"
+    ]
+  },
+  "Marcadet - Poissonniers::4": {
+    "nom": "Marcadet - Poissonniers",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.891280439844486,
+    "longitude": 2.349681541722477,
+    "ids_originaux": [
+      "IDFM:22132",
+      "IDFM:462974"
+    ]
+  },
+  "Quai de la Gare::6": {
+    "nom": "Quai de la Gare",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.8370742706096,
+    "longitude": 2.372766248948172,
+    "ids_originaux": [
+      "IDFM:463288",
+      "IDFM:22161"
+    ]
+  },
+  "Nationale::6": {
+    "nom": "Nationale",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.83323527967617,
+    "longitude": 2.3628041715935075,
+    "ids_originaux": [
+      "IDFM:463004",
+      "IDFM:22169"
+    ]
+  },
+  "Javel - André Citroën::10": {
+    "nom": "Javel - André Citroën",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.846086877931405,
+    "longitude": 2.2780435059854063,
+    "ids_originaux": [
+      "IDFM:462958",
+      "IDFM:21972"
+    ]
+  },
+  "Cardinal Lemoine::10": {
+    "nom": "Cardinal Lemoine",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84670003526311,
+    "longitude": 2.3513280016731763,
+    "ids_originaux": [
+      "IDFM:463141",
+      "IDFM:21984"
+    ]
+  },
+  "Victor Hugo::2": {
+    "nom": "Victor Hugo",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.8698545716049,
+    "longitude": 2.2859020006220643,
+    "ids_originaux": [
+      "IDFM:22109",
+      "IDFM:463322"
+    ]
+  },
+  "Billancourt::9": {
+    "nom": "Billancourt",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.83183051284947,
+    "longitude": 2.237965973200589,
+    "ids_originaux": [
+      "IDFM:21939",
+      "IDFM:463035"
+    ]
+  },
+  "Dugommier::6": {
+    "nom": "Dugommier",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.83903652832887,
+    "longitude": 2.3895997700798097,
+    "ids_originaux": [
+      "IDFM:463075",
+      "IDFM:22182"
+    ]
+  },
+  "Danube::7B": {
+    "nom": "Danube",
+    "lignes": [
+      "7B"
+    ],
+    "latitude": 48.88194921492064,
+    "longitude": 2.393228471227492,
+    "ids_originaux": [
+      "IDFM:24687"
+    ]
+  },
+  "Picpus::6": {
+    "nom": "Picpus",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.84510324750185,
+    "longitude": 2.401274538822374,
+    "ids_originaux": [
+      "IDFM:463098",
+      "IDFM:22167"
+    ]
+  },
+  "Croix de Chavaux::9": {
+    "nom": "Croix de Chavaux",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.857992585158016,
+    "longitude": 2.4358546126745826,
+    "ids_originaux": [
+      "IDFM:21943",
+      "IDFM:463176"
+    ]
+  },
+  "Richard-Lenoir::5": {
+    "nom": "Richard-Lenoir",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.85985966744055,
+    "longitude": 2.3719501400872653,
+    "ids_originaux": [
+      "IDFM:463096",
+      "IDFM:22002"
+    ]
+  },
+  "Strasbourg - Saint-Denis::8": {
+    "nom": "Strasbourg - Saint-Denis",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.86946694920397,
+    "longitude": 2.353797473153033,
+    "ids_originaux": [
+      "IDFM:463312",
+      "IDFM:22159"
+    ]
+  },
+  "Bercy::6": {
+    "nom": "Bercy",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.840176028121896,
+    "longitude": 2.379463070185257,
+    "ids_originaux": [
+      "IDFM:22178",
+      "IDFM:463128"
+    ]
+  },
+  "Plaisance::13": {
+    "nom": "Plaisance",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.83174121370108,
+    "longitude": 2.313833364032832,
+    "ids_originaux": [
+      "IDFM:22223",
+      "IDFM:463085"
+    ]
+  },
+  "Gare de Lyon::1": {
+    "nom": "Gare de Lyon",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.8456832067358,
+    "longitude": 2.3731565937892047,
+    "ids_originaux": [
+      "IDFM:22083",
+      "IDFM:463197"
+    ]
+  },
+  "Bérault::1": {
+    "nom": "Bérault",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.84540614839331,
+    "longitude": 2.4292049740990573,
+    "ids_originaux": [
+      "IDFM:22105",
+      "IDFM:463130"
+    ]
+  },
+  "Filles du Calvaire::8": {
+    "nom": "Filles du Calvaire",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.86308830188695,
+    "longitude": 2.366826859795412,
+    "ids_originaux": [
+      "IDFM:22200",
+      "IDFM:463048"
+    ]
+  },
+  "Bobigny-Pantin - Raymond Queneau::5": {
+    "nom": "Bobigny-Pantin - Raymond Queneau",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.89563789793626,
+    "longitude": 2.426277595760804,
+    "ids_originaux": [
+      "IDFM:463002",
+      "IDFM:22014"
+    ]
+  },
+  "Exelmans::9": {
+    "nom": "Exelmans",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.842624465259945,
+    "longitude": 2.25967486021195,
+    "ids_originaux": [
+      "IDFM:462956",
+      "IDFM:21930"
+    ]
+  },
+  "Charonne::9": {
+    "nom": "Charonne",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.854939443448494,
+    "longitude": 2.384782396448888,
+    "ids_originaux": [
+      "IDFM:463143",
+      "IDFM:21934"
+    ]
+  },
+  "Censier - Daubenton::7": {
+    "nom": "Censier - Daubenton",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.84022624851393,
+    "longitude": 2.351626572605499,
+    "ids_originaux": [
+      "IDFM:22391",
+      "IDFM:463157"
+    ]
+  },
+  "République::8": {
+    "nom": "République",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.86748513277203,
+    "longitude": 2.3632563242479026,
+    "ids_originaux": [
+      "IDFM:22199",
+      "IDFM:462962"
+    ]
+  },
+  "Maraîchers::9": {
+    "nom": "Maraîchers",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.85265013095636,
+    "longitude": 2.4060490065790447,
+    "ids_originaux": [
+      "IDFM:463215",
+      "IDFM:21936"
+    ]
+  },
+  "Château d'Eau::4": {
+    "nom": "Château d'Eau",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.87244691759551,
+    "longitude": 2.3560517414015862,
+    "ids_originaux": [
+      "IDFM:22153",
+      "IDFM:462979"
+    ]
+  },
+  "Laumière::5": {
+    "nom": "Laumière",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.88513384808583,
+    "longitude": 2.3793909893523923,
+    "ids_originaux": [
+      "IDFM:22012",
+      "IDFM:462999"
+    ]
+  },
+  "Pont de Levallois - Bécon::3": {
+    "nom": "Pont de Levallois - Bécon",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.89718710383118,
+    "longitude": 2.280180198501724,
+    "ids_originaux": [
+      "IDFM:22035",
+      "IDFM:462985"
+    ]
+  },
+  "Châtelet::11": {
+    "nom": "Châtelet",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.85776111354502,
+    "longitude": 2.3478374055687867,
+    "ids_originaux": [
+      "IDFM:21966",
+      "IDFM:463079"
+    ]
+  },
+  "Convention::12": {
+    "nom": "Convention",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.837125900521,
+    "longitude": 2.2963642614342694,
+    "ids_originaux": [
+      "IDFM:22058",
+      "IDFM:462949"
+    ]
+  },
+  "Place d'Italie::5": {
+    "nom": "Place d'Italie",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.830965713292656,
+    "longitude": 2.355501591481485,
+    "ids_originaux": [
+      "IDFM:463025",
+      "IDFM:22006"
+    ]
+  },
+  "Boulogne Pont de Saint-Cloud::10": {
+    "nom": "Boulogne Pont de Saint-Cloud",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84067248206251,
+    "longitude": 2.2283125898228056,
+    "ids_originaux": [
+      "IDFM:21989",
+      "IDFM:463136"
+    ]
+  },
+  "Villiers::3": {
+    "nom": "Villiers",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.881153980760416,
+    "longitude": 2.3157901685080926,
+    "ids_originaux": [
+      "IDFM:462987",
+      "IDFM:22027"
+    ]
+  },
+  "Tuileries::1": {
+    "nom": "Tuileries",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.864550163577015,
+    "longitude": 2.3297453212172794,
+    "ids_originaux": [
+      "IDFM:22075",
+      "IDFM:463041"
+    ]
+  },
+  "Mairie d'Issy::12": {
+    "nom": "Mairie d'Issy",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.82434428766646,
+    "longitude": 2.273558168023932,
+    "ids_originaux": [
+      "IDFM:463219",
+      "IDFM:22062"
+    ]
+  },
+  "Daumesnil::8": {
+    "nom": "Daumesnil",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.83967393140864,
+    "longitude": 2.395573606140371,
+    "ids_originaux": [
+      "IDFM:463168",
+      "IDFM:22184"
+    ]
+  },
+  "Belleville::2": {
+    "nom": "Belleville",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.87231407736167,
+    "longitude": 2.3768306915222848,
+    "ids_originaux": [
+      "IDFM:22128",
+      "IDFM:463111"
+    ]
+  },
+  "Notre-Dame-de-Lorette::12": {
+    "nom": "Notre-Dame-de-Lorette",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.8760350312806,
+    "longitude": 2.3378736192226386,
+    "ids_originaux": [
+      "IDFM:22050",
+      "IDFM:463062"
+    ]
+  },
+  "Villejuif - Louis Aragon::7": {
+    "nom": "Villejuif - Louis Aragon",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.787572501132765,
+    "longitude": 2.367716899053842,
+    "ids_originaux": [
+      "IDFM:463269",
+      "IDFM:22400"
+    ]
+  },
+  "Jussieu::10": {
+    "nom": "Jussieu",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84619789163701,
+    "longitude": 2.3549316718232256,
+    "ids_originaux": [
+      "IDFM:21968",
+      "IDFM:463077"
+    ]
+  },
+  "Porte d'Orléans::4": {
+    "nom": "Porte d'Orléans",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.82339460262072,
+    "longitude": 2.325623760353114,
+    "ids_originaux": [
+      "IDFM:463092",
+      "IDFM:22140"
+    ]
+  },
+  "Mairie des Lilas::11": {
+    "nom": "Mairie des Lilas",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.879658467973904,
+    "longitude": 2.4163499077398614,
+    "ids_originaux": [
+      "IDFM:463223",
+      "IDFM:21999"
+    ]
+  },
+  "Chevaleret::6": {
+    "nom": "Chevaleret",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.83496308210916,
+    "longitude": 2.368081282972743,
+    "ids_originaux": [
+      "IDFM:22174",
+      "IDFM:463147"
+    ]
+  },
+  "La Défense (Grande Arche)::1": {
+    "nom": "La Défense (Grande Arche)",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.89199558886802,
+    "longitude": 2.2383579200010373,
+    "ids_originaux": [
+      "IDFM:463193",
+      "IDFM:22101"
+    ]
+  },
+  "Gambetta::3B": {
+    "nom": "Gambetta",
+    "lignes": [
+      "3B"
+    ],
+    "latitude": 48.865032564464,
+    "longitude": 2.398537305704572,
+    "ids_originaux": [
+      "IDFM:21945",
+      "IDFM:462997"
+    ]
+  },
+  "Concorde::8": {
+    "nom": "Concorde",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.86652125193945,
+    "longitude": 2.3220315426557194,
+    "ids_originaux": [
+      "IDFM:22096",
+      "IDFM:463151"
+    ]
+  },
+  "Faidherbe - Chaligny::8": {
+    "nom": "Faidherbe - Chaligny",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.85020070550927,
+    "longitude": 2.384072471688875,
+    "ids_originaux": [
+      "IDFM:22204",
+      "IDFM:463172"
+    ]
+  },
+  "Grands Boulevards::8": {
+    "nom": "Grands Boulevards",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.87146677844407,
+    "longitude": 2.342839648636545,
+    "ids_originaux": [
+      "IDFM:22197",
+      "IDFM:463058"
+    ]
+  },
+  "La Courneuve - 8 Mai 1945::7": {
+    "nom": "La Courneuve - 8 Mai 1945",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.92037064946693,
+    "longitude": 2.410008476572451,
+    "ids_originaux": [
+      "IDFM:463200",
+      "IDFM:22395"
+    ]
+  },
+  "Duroc::13": {
+    "nom": "Duroc",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.847009893611975,
+    "longitude": 2.3165212194565217,
+    "ids_originaux": [
+      "IDFM:22229",
+      "IDFM:463083"
+    ]
+  },
+  "Mouton-Duvernet::4": {
+    "nom": "Mouton-Duvernet",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.83133758557153,
+    "longitude": 2.329887640408421,
+    "ids_originaux": [
+      "IDFM:463242",
+      "IDFM:22144"
+    ]
+  },
+  "Opéra::8": {
+    "nom": "Opéra",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.87059812248669,
+    "longitude": 2.332135072925294,
+    "ids_originaux": [
+      "IDFM:22195",
+      "IDFM:463244"
+    ]
+  },
+  "Charles de Gaulle - Etoile::6": {
+    "nom": "Charles de Gaulle - Etoile",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.87371127132366,
+    "longitude": 2.2947520493673434,
+    "ids_originaux": [
+      "IDFM:463042",
+      "IDFM:22095"
+    ]
+  },
+  "Jules Joffrin::12": {
+    "nom": "Jules Joffrin",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.892492268201934,
+    "longitude": 2.3443200293804827,
+    "ids_originaux": [
+      "IDFM:463065",
+      "IDFM:22054"
+    ]
+  },
+  "Porte de Vincennes::1": {
+    "nom": "Porte de Vincennes",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.84700773108863,
+    "longitude": 2.4108049967015006,
+    "ids_originaux": [
+      "IDFM:22077",
+      "IDFM:463012"
+    ]
+  },
+  "Rue des Boulets::9": {
+    "nom": "Rue des Boulets",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.85221407333194,
+    "longitude": 2.3891047050322425,
+    "ids_originaux": [
+      "IDFM:22442",
+      "IDFM:463298"
+    ]
+  },
+  "Passy::6": {
+    "nom": "Passy",
+    "lignes": [
+      "6"
+    ],
+    "latitude": 48.8575315296204,
+    "longitude": 2.2855802300954733,
+    "ids_originaux": [
+      "IDFM:463101",
+      "IDFM:22165"
+    ]
+  },
+  "Nation::2": {
+    "nom": "Nation",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.848453436979646,
+    "longitude": 2.395925559927623,
+    "ids_originaux": [
+      "IDFM:463067",
+      "IDFM:22072"
+    ]
+  },
+  "Bastille::1": {
+    "nom": "Bastille",
+    "lignes": [
+      "1"
+    ],
+    "latitude": 48.85196422011205,
+    "longitude": 2.368692796099789,
+    "ids_originaux": [
+      "IDFM:463019",
+      "IDFM:22089"
+    ]
+  },
+  "Porte d'Ivry::7": {
+    "nom": "Porte d'Ivry",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.821489035562834,
+    "longitude": 2.3695112543194927,
+    "ids_originaux": [
+      "IDFM:22372",
+      "IDFM:463029"
+    ]
+  },
+  "Saint-Germain-des-Prés::4": {
+    "nom": "Saint-Germain-des-Prés",
+    "lignes": [
+      "4"
+    ],
+    "latitude": 48.85367371343323,
+    "longitude": 2.333987429134225,
+    "ids_originaux": [
+      "IDFM:462993",
+      "IDFM:22136"
+    ]
+  },
+  "Asnières - Gennevilliers Les Courtilles::13": {
+    "nom": "Asnières - Gennevilliers Les Courtilles",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.93060364140038,
+    "longitude": 2.284372100658843,
+    "ids_originaux": [
+      "IDFM:22233",
+      "IDFM:463109"
+    ]
+  },
+  "Saint-Lazare::13": {
+    "nom": "Saint-Lazare",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.8754621353288,
+    "longitude": 2.3254668925871607,
+    "ids_originaux": [
+      "IDFM:462970",
+      "IDFM:22218"
+    ]
+  },
+  "Châtillon-Montrouge::13": {
+    "nom": "Châtillon-Montrouge",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.81072820779425,
+    "longitude": 2.301595459041787,
+    "ids_originaux": [
+      "IDFM:463087",
+      "IDFM:22237"
+    ]
+  },
+  "Porte d'Italie::7": {
+    "nom": "Porte d'Italie",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.81903428608761,
+    "longitude": 2.359462523882543,
+    "ids_originaux": [
+      "IDFM:22380",
+      "IDFM:463235"
+    ]
+  },
+  "Porte de Charenton::8": {
+    "nom": "Porte de Charenton",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.83344922287947,
+    "longitude": 2.402511872850073,
+    "ids_originaux": [
+      "IDFM:22208",
+      "IDFM:463277"
+    ]
+  },
+  "Gallieni::3": {
+    "nom": "Gallieni",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86539746068654,
+    "longitude": 2.415921484287642,
+    "ids_originaux": [
+      "IDFM:463174",
+      "IDFM:22037"
+    ]
+  },
+  "Place de Clichy::2": {
+    "nom": "Place de Clichy",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.88374519677981,
+    "longitude": 2.3278987090661456,
+    "ids_originaux": [
+      "IDFM:463252",
+      "IDFM:22115"
+    ]
+  },
+  "Madeleine::14": {
+    "nom": "Madeleine",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.870630484228144,
+    "longitude": 2.3258757399808627,
+    "ids_originaux": [
+      "IDFM:463064",
+      "IDFM:21961"
+    ]
+  },
+  "Le Peletier::7": {
+    "nom": "Le Peletier",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.874959406040965,
+    "longitude": 2.3401505597063736,
+    "ids_originaux": [
+      "IDFM:22382",
+      "IDFM:463206"
+    ]
+  },
+  "La Tour-Maubourg::8": {
+    "nom": "La Tour-Maubourg",
+    "lignes": [
+      "8"
+    ],
+    "latitude": 48.85766922956403,
+    "longitude": 2.310588789873988,
+    "ids_originaux": [
+      "IDFM:22192",
+      "IDFM:463204"
+    ]
+  },
+  "Place des Fêtes::11": {
+    "nom": "Place des Fêtes",
+    "lignes": [
+      "11"
+    ],
+    "latitude": 48.87672366197325,
+    "longitude": 2.393139370360497,
+    "ids_originaux": [
+      "IDFM:21951",
+      "IDFM:463254"
+    ]
+  },
+  "Saint-Denis - Porte de Paris::13": {
+    "nom": "Saint-Denis - Porte de Paris",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.92992275044576,
+    "longitude": 2.3561729251016,
+    "ids_originaux": [
+      "IDFM:463301",
+      "IDFM:22241"
+    ]
+  },
+  "Pasteur::12": {
+    "nom": "Pasteur",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.84282366881032,
+    "longitude": 2.3126518981045816,
+    "ids_originaux": [
+      "IDFM:462947",
+      "IDFM:22039"
+    ]
+  },
+  "Quatre Septembre::3": {
+    "nom": "Quatre Septembre",
+    "lignes": [
+      "3"
+    ],
+    "latitude": 48.86959592111917,
+    "longitude": 2.3362786423248583,
+    "ids_originaux": [
+      "IDFM:22024",
+      "IDFM:462989"
+    ]
+  },
+  "Sèvres - Babylone::12": {
+    "nom": "Sèvres - Babylone",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.85157445264095,
+    "longitude": 2.326886801039095,
+    "ids_originaux": [
+      "IDFM:462966",
+      "IDFM:21980"
+    ]
+  },
+  "Pont Marie (Cité des Arts)::7": {
+    "nom": "Pont Marie (Cité des Arts)",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.85341474936241,
+    "longitude": 2.357349968447059,
+    "ids_originaux": [
+      "IDFM:22378",
+      "IDFM:463231"
+    ]
+  },
+  "Église de Pantin::5": {
+    "nom": "Église de Pantin",
+    "lignes": [
+      "5"
+    ],
+    "latitude": 48.89324469416795,
+    "longitude": 2.413074999597678,
+    "ids_originaux": [
+      "IDFM:463178",
+      "IDFM:22016"
+    ]
+  },
+  "Michel-Ange - Auteuil::10": {
+    "nom": "Michel-Ange - Auteuil",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84797535417627,
+    "longitude": 2.263989525333329,
+    "ids_originaux": [
+      "IDFM:21907"
+    ]
+  },
+  "Porte Dauphine::2": {
+    "nom": "Porte Dauphine",
+    "lignes": [
+      "2"
+    ],
+    "latitude": 48.8717351159749,
+    "longitude": 2.2778093495879346,
+    "ids_originaux": [
+      "IDFM:463256",
+      "IDFM:22111"
+    ]
+  },
+  "Louis Blanc::7": {
+    "nom": "Louis Blanc",
+    "lignes": [
+      "7"
+    ],
+    "latitude": 48.880895011629946,
+    "longitude": 2.3650968074522214,
+    "ids_originaux": [
+      "IDFM:463033",
+      "IDFM:22384"
+    ]
+  },
+  "Mirabeau::10": {
+    "nom": "Mirabeau",
+    "lignes": [
+      "10"
+    ],
+    "latitude": 48.84707750734599,
+    "longitude": 2.2730641263728333,
+    "ids_originaux": [
+      "IDFM:21982"
+    ]
+  },
+  "Porte de la Chapelle::12": {
+    "nom": "Porte de la Chapelle",
+    "lignes": [
+      "12"
+    ],
+    "latitude": 48.89741064164834,
+    "longitude": 2.359103857300198,
+    "ids_originaux": [
+      "IDFM:463281",
+      "IDFM:22041"
+    ]
+  },
+  "Carrefour Pleyel::13": {
+    "nom": "Carrefour Pleyel",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.91973260804976,
+    "longitude": 2.343534674183465,
+    "ids_originaux": [
+      "IDFM:462976",
+      "IDFM:22239"
+    ]
+  },
+  "Porte de Montreuil::9": {
+    "nom": "Porte de Montreuil",
+    "lignes": [
+      "9"
+    ],
+    "latitude": 48.85356350094303,
+    "longitude": 2.4107036110235414,
+    "ids_originaux": [
+      "IDFM:21913",
+      "IDFM:463279"
+    ]
+  },
+  "Châtelet::14": {
+    "nom": "Châtelet",
+    "lignes": [
+      "14"
+    ],
+    "latitude": 48.85955653272677,
+    "longitude": 2.346411849769497,
+    "ids_originaux": [
+      "IDFM:463159",
+      "IDFM:21959"
+    ]
+  },
+  "Porte de Saint-Ouen::13": {
+    "nom": "Porte de Saint-Ouen",
+    "lignes": [
+      "13"
+    ],
+    "latitude": 48.89749783732745,
+    "longitude": 2.3290483407446505,
+    "ids_originaux": [
+      "IDFM:22220",
+      "IDFM:462951"
+    ]
+  }
+}

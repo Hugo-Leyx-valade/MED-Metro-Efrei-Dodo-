@@ -6,4 +6,6 @@ npm-debug.log*
 # Dependency directories
 jspm_packages/
 # Optional npm cache directory
-*.txt
+flask_back/data/*.txt
+flask_back/data/version 1/*.txt
+venv/
