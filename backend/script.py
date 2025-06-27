@@ -250,3 +250,5 @@ def charger_stations():
 edges = charger_stations()
 with open('nodes.json', 'w', encoding='utf-8') as f:
     json.dump(edges, f, ensure_ascii=False, indent=2)
+
+recuperer_edges_metro_sans_doublons("backend\\data")
