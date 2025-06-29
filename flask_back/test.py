@@ -51,11 +51,8 @@ def kruskal_metro(nodes_path="C:\\Users\\hugol\\Documents\\projet\\mastercamp\\M
     for weight, u, v in edges:
         if union(u, v):
             mst_edges.append((u, v, weight))
-
+    total_weight = sum(weight for _, _, weight in mst_edges)
     return mst_edges
-
-print(len(kruskal_metro()))
-
 
 import json
 import heapq
@@ -102,4 +99,48 @@ def prim_metro(nodes_path="C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-
 
     return mst_edges
 
-print(len(prim_metro()))
+import json
+import networkx as nx
+
+acpm_edges = kruskal_metro()
+
+def verifier_connexite_et_completude(acpm_edges, nodes_path="C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodes.json"):
+    def simplify(name):
+        return name.split("::")[0].strip().lower()
+    
+    # 1. Chargement des stations
+    with open(nodes_path, "r", encoding="utf-8") as f:
+        raw_nodes = json.load(f)
+    
+    # Ensemble des noms de stations (simplifiés)
+    all_nodes = set(simplify(name) for name in raw_nodes.keys())
+
+    # 2. Création du graphe à partir des arêtes ACPM
+    G = nx.Graph()
+    for u, v, _ in acpm_edges:
+        G.add_edge(u, v)
+
+    # 3. Vérification de la connexité
+    is_connected = nx.is_connected(G)
+
+    # 4. Vérification de la couverture complète des nœuds
+    graph_nodes = set(G.nodes)
+    missing_nodes = all_nodes - graph_nodes
+    extra_nodes = graph_nodes - all_nodes
+
+    all_present = len(missing_nodes) == 0
+
+    # 5. Résumé
+    print("✅ Graphe connexe :", is_connected)
+    print("✅ Tous les nœuds présents :", all_present)
+    print(f"📦 Nœuds attendus : {len(all_nodes)} — Dans le graphe : {len(graph_nodes)}")
+    if not all_present:
+        print("❌ Nœuds manquants :", missing_nodes)
+    if extra_nodes:
+        print("⚠️ Nœuds non attendus dans le graphe :", extra_nodes)
+    print("hugo ", len(all_nodes))
+    return is_connected and all_present and len(all_nodes)
+
+
+
+

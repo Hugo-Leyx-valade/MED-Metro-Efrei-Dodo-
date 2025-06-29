@@ -722,6 +722,8 @@ def kruskalV2():
         if union(u, v):
             mst_edges.append((u, v, weight))
 
+    total_weight = sum(weight for _, _, weight in mst_edges)
+    print(f"Nombre d'arêtes dans l'ACPM : {len(mst_edges)}, Poids total : {total_weight}")
     return mst_edges
 
 
