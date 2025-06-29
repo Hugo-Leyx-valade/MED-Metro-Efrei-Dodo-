@@ -45,7 +45,7 @@ def count_connected_components(graph):
     return components
 
 # Analyse
-file_path = "C:\\Users\\Hugo\\Documents\\Projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
+file_path = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
 graph, id_to_name = parse_graph(file_path)
 components = count_connected_components(graph)
 

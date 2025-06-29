@@ -209,7 +209,7 @@ def recuperer_edges_metro_sans_doublons(gtfs_folder):
 import json
 
 def charger_stations():
-    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\"
+    gtfs_folder = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\"
     stops = pd.read_csv(f"{gtfs_folder}stops.txt")
     stop_times = pd.read_csv(f"{gtfs_folder}stop_times.txt")
     trips = pd.read_csv(f"{gtfs_folder}trips.txt")
@@ -250,3 +250,5 @@ def charger_stations():
 edges = charger_stations()
 with open('nodes.json', 'w', encoding='utf-8') as f:
     json.dump(edges, f, ensure_ascii=False, indent=2)
+
+recuperer_edges_metro_sans_doublons("backend\\data")

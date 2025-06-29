@@ -1,35 +1,33 @@
 <template>
-  
   <div class="map-container">
-
     <div class="controls">
-  <h3>Calcul de chemin</h3>
-  <label>
-    De :
-    <select v-model="selectedFrom">
-      <option disabled value="">Sélectionner...</option>
-      <option v-for="station in points" :key="station.id" :value="station">
-        Station : {{ station.name }} Ligne : {{ station.line }}
-      </option>
-    </select>
-  </label>
+      <h3>Calcul de chemin</h3>
+      <label>
+        De :
+        <select v-model="selectedFrom">
+          <option disabled value="">Sélectionner...</option>
+          <option v-for="station in points" :key="station.id" :value="station">
+            Station : {{ station.name }} Ligne : {{ station.line }}
+          </option>
+        </select>
+      </label>
 
-  <label>
-    À :
-    <select v-model="selectedTo">
-      <option disabled value="">Sélectionner...</option>
-      <option v-for="station in points" :key="station.id" :value="station">
-        Station : {{ station.name }} Ligne : {{ station.line }}
-      </option>
-    </select>
-  </label>
-  <button @click="computeShortestPath">Calculer</button>
-</div>
+      <label>
+        À :
+        <select v-model="selectedTo">
+          <option disabled value="">Sélectionner...</option>
+          <option v-for="station in points" :key="station.id" :value="station">
+            Station : {{ station.name }} Ligne : {{ station.line }}
+          </option>
+        </select>
+      </label>
+      <button @click="computeShortestPath">Calculer</button>
+    </div>
 
     <!-- Image utilisée pour le placement, invisible -->
     <img ref="imageRef" src="../assets/metrof_r.png" class="map-image" />
 
-  <!-- Lignes entre les points -->
+    <!-- Lignes entre les points -->
     <svg class="map-svg">
       <line
         v-for="edge in edges"
@@ -41,11 +39,9 @@
         :stroke="getLineColor(points[parseInt(edge.node0)].line)"
         stroke-width="2"
       />
-
-
     </svg>
 
-      <div class="controls">
+    <div class="controls">
       <h3>Calcul de chemin</h3>
       <!-- Autres éléments existants -->
 
@@ -58,7 +54,7 @@
       v-for="(point, index) in points"
       :key="index"
       class="point"
-      :style="{ top: point.y/1.5 + 'px', left: point.x/1.5 + 'px', background: 'white' }"
+      :style="{ top: point.y / 1.5 + 'px', left: point.x / 1.5 + 'px', background: 'white' }"
       :title="point.name"
     ></div>
   </div>
@@ -95,33 +91,32 @@ async function computeACPM() {
     shortestPathEdges.value = res.data
     totalWeight.value = res.data.total_weight
     console.log('ACPM:', shortestPathEdges.value, 'Poids total:', totalWeight.value)
-    alert(`ACPM calculé avec succès ! Poids total : ${totalWeight.value/3600}`)
-    animatePathDisplay()  
+    alert(`ACPM calculé avec succès ! Poids total : ${totalWeight.value / 3600}`)
+    animatePathDisplay()
   } catch (error) {
-    console.error('Erreur lors du calcul de l\'ACPM :', error)
+    console.error("Erreur lors du calcul de l'ACPM :", error)
   }
 }
 
 function getLineColor(line) {
   const colors = {
-    '1': '#ffcd00',
-    '2': '#0055c8',
-    '3': '#837902',
-    '4': '#932990',
-    '5': '#ff7e2e',
-    '6': '#6ec4e8',
-    '7': '#f5a2bd',
-    '8': '#c9910d',
-    '9': '#d5c900',
-    '10': '#e4b12f',
-    '11': '#704b1c',
-    '12': '#007852',
-    '13': '#99d4e4',
-    '14': '#62259d'
+    1: '#ffcd00',
+    2: '#0055c8',
+    3: '#837902',
+    4: '#932990',
+    5: '#ff7e2e',
+    6: '#6ec4e8',
+    7: '#f5a2bd',
+    8: '#c9910d',
+    9: '#d5c900',
+    10: '#e4b12f',
+    11: '#704b1c',
+    12: '#007852',
+    13: '#99d4e4',
+    14: '#62259d',
   }
   return colors[line] || 'white'
 }
-
 
 onMounted(() => {
   fetchData()
@@ -133,26 +128,27 @@ const shortestPathEdges = ref([])
 
 async function computeShortestPath() {
   if (!selectedFrom.value || !selectedTo.value) {
-    alert("Veuillez sélectionner une station de départ et d'arrivée.");
-    return;
+    alert("Veuillez sélectionner une station de départ et d'arrivée.")
+    return
   }
 
-  const startId = selectedFrom.value.id;
-  const endId = selectedTo.value.id;
+  const startId = selectedFrom.value.id
+  const endId = selectedTo.value.id
 
   try {
-    const response = await fetch(`http://localhost:5000/api/path?start_id=${startId}&end_id=${endId}`);
+    const response = await fetch(
+      `http://localhost:5000/api/path?start_id=${startId}&end_id=${endId}`,
+    )
     if (!response.ok) {
-      throw new Error(`Erreur serveur: ${response.status}`);
+      throw new Error(`Erreur serveur: ${response.status}`)
     }
-    const data = await response.json();
-    shortestPath.value = data.path;
-    shortestweight.value = data.total_weight;
-    console.log('Chemin le plus court:', shortestPath.value, 'Poids:', shortestweight.value);
-    alert(`Chemin le plus court calculé avec succès ! Poids total : ${shortestweight.value/3600}`);
-
+    const data = await response.json()
+    shortestPath.value = data.path
+    shortestweight.value = data.total_weight
+    console.log('Chemin le plus court:', shortestPath.value, 'Poids:', shortestweight.value)
+    alert(`Chemin le plus court calculé avec succès ! Poids total : ${shortestweight.value / 3600}`)
   } catch (error) {
-    console.error('Erreur calcul chemin :', error);
+    console.error('Erreur calcul chemin :', error)
   }
 }
 
@@ -168,17 +164,16 @@ function animatePathDisplay() {
     }
   }, 300) // délai entre chaque segment en ms
 }
-
 </script>
 
 <style scoped>
 .page-wrapper {
   display: flex;
   justify-content: flex-end; /* pour pousser à droite */
-  align-items: center;        /* centré verticalement */
-  height: 100vh;              /* prend toute la hauteur */
-  width: 100vw;               /* prend toute la largeur */
-  background-color: #121212;  /* optionnel pour mieux voir */
+  align-items: center; /* centré verticalement */
+  height: 100vh; /* prend toute la hauteur */
+  width: 100vw; /* prend toute la largeur */
+  background-color: #121212; /* optionnel pour mieux voir */
 }
 
 .map-container {
@@ -195,7 +190,7 @@ function animatePathDisplay() {
 }
 
 .map-svg {
-  position:fixed;
+  position: fixed;
   top: 10%;
   left: 0;
   width: 40%;
@@ -216,7 +211,6 @@ function animatePathDisplay() {
   cursor: pointer;
 }
 
-
 .controls {
   position: fixed;
   top: 10px;
@@ -235,5 +229,4 @@ function animatePathDisplay() {
   padding: 5px;
   font-size: 0.9rem;
 }
-
 </style>

@@ -42,7 +42,7 @@ def prim(graph):
     return total_weight, mst_edges
 
 # Exemple d’utilisation
-file_path = "C:\\Users\\Hugo\\Documents\\Projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
+file_path = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
 graph = parse_edges(file_path)
 total, edges = prim(graph)
 

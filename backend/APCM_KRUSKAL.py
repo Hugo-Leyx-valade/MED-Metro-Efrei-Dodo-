@@ -53,7 +53,7 @@ def kruskal_mst(edges, id_to_name):
     return mst, total_weight
 
 # Utilisation
-file_path = "C:\\Users\\Hugo\\Documents\\Projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
+file_path = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
 edges, id_to_name = parse_edges(file_path)
 mst, total_weight = kruskal_mst(edges, id_to_name)
 

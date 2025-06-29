@@ -5,7 +5,7 @@ def to_graph():
     """
     Converts a text file to a graph representation.
     """
-    txt_file = "C:/Users/hugol/Documents/projet/mastercamp/MED-Metro-Efrei-Dodo-/flask_back/data/version 1/output.txt"
+    txt_file = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data/version 1/output.txt"
     with open(txt_file, 'r') as f:
         lines = f.readlines()
 
@@ -31,7 +31,7 @@ def to_graph():
 
 def get_map_points():
     points = []
-    file_path = txt_file = "C:/Users/hugol/Documents/projet/mastercamp/MED-Metro-Efrei-Dodo-/flask_back/data/version 1/pospoints.txt"
+    file_path = txt_file = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data/version 1/pospoints.txt"
 
 
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -61,8 +61,8 @@ def to_graph_nodes():
     """
     Converts a text file to a graph representation.
     """
-    txt_file_nodes = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
-    txt_file_positions = "C:\\Users\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
+    txt_file_nodes = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
+    txt_file_positions = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
 
     station_positions = load_station_positions(txt_file_positions)
 
