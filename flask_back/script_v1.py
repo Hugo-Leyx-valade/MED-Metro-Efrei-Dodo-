@@ -61,8 +61,8 @@ def to_graph_nodes():
     """
     Converts a text file to a graph representation.
     """
-    txt_file_nodes = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
-    txt_file_positions = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
+    txt_file_nodes = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
+    txt_file_positions = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
 
     station_positions = load_station_positions(txt_file_positions)
 

@@ -95,10 +95,10 @@ function getDynamicRadius(zoom) {
 }
 
 async function fetchData() {
-  const nodesRes = await fetch('http://localhost:5001/api/nodesV2')
+  const nodesRes = await fetch('http://localhost:5000/api/nodesV2')
   stations.value = await nodesRes.json()
 
-  const edgesRes = await fetch('http://localhost:5001/api/edgesV2')
+  const edgesRes = await fetch('http://localhost:5000/api/edgesV2')
   edges.value = await edgesRes.json()
 
   initMap()
@@ -167,7 +167,7 @@ async function fetchPath() {
   }
 
   const response = await fetch(
-    `http://localhost:5001/api/pathV2?start_id=${startId.value}&end_id=${endId.value}`,
+    `http://localhost:5000/api/pathV2?start_id=${startId.value}&end_id=${endId.value}`,
   )
   const data = await response.json()
   currentPath.value = data.path
