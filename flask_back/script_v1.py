@@ -1,95 +1,81 @@
+# --- Import des librairies ---
+import json
 import heapq
 from collections import defaultdict
-
-def to_graph():
-    """
-    Converts a text file to a graph representation.
-    """
-    txt_file = "C:/Users/hugol/Documents/projet/mastercamp/MED-Metro-Efrei-Dodo-/flask_back/data/version 1/output.txt"
-    with open(txt_file, 'r') as f:
-        lines = f.readlines()
-
-    tab_arretes = []
-    tab_noeuds = []
-
-    for line in lines:
-        parts = line.strip().split(';')
-
-        if len(parts) <= 4:  # Ensure there are enough parts to form an edge
-            arretes = {
-                "node0": parts[1],
-                "node1": parts[2],
-                "weight": parts[3]
-            }
-            tab_arretes.append(arretes)
+from datetime import datetime, timedelta
+import os
 
 
-    return tab_arretes, tab_noeuds
+# --- Chargement des données ---
+def charger_json(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
 
 
+# --- Dijkstra temporel ---
+def parse_time_to_datetime(hhmmss):
+    try:
+        h, m, s = map(int, hhmmss.split(":"))
+        return datetime(1900, 1, 1, h % 24, m, s) + timedelta(hours=h // 24)
+    except:
+        return None
 
 
-def get_map_points():
-    points = []
-    file_path = txt_file = "C:/Users/hugol/Documents/projet/mastercamp/MED-Metro-Efrei-Dodo-/flask_back/data/version 1/pospoints.txt"
+def dijkstra_temporel(graphe_temporel, nodes, depart, arrivee, heure_depart_str, correspondance_duree=120):
+    heure_depart = parse_time_to_datetime(heure_depart_str)
+    file = [(heure_depart, depart, [], None)]  # (heure courante, stop_id, chemin, ligne)
+    visites = {}
+
+    while file:
+        heure_actuelle, station, chemin, ligne_prec = heapq.heappop(file)
+
+        if station == arrivee:
+            return chemin + [(station, heure_actuelle.time(), ligne_prec or "?")]
+
+        if station in visites and visites[station] <= heure_actuelle:
+            continue
+        visites[station] = heure_actuelle
+
+        for traj in graphe_temporel.get(station, []):
+            heure_dep_trajet = parse_time_to_datetime(traj["departure"])
+            if heure_dep_trajet and heure_dep_trajet >= heure_actuelle:
+                attente = (heure_dep_trajet - heure_actuelle).total_seconds()
+                if ligne_prec and traj["ligne"] != ligne_prec:
+                    heure_dep_trajet += timedelta(seconds=correspondance_duree)
+                heure_arrivee = parse_time_to_datetime(traj["arrival"])
+                nouveau_chemin = chemin + [(station, heure_actuelle.time(), traj["ligne"])]
+                heapq.heappush(file, (heure_arrivee, traj["to"], nouveau_chemin, traj["ligne"]))
+
+        # Ajout des transferts inter-quais
+        for nom_station, data in nodes.items():
+            if station in data.get("ids_originaux", []):
+                for autre_stop in data.get("ids_originaux", []):
+                    if autre_stop != station:
+                        heure_transfert = heure_actuelle + timedelta(seconds=correspondance_duree)
+                        nouveau_chemin = chemin + [(station, heure_actuelle.time(), "transfert")]
+                        heapq.heappush(file, (heure_transfert, autre_stop, nouveau_chemin, None))
+
+    return None
 
 
-    with open(file_path, 'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
+# --- Exemple d'utilisation ---
+if __name__ == '__main__':
+    base_path = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
+    nodes = charger_json(os.path.join(base_path, "nodes.json"))
+    graphe_temporel = charger_json(os.path.join(base_path, "graphe_temporel.json"))
 
-            parts = line.split(";")
-            if len(parts) != 3:
-                continue
+    depart = "IDFM:21935"
+    arrivee = "IDFM:22399"
+    heure_depart = "07:30:00"
 
-            x = int(parts[0])
-            y = int(parts[1])
-            name = parts[2].replace("@", " ")
-            points.append({
-                "x": x,
-                "y": y,
-                "name": name
-            })
+    chemin = dijkstra_temporel(graphe_temporel, nodes, depart, arrivee, heure_depart)
 
-    return points
-import heapq
-from collections import defaultdict
-
-def to_graph_nodes():
-    """
-    Converts a text file to a graph representation.
-    """
-    txt_file_nodes = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
-    txt_file_positions = "C:\\Users\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
-
-    station_positions = load_station_positions(txt_file_positions)
-
-    with open(txt_file_nodes, 'r') as f:
-        lines = f.readlines()
-
-    tab_noeuds = []
-    for line in lines:
-        parts = line.strip().split(';')
-        if len(parts) > 5:
-            node = {
-                "id": parts[1],
-                "name": " ".join(parts[2:-5]),
-                "line": parts[-3],
-                "terminus": parts[-2],
-                "branchement": parts[-1]
-            }
-            # Ajouter les coordonnées x et y si disponibles
-            station_name = " ".join(parts[2:-5])
-            if station_name in station_positions:
-                node["x"] = station_positions[station_name]['x']
-                node["y"] = station_positions[station_name]['y']
-            else:
-                node["x"] = None
-                node["y"] = None
-            tab_noeuds.append(node)
-
-    return jsonify(tab_noeuds)
-
-print(to_graph())
+    if chemin:
+        print("\nItinéraire trouvé :")
+        for etape in chemin:
+            nom = etape[0]
+            heure = etape[1]
+            ligne = etape[2]
+            print(f" - {nom} à {heure} via {ligne}")
+    else:
+        print("\nAucun itinéraire trouvé.")

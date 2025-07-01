@@ -66,6 +66,9 @@ async function fetchData() {
   const edgesRes = await fetch('http://localhost:5000/api/edgesV2')
   edges.value = await edgesRes.json()
 
+  console.log('Stations:', stations.value)
+  console.log('Edges:', edges.value)
+
   initMap()
 }
 
