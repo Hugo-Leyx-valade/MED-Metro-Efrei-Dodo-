@@ -52,6 +52,7 @@ def kruskal_metro(nodes_path="C:\\Users\\hugol\\Documents\\projet\\mastercamp\\M
         if union(u, v):
             mst_edges.append((u, v, weight))
     total_weight = sum(weight for _, _, weight in mst_edges)
+    print("hugo :", total_weight)
     return mst_edges
 
 import json
@@ -96,7 +97,6 @@ def prim_metro(nodes_path="C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-
             for weight, neighbor in graph[v]:
                 if neighbor not in visited:
                     heapq.heappush(min_heap, (weight, v, neighbor))
-
     return mst_edges
 
 import json
@@ -142,5 +142,4 @@ def verifier_connexite_et_completude(acpm_edges, nodes_path="C:\\Users\\hugol\\D
     return is_connected and all_present and len(all_nodes)
 
 
-
-
+print(verifier_connexite_et_completude(kruskal_metro()))
