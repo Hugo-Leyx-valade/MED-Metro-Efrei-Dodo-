@@ -727,5 +727,133 @@ def kruskalV2():
     return mst_edges
 
 
+
+#================================== VERSION 3 ================================================
+
+
+# --- Import des librairies ---
+import json
+import heapq
+from collections import defaultdict
+from datetime import datetime, timedelta
+import os
+
+
+def charger_json(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+def parse_time_to_datetime(hhmmss):
+    try:
+        h, m, s = map(int, hhmmss.split(":"))
+        return datetime(1900, 1, 1, h, m, s)
+    except:
+        return None
+
+
+def trouver_stop_id(nodes, nom_station, ligne):
+    for stop_id, data in nodes.items():
+        if data.get("nom", "").lower() == nom_station.lower() and ligne in data.get("lignes", []):
+            return stop_id
+    return None
+
+
+def dijkstra_temporel(graphe_temporel, nodes, transferts, depart_id, arrivee_id, heure_depart_str):
+    heure_depart = parse_time_to_datetime(heure_depart_str)
+    file = [(heure_depart, depart_id, [], "?")]  # (heure courante, stop_id, chemin, ligne)
+    visites = {}
+
+    id_to_name = {node_id: node_data.get("nom", node_id) for node_id, node_data in nodes.items()}
+
+    transferts_par_station = defaultdict(list)
+    for transfert in transferts:
+        transferts_par_station[transfert["from"]].append(transfert)
+
+    while file:
+        heure_actuelle, station, chemin, ligne_prec = heapq.heappop(file)
+
+        if id_to_name.get(station) == id_to_name.get(arrivee_id):
+            return [
+                (etape[0], etape[1].strftime("%H:%M:%S"), etape[2], int(etape[3]))
+                for etape in chemin
+            ] + [
+                (station, heure_actuelle.strftime("%H:%M:%S"), ligne_prec or "?", 0)
+            ]
+
+        if station in visites and visites[station] <= heure_actuelle:
+            continue
+        visites[station] = heure_actuelle
+
+        for traj in graphe_temporel.get(station, []):
+            heure_dep_trajet = parse_time_to_datetime(traj["departure"])
+            if heure_dep_trajet and heure_dep_trajet >= heure_actuelle:
+                heure_arrivee = heure_dep_trajet + timedelta(seconds=traj["duree"])
+                nouveau_chemin = chemin + [(station, heure_dep_trajet, traj["ligne"], 0)]
+                heapq.heappush(file, (heure_arrivee, traj["to"], nouveau_chemin, traj["ligne"]))
+
+        for transfert in transferts_par_station.get(station, []):
+            to = transfert["to"]
+            temps = transfert.get("min_transfer_time")
+
+            ligne_actuelle = ligne_prec
+            lignes_to = set(traj["ligne"] for traj in graphe_temporel.get(to, []))
+
+            if ligne_actuelle is None or (lignes_to and ligne_actuelle not in lignes_to):
+                heure_arrivee = heure_actuelle + timedelta(seconds=temps)
+                nouveau_chemin = chemin + [(station, heure_arrivee, ligne_actuelle,1)]
+                heapq.heappush(file, (heure_arrivee, to, nouveau_chemin, "?"))
+
+
+    return None
+
+
+
+from flask import Flask, request, jsonify
+import os
+from datetime import datetime
+
+app = Flask(__name__)
+
+# Charge les données une seule fois au lancement du backend
+base_path = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
+nodes = charger_json(os.path.join(base_path, "nodesV3.json"))
+graphe_temporel = charger_json(os.path.join(base_path, "graphe_temporel.json"))
+
+@app.route('/api/pathV3', methods=['GET'])
+def calcul_chemin_temporel():
+    # Récupère les paramètres GET du frontend
+    nom_depart = request.args.get('nom_depart')
+    ligne_depart = request.args.get('ligne_depart')
+    nom_arrivee = request.args.get('nom_arrivee')
+    ligne_arrivee = request.args.get('ligne_arrivee')
+    heure_depart = request.args.get('heure_depart')  # format attendu: "HH:MM:SS"
+
+    # Vérifie que tous les paramètres sont présents
+    if not all([nom_depart, ligne_depart, nom_arrivee, ligne_arrivee, heure_depart]):
+        return jsonify({"error": "Paramètres manquants"}), 400
+
+    try:
+        # Conversion de l'heure pour validation (facultatif mais recommandé)
+        heure_depart_dt = datetime.strptime(heure_depart, "%H:%M:%S")
+    except ValueError:
+        return jsonify({"error": "Format de l'heure invalide, attendu HH:MM:SS"}), 400
+
+    # Recherche des IDs dans les nodes
+    depart_id = trouver_stop_id(nodes, nom_depart, ligne_depart)
+    arrivee_id = trouver_stop_id(nodes, nom_arrivee, ligne_arrivee)
+
+    if not depart_id or not arrivee_id:
+        return jsonify({"error": "Station de départ ou d'arrivée introuvable"}), 404
+
+    # Appel à ton algorithme temporel
+    chemin = dijkstra_temporel(graphe_temporel, depart_id, arrivee_id, heure_depart)
+
+    return jsonify({
+        "chemin": chemin,
+    })
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
