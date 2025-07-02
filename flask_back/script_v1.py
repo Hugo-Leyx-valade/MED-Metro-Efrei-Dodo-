@@ -96,7 +96,24 @@ if __name__ == '__main__':
 
         if chemin:
             print("\nItinéraire trouvé :")
-            for nom, heure, ligne in chemin:
-                print(f" - {nom} à {heure} via ligne {ligne}")
-        else:
-            print("\nAucun itinéraire trouvé.")
+
+            for i in range(len(chemin)):
+                nom_station, heure_arrivee_quai_str, ligne = chemin[i]
+
+                # Heure d'arrivée sur le quai = heure de départ de cette étape
+                heure_arrivee_quai = datetime.strptime(heure_arrivee_quai_str, "%H:%M:%S")
+
+                # Heure de départ du métro suivant (si il y a une étape suivante)
+                if i + 1 < len(chemin):
+                    _, heure_depart_str, _ = chemin[i + 1]
+                    heure_depart = datetime.strptime(heure_depart_str, "%H:%M:%S")
+                else:
+                    heure_depart = None
+
+                if heure_depart:
+                    print(f" - {nom_station} à {heure_arrivee_quai.strftime('%H:%M:%S')}, départ à {heure_depart.strftime('%H:%M:%S')} via ligne {ligne}")
+                else:
+                    # Dernière station (arrivée)
+                    print(f" - {nom_station} à {heure_arrivee_quai.strftime('%H:%M:%S')} via ligne {ligne}")
+        else : 
+            print("aucun chemin trouvé")
