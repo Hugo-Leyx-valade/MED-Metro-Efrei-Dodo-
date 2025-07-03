@@ -16,7 +16,7 @@ def to_graph_edges():
     """
     Converts a text file to a graph representation.
     """
-    txt_file = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
+    txt_file = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
 
     with open(txt_file, 'r') as f:
         lines = f.readlines()
@@ -51,8 +51,8 @@ def to_graph_nodes():
     """
     Converts a text file to a graph representation.
     """
-    txt_file_nodes = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
-    txt_file_positions = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
+    txt_file_nodes = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\output.txt"
+    txt_file_positions = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
 
     station_positions = load_station_positions(txt_file_positions)
 
@@ -268,7 +268,7 @@ def afficher_stations_par_ligne(gtfs_folder, nom_ligne, mode_transport):
 
 import pandas as pd
 def charger_stations():
-    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
+    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
     stops = pd.read_csv(f"{gtfs_folder}stops.txt")
     stop_times = pd.read_csv(f"{gtfs_folder}stop_times.txt")
     trips = pd.read_csv(f"{gtfs_folder}trips.txt")
@@ -314,7 +314,7 @@ import pandas as pd
 
 def compter_stations():
     # Chargement des fichiers
-    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"  # Chemin vers le dossier GTFS
+    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"  # Chemin vers le dossier GTFS
     stops = pd.read_csv(f"{gtfs_folder}stops.txt")
     stop_times = pd.read_csv(f"{gtfs_folder}/stop_times.txt")
     trips = pd.read_csv(f"{gtfs_folder}/trips.txt")
@@ -348,7 +348,7 @@ import os
 from collections import defaultdict
 
 def recuperer_edges_metro_sans_doublons():
-    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
+    gtfs_folder = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
     stop_times = pd.read_csv(os.path.join(gtfs_folder, "stop_times.txt"))
     trips = pd.read_csv(os.path.join(gtfs_folder, "trips.txt"))
     routes = pd.read_csv(os.path.join(gtfs_folder, "routes.txt"))
@@ -397,14 +397,14 @@ def recuperer_edges_metro_sans_doublons():
 import json
 @app.route('/api/edgesV2', methods=['GET'])
 def charger_json_edges():
-    with open("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\edges.json", 'r', encoding='utf-8') as f:
+    with open("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\edges.json", 'r', encoding='utf-8') as f:
 
         data = json.load(f)
     return data
 
 @app.route('/api/nodesV2', methods=['GET'])
 def charger_json_nodes():
-    with open("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodes.json", 'r', encoding='utf-8') as f:
+    with open("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodes.json", 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
@@ -745,12 +745,12 @@ def charger_json(path):
 
 @app.route('/api/nodesV3', methods=['GET'])
 def charger_nodesV3():
-    return charger_json("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodesV3.json")
+    return charger_json("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodesV3.json")
 
 @app.route('/api/edgesV3', methods=['GET'])
 def charger_edgesV3():
     print("hugo")
-    return charger_json("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\edgesV3.json")
+    return charger_json("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\edgesV3.json")
 
 def parse_time_to_datetime(hhmmss):
     try:
@@ -769,7 +769,7 @@ def trouver_stop_id(nodes, nom_station, ligne):
 
 def dijkstra_temporel(graphe_temporel, depart_id, arrivee_id, heure_depart_str):
     nodes = charger_nodesV3()
-    transferts = charger_json("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\transferts_metro.json")
+    transferts = charger_json("C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\transferts_metro.json")
     heure_depart = parse_time_to_datetime(heure_depart_str)
     file = [(heure_depart, depart_id, [], "?")]  # (heure courante, stop_id, chemin, ligne)
     visites = {}
@@ -824,7 +824,7 @@ import os
 from datetime import datetime
 
 # Charge les données une seule fois au lancement du backend
-base_path = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
+base_path = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
 nodes = charger_json(os.path.join(base_path, "nodesV3.json"))
 graphe_temporel = charger_json(os.path.join(base_path, "graphe_temporel.json"))
 
@@ -836,9 +836,10 @@ def calcul_chemin_temporel():
     nom_arrivee = request.args.get('end_name')
     ligne_arrivee = request.args.get('end_ligne')
     heure_depart = request.args.get('heure_depart')  # format attendu: "HH:MM:SS"
+    print(heure_depart)
     # Vérifie que tous les paramètres sont présents
     if not all([nom_depart, ligne_depart, nom_arrivee, ligne_arrivee, heure_depart]):
-        return jsonify({"error": "Paramètres manquants"}), 400
+        return jsonify({"error": "Paramètres manquants"}), 400  
 
     try:
         # Conversion de l'heure pour validation (facultatif mais recommandé)
@@ -856,12 +857,26 @@ def calcul_chemin_temporel():
     print(depart_id, arrivee_id, heure_depart)
     # Appel à ton algorithme temporel
     chemin = dijkstra_temporel(graphe_temporel, depart_id, arrivee_id, heure_depart)
-    print("fin")
-    print(chemin)
     return jsonify({
-        "chemin": chemin,
+        "chemin": formater_resultat_dijkstra(chemin),
     })
 
+
+def formater_resultat_dijkstra(resultat):
+    trajet_formate = []
+    for i in range(len(resultat) - 1):
+        id_from, heure_from, ligne_from, type_trajet = resultat[i]
+        id_to, heure_to, ligne_to, _ = resultat[i + 1]
+        trajet_formate.append([
+            id_from,
+            ligne_from,
+            heure_from,
+            id_to,
+            ligne_to,
+            heure_to,
+            type_trajet
+        ])
+    return trajet_formate
 
 
 if __name__ == '__main__':

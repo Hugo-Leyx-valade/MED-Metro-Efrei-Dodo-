@@ -43,7 +43,7 @@
     const startId = ref('')
     const endId = ref('')
     let pathLayer = null
-    const departureTime = ref('08:00:00') // valeur par défaut
+    const departureTime = ref('08:00') // valeur par défaut
 
     const lineColors = {
     '1': '#ffcd00',
@@ -118,43 +118,59 @@
     }
 
     async function fetchPath() {
-        if (!startId.value || !endId.value) {
-            alert('Veuillez sélectionner les deux stations.')
-            return
-        }
-            const startStation = stations.value[startId.value]
-            const endStation = stations.value[endId.value]
-            const depart = departureTime.value + ":00"
-            console.log(depart)
-            const response = await fetch(`http://localhost:5000/api/pathV3?start_name=${startStation.nom}&start_ligne=${startStation.lignes[0]}&end_name=${endStation.nom}&end_ligne=${endStation.lignes[0]}&heure_depart=${depart}`)
-
-            const data = await response.json()
-            console.log('Chemin trouvé:', data)
-
-        if (!leafletMap.value) {
-            alert("Carte non encore initialisée.")
-            return
-        }
-
-        if (pathLayer) {
-            leafletMap.value.removeLayer(pathLayer)
-        }
-
-        const latlngs = data.path.map(id => {
-            const s = stations.value[id]
-            return [s.latitude, s.longitude]
-        })
-
-        console.log('LatLngs:', latlngs)
-
-        pathLayer = L.polyline(latlngs, {
-            color: 'red',
-            weight: 5,
-            opacity: 1
-        }).addTo(leafletMap.value)
-
-        leafletMap.value.fitBounds(pathLayer.getBounds())
+    if (!startId.value || !endId.value) {
+        alert('Veuillez sélectionner les deux stations.')
+        return
     }
+
+    const startStation = stations.value[startId.value]
+    const endStation = stations.value[endId.value]
+    const depart = departureTime.value + ":00"
+
+    const response = await fetch(`http://localhost:5000/api/pathV3?start_name=${startStation.nom}&start_ligne=${startStation.lignes[0]}&end_name=${endStation.nom}&end_ligne=${endStation.lignes[0]}&heure_depart=${depart}`)
+
+    const data = await response.json()
+    console.log('Chemin trouvé:', data)
+
+    if (!leafletMap.value) {
+        alert("Carte non encore initialisée.")
+        return
+    }
+
+    if (pathLayer) {
+        leafletMap.value.removeLayer(pathLayer)
+    }
+
+    const latlngs = []
+    const colors = []
+
+    data.path.forEach(step => {
+        const [fromId, fromLigne, fromHeure, toId, toLigne, toHeure, type] = step
+        const fromStation = stations.value[fromId]
+        const toStation = stations.value[toId]
+
+        if (fromStation && toStation) {
+            latlngs.push([
+                [fromStation.latitude, fromStation.longitude],
+                [toStation.latitude, toStation.longitude]
+            ])
+            colors.push(type === 1 ? '#888' : (lineColors[fromLigne] || lineColors.default))
+        }
+    })
+
+    const polylines = latlngs.map((segment, i) =>
+        L.polyline(segment, {
+            color: colors[i],
+            weight: 5,
+            opacity: 0.9,
+            dashArray: (colors[i] === '#888') ? '4' : null
+        }).addTo(leafletMap.value)
+    )
+
+    pathLayer = L.featureGroup(polylines)
+    leafletMap.value.fitBounds(pathLayer.getBounds())
+}
+
 
     function resetPath() {
     if (pathLayer && leafletMap.value) {
