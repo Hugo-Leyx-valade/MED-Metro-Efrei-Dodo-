@@ -819,6 +819,15 @@ def dijkstra_temporel(graphe_temporel, depart_id, arrivee_id, heure_depart_str):
 
 
 
+def trouver_stop_ligne(nodes, nom):
+    lignes = None
+    for stop_id, data in nodes.items():
+        if data["nom"] == nom:
+            lignes = data["lignes"][0]
+    return lignes if lignes else None
+
+
+
 from flask import Flask, request, jsonify
 import os
 from datetime import datetime
@@ -832,13 +841,10 @@ graphe_temporel = charger_json(os.path.join(base_path, "graphe_temporel.json"))
 def calcul_chemin_temporel():
     # Récupère les paramètres GET du frontend
     nom_depart = request.args.get('start_name')
-    ligne_depart = request.args.get('start_ligne')
     nom_arrivee = request.args.get('end_name')
-    ligne_arrivee = request.args.get('end_ligne')
     heure_depart = request.args.get('heure_depart')  # format attendu: "HH:MM:SS"
-    print(heure_depart)
     # Vérifie que tous les paramètres sont présents
-    if not all([nom_depart, ligne_depart, nom_arrivee, ligne_arrivee, heure_depart]):
+    if not all([nom_depart, nom_arrivee, heure_depart]):
         return jsonify({"error": "Paramètres manquants"}), 400  
 
     try:
@@ -847,9 +853,13 @@ def calcul_chemin_temporel():
     except ValueError:
         return jsonify({"error": "Format de l'heure invalide, attendu HH:MM:SS"}), 400
 
+    ligne_depart = trouver_stop_ligne(nodes, nom_depart)
+    ligne_arrivee = trouver_stop_ligne(nodes, nom_arrivee)
     # Recherche des IDs dans les nodes
     depart_id = trouver_stop_id(nodes, nom_depart, ligne_depart)
     arrivee_id = trouver_stop_id(nodes, nom_arrivee, ligne_arrivee)
+
+    
 
     if not depart_id or not arrivee_id:
         return jsonify({"error": "Station de départ ou d'arrivée introuvable"}), 404

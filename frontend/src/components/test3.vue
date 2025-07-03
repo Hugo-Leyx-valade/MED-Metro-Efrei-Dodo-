@@ -128,7 +128,7 @@
   const endStation = stations.value[endId.value]
   const depart = departureTime.value + ":00"
 
-  const response = await fetch(`http://localhost:5000/api/pathV3?start_name=${startStation.nom}&start_ligne=${startStation.lignes[0]}&end_name=${endStation.nom}&end_ligne=${endStation.lignes[0]}&heure_depart=${depart}`)
+  const response = await fetch(`http://localhost:5000/api/pathV3?start_name=${startStation.nom}&end_name=${endStation.nom}&heure_depart=${depart}`)
   const data = await response.json()
 
   console.log('Chemin trouvé:', data)
@@ -160,7 +160,7 @@
         [fromStation.latitude, fromStation.longitude],
         [toStation.latitude, toStation.longitude]
       ])
-      colors.push(type === 1 ? 'red' : (lineColors[fromLigne] || lineColors.default))
+      colors.push(type === 1 ? '#4f4f4f' : (lineColors[fromLigne] || lineColors.default))
     }
   })
 
@@ -169,7 +169,7 @@
       color: colors[i],
       weight: 5,
       opacity: 0.9,
-      dashArray: (colors[i] === 'red') ? '4' : null
+      dashArray: (colors[i] === '#4f4f4f') ? '8 12' : null
     }).addTo(leafletMap.value)
   )
 
