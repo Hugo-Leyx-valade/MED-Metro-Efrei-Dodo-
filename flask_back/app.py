@@ -743,6 +743,14 @@ def charger_json(path):
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
+@app.route('/api/nodesV3', methods=['GET'])
+def charger_nodesV3():
+    return charger_json("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\nodesV3.json")
+
+@app.route('/api/edgesV3', methods=['GET'])
+def charger_edgesV3():
+    print("hugo")
+    return charger_json("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\edgesV3.json")
 
 def parse_time_to_datetime(hhmmss):
     try:
@@ -759,7 +767,9 @@ def trouver_stop_id(nodes, nom_station, ligne):
     return None
 
 
-def dijkstra_temporel(graphe_temporel, nodes, transferts, depart_id, arrivee_id, heure_depart_str):
+def dijkstra_temporel(graphe_temporel, depart_id, arrivee_id, heure_depart_str):
+    nodes = charger_nodesV3()
+    transferts = charger_json("C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\transferts_metro.json")
     heure_depart = parse_time_to_datetime(heure_depart_str)
     file = [(heure_depart, depart_id, [], "?")]  # (heure courante, stop_id, chemin, ligne)
     visites = {}
@@ -813,8 +823,6 @@ from flask import Flask, request, jsonify
 import os
 from datetime import datetime
 
-app = Flask(__name__)
-
 # Charge les données une seule fois au lancement du backend
 base_path = "C:\\Users\\hugol\\Documents\\projet\\mastercamp\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
 nodes = charger_json(os.path.join(base_path, "nodesV3.json"))
@@ -823,12 +831,11 @@ graphe_temporel = charger_json(os.path.join(base_path, "graphe_temporel.json"))
 @app.route('/api/pathV3', methods=['GET'])
 def calcul_chemin_temporel():
     # Récupère les paramètres GET du frontend
-    nom_depart = request.args.get('nom_depart')
-    ligne_depart = request.args.get('ligne_depart')
-    nom_arrivee = request.args.get('nom_arrivee')
-    ligne_arrivee = request.args.get('ligne_arrivee')
+    nom_depart = request.args.get('start_name')
+    ligne_depart = request.args.get('start_ligne')
+    nom_arrivee = request.args.get('end_name')
+    ligne_arrivee = request.args.get('end_ligne')
     heure_depart = request.args.get('heure_depart')  # format attendu: "HH:MM:SS"
-
     # Vérifie que tous les paramètres sont présents
     if not all([nom_depart, ligne_depart, nom_arrivee, ligne_arrivee, heure_depart]):
         return jsonify({"error": "Paramètres manquants"}), 400
@@ -846,9 +853,11 @@ def calcul_chemin_temporel():
     if not depart_id or not arrivee_id:
         return jsonify({"error": "Station de départ ou d'arrivée introuvable"}), 404
 
+    print(depart_id, arrivee_id, heure_depart)
     # Appel à ton algorithme temporel
     chemin = dijkstra_temporel(graphe_temporel, depart_id, arrivee_id, heure_depart)
-
+    print("fin")
+    print(chemin)
     return jsonify({
         "chemin": chemin,
     })
