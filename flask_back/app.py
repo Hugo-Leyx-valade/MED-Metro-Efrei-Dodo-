@@ -478,7 +478,7 @@ def dijkstra_shortest_path(start_id, end_id, nodes, edges):
         distances[start_id] = 0
         queue = [(0, start_id)]
 
-        while queue:
+        while queue:    
             current_distance, current_node = heapq.heappop(queue)
 
             if current_node == end_id:
@@ -797,7 +797,7 @@ def dijkstra_temporel(graphe_temporel, depart_id, arrivee_id, heure_depart_str):
 
         for traj in graphe_temporel.get(station, []):
             heure_dep_trajet = parse_time_to_datetime(traj["departure"])
-            if heure_dep_trajet and heure_dep_trajet >= heure_actuelle:
+            if heure_dep_trajet and (heure_dep_trajet >= heure_actuelle):
                 heure_arrivee = heure_dep_trajet + timedelta(seconds=traj["duree"])
                 nouveau_chemin = chemin + [(station, heure_dep_trajet, traj["ligne"], 0)]
                 heapq.heappush(file, (heure_arrivee, traj["to"], nouveau_chemin, traj["ligne"]))
@@ -836,6 +836,8 @@ from datetime import datetime
 base_path = "C:\\Users\\hugol\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\flask_back\\data\\"
 nodes = charger_json(os.path.join(base_path, "nodesV3.json"))
 graphe_temporel = charger_json(os.path.join(base_path, "graphe_temporel.json"))
+
+
 
 @app.route('/api/pathV3', methods=['GET'])
 def calcul_chemin_temporel():
@@ -887,6 +889,179 @@ def formater_resultat_dijkstra(resultat):
             type_trajet
         ])
     return trajet_formate
+
+
+
+import json
+from collections import defaultdict, deque
+
+import json
+from collections import defaultdict, deque
+
+def check_graph_connexityV3():
+    # Charger les données
+    with open("flask_back/data/edgesV3.json", encoding="utf-8") as f:
+        edges_data = json.load(f)
+
+    with open("flask_back/data/transferts_metro.json", encoding="utf-8") as f:
+        transfers_data = json.load(f)
+
+    # Construction du graphe non orienté
+    graph = defaultdict(list)
+
+    for edge in edges_data:
+        a, b = edge["node0"], edge["node1"]
+        graph[a].append(b)
+        graph[b].append(a)
+
+    for transfer in transfers_data:
+        a, b = transfer["from"], transfer["to"]
+        graph[a].append(b)
+        graph[b].append(a)
+
+    # BFS pour trouver la composante connexe
+    visited = set()
+    nodes = list(graph.keys())
+
+    if not nodes:
+        return 0  # graphe vide => non connexe
+
+    queue = deque([nodes[0]])
+    visited.add(nodes[0])
+
+    while queue:
+        current = queue.popleft()
+        for neighbor in graph[current]:
+            if neighbor not in visited:
+                visited.add(neighbor)
+                queue.append(neighbor)
+
+    # Si tous les sommets ont été visités, alors le graphe est connexe
+    return 1 if len(visited) == len(graph) else 0
+
+
+
+
+import json
+from flask import jsonify
+@app.route('/api/kruskalV3', methods=['GET'])
+def ACPMV3():
+    if check_graph_connexityV3():
+        # Charger les arêtes classiques
+        with open("flask_back/data/edgesV3.json", encoding="utf-8") as f:
+            edges_data = json.load(f)
+        edges = []
+        for edge in edges_data:
+            u, v, w = edge["node0"], edge["node1"], edge["weight"]
+            edges.append((w, u, v))
+
+        # Charger les transferts (facultatif)
+        try:
+            with open("flask_back/data/transferts_metro.json", encoding="utf-8") as f:
+                transfers_data = json.load(f)
+            for transfer in transfers_data:
+                u, v, w = transfer["from"], transfer["to"], transfer["min_transfer_time"]
+                edges.append((w, u, v))
+        except FileNotFoundError:
+            pass  # Ignore si le fichier n'existe pas=
+        # Union-Find
+        class UnionFind:
+            def __init__(self, nodes):
+                self.parent = {node: node for node in nodes}
+                self.rank = {node: 0 for node in nodes}
+
+            def find(self, u):
+                if self.parent[u] != u:
+                    self.parent[u] = self.find(self.parent[u])
+                return self.parent[u]
+
+            def union(self, u, v):
+                u_root, v_root = self.find(u), self.find(v)
+                if u_root == v_root:
+                    return False
+                if self.rank[u_root] < self.rank[v_root]:
+                    self.parent[u_root] = v_root
+                else:
+                    self.parent[v_root] = u_root
+                    if self.rank[u_root] == self.rank[v_root]:
+                        self.rank[u_root] += 1
+                return True
+    # Récupérer tous les sommets
+    nodes = set()
+    for _, u, v in edges:
+        nodes.add(u)
+        nodes.add(v)
+    uf = UnionFind(nodes)
+    edges.sort()
+    # Kruskal
+    mst = []
+    total_weight = 0
+    for w, u, v in edges:
+        if uf.union(u, v):
+            mst.append({"from": u, "to": v, "weight": w})
+            total_weight += w
+    return {
+        "total_weight": total_weight,
+        "edge_count": len(mst),
+        "mst": mst
+    }
+
+
+#PRIM
+import json
+import heapq
+from collections import defaultdict
+
+# Charger les données
+with open("flask_back/data/edgesV3.json", encoding="utf-8") as f:
+    edges_data = json.load(f)
+
+with open("flask_back/data/transferts_metro.json", encoding="utf-8") as f:
+    transfers_data = json.load(f)
+
+# Construire le graphe sous forme d'adjacence
+graph = defaultdict(list)
+
+for edge in edges_data:
+    u, v, w = edge["node0"], edge["node1"], edge["weight"]
+    graph[u].append((w, v))
+    graph[v].append((w, u))
+
+for transfer in transfers_data:
+    u, v, w = transfer["from"], transfer["to"], transfer["min_transfer_time"]
+    graph[u].append((w, v))
+    graph[v].append((w, u))
+
+
+def prim(graph, start):
+    visited = set([start])
+    edges = graph[start][:]
+    heapq.heapify(edges)
+    mst = []
+    total_weight = 0
+
+    while edges and len(visited) < len(graph):
+        w, v = heapq.heappop(edges)
+        if v not in visited:
+            visited.add(v)
+            mst.append((start, v, w))
+            total_weight += w
+            for next_w, next_v in graph[v]:
+                if next_v not in visited:
+                    heapq.heappush(edges, (next_w, next_v))
+            start = v  # continue depuis le dernier sommet ajouté
+
+    return mst, total_weight
+
+
+# Exécuter Prim à partir d’un sommet arbitraire
+start_node = next(iter(graph))
+mst, total_weight = prim(graph, start_node)
+
+print(f"\n🌳 Arbre couvrant minimal trouvé avec {len(mst)} arêtes.")
+print(f"⚖️ Poids total : {total_weight}")
+print(f"📝 Exemple d'arêtes dans l'ACM : {mst[:10]}{'...' if len(mst) > 10 else ''}")
+
 
 
 if __name__ == '__main__':

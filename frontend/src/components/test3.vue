@@ -25,6 +25,9 @@
 
         <button class="btn primary" @click="fetchPath">Afficher le chemin</button>
         <button class="btn" @click="resetPath">Réinitialiser</button>
+
+        <button class="btn" @click="fetchKruskal">Afficher Kruskal</button>
+
         </aside>
 
         <div id="map" ref="map"></div>
@@ -178,11 +181,54 @@
 }
 
 
+let kruskalLayer = null
+
+async function fetchKruskal() {
+  const res = await fetch('http://localhost:5000/api/ACPMV3')
+  const kruskalEdges = await res.json()
+
+  if (!Array.isArray(kruskalEdges)) {
+    alert("Erreur lors de la récupération de l'arbre de Kruskal.")
+    return
+  }
+
+  if (kruskalLayer) {
+    leafletMap.value.removeLayer(kruskalLayer)
+    kruskalLayer = null
+  }
+
+  const segments = []
+  kruskalEdges.forEach(edge => {
+    const from = stations.value[edge.node0]
+    const to = stations.value[edge.node1]
+
+    if (from && to) {
+      const color = '#e6007e' // Rose flashy
+
+      const segment = L.polyline([
+        [from.latitude, from.longitude],
+        [to.latitude, to.longitude]
+      ], {
+        color,
+        weight: 4,
+        opacity: 0.7,
+        dashArray: '4 6'
+      }).addTo(leafletMap.value)
+
+      segments.push(segment)
+    }
+  })
+
+  kruskalLayer = L.featureGroup(segments)
+  leafletMap.value.fitBounds(kruskalLayer.getBounds())
+}
+
 
 
     function resetPath() {
     if (pathLayer && leafletMap.value) {
         leafletMap.value.removeLayer(pathLayer)
+        leafletMap.value.removeLayer(kruskalLayer)
         pathLayer = null
     }
     startId.value = ''

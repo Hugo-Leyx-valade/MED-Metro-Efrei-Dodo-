@@ -32,23 +32,27 @@ def ajouter_correspondances(nodes, edges, poids_correspondance=90):
 
     return edges + correspondances
 
+
+from codecarbon import EmissionsTracker
 def api_shortest_pathV2(start_id, end_id):
     print(f"Recherche du chemin le plus court de {start_id} à {end_id}")
     
     nodes = charger_json_nodes()
     edges = charger_json_edges()
-
-    # Ajouter les correspondances interlignes
     edges = ajouter_correspondances(nodes, edges)
 
+    # Démarre le tracker carbone
+    tracker = EmissionsTracker()  # ISO pour la France
+    tracker.start()
+
+    # Appel de Dijkstra
     result = dijkstra_shortest_path(start_id, end_id, nodes, edges)
 
-    for id in result["path"]:
-        station = nodes.get(id)
-        if station:
-            print(f"{station['nom']} | Lignes: {', '.join(station['lignes'])}")
-        else:
-            print(f"[⚠] Station inconnue pour ID: {id}")
+    # Arrête le tracker carbone
+    emissions = tracker.stop()  # Retourne les émissions en kg de CO2e
+    result["co2_estimation_kg"] = emissions
+
+    print(f"🌍 Estimation CO₂ (codecarbon) : {emissions:.10f} kg")
 
     return result
 
@@ -109,4 +113,41 @@ def dijkstra_shortest_path(start_id, end_id, nodes, edges):
         "total_weight": distances[end_id]
     }
 
-print(api_shortest_pathV2("Villejuif Léo Lagrange::7", "Charles de Gaulle - Etoile::1"))  # Exemple d'appel
+import random
+from codecarbon import EmissionsTracker
+
+def test_moyenne_emissions(nb_tests=100):
+    nodes = charger_json_nodes()
+    node_ids = list(nodes.keys())
+
+    total_emissions = 0.0
+    trajets_valides = 0
+
+    for i in range(nb_tests):
+        start_id, end_id = random.sample(node_ids, 2)
+
+        print(f"\n🔁 Test {i+1} : {start_id} ➡ {end_id}")
+        
+        # Démarrer le tracker uniquement autour du Dijkstra
+        tracker = EmissionsTracker()
+        tracker.start()
+
+        result = dijkstra_shortest_path(start_id, end_id, nodes, ajouter_correspondances(nodes, charger_json_edges()))
+
+        emissions = tracker.stop()  # En kg de CO₂
+        co2 = emissions if emissions is not None else 0.0
+
+        if result["path"]:
+            print(f"✅ Chemin trouvé - CO₂ : {co2:.10f} kg")
+            total_emissions += co2
+            trajets_valides += 1
+        else:
+            print("❌ Aucun chemin trouvé")
+
+    moyenne = total_emissions / trajets_valides if trajets_valides else 0
+    print("\n📊 Résumé des tests")
+    print(f"Total de trajets valides : {trajets_valides}/{nb_tests}")
+    print(f"🌍 Moyenne des émissions CO₂ : {moyenne:.10f} kg")
+    return moyenne
+
+test_moyenne_emissions(5)
