@@ -1,0 +1,3722 @@
+[
+  {
+    "node0": "IDFM:22109",
+    "node1": "IDFM:22111",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:22109",
+    "node1": "IDFM:463043",
+    "weight": 115
+  },
+  {
+    "node0": "IDFM:22108",
+    "node1": "IDFM:463043",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:22108",
+    "node1": "IDFM:22121",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:22121",
+    "node1": "IDFM:463240",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:462988",
+    "node1": "IDFM:463240",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:22110",
+    "node1": "IDFM:462988",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22110",
+    "node1": "IDFM:22115",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:22115",
+    "node1": "IDFM:22125",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:22125",
+    "node1": "IDFM:463088",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:463088",
+    "node1": "IDFM:463120",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22127",
+    "node1": "IDFM:463120",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:22119",
+    "node1": "IDFM:22127",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22107",
+    "node1": "IDFM:22119",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:22107",
+    "node1": "IDFM:462981",
+    "weight": 83
+  },
+  {
+    "node0": "IDFM:462981",
+    "node1": "IDFM:462984",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:462984",
+    "node1": "IDFM:463111",
+    "weight": 94
+  },
+  {
+    "node0": "IDFM:462983",
+    "node1": "IDFM:463111",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:462983",
+    "node1": "IDFM:463243",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:463243",
+    "node1": "IDFM:463285",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:463230",
+    "node1": "IDFM:463285",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:22122",
+    "node1": "IDFM:463230",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:22122",
+    "node1": "IDFM:463125",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:463067",
+    "node1": "IDFM:463125",
+    "weight": 169
+  },
+  {
+    "node0": "IDFM:22072",
+    "node1": "IDFM:22124",
+    "weight": 94
+  },
+  {
+    "node0": "IDFM:22124",
+    "node1": "IDFM:463117",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:22113",
+    "node1": "IDFM:463117",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:22112",
+    "node1": "IDFM:22113",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:22112",
+    "node1": "IDFM:22116",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22116",
+    "node1": "IDFM:22126",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22126",
+    "node1": "IDFM:22128",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:22120",
+    "node1": "IDFM:22128",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22118",
+    "node1": "IDFM:22120",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22118",
+    "node1": "IDFM:463009",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:462982",
+    "node1": "IDFM:463009",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:462982",
+    "node1": "IDFM:463094",
+    "weight": 112
+  },
+  {
+    "node0": "IDFM:22123",
+    "node1": "IDFM:463094",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:22114",
+    "node1": "IDFM:22123",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22114",
+    "node1": "IDFM:463113",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:463113",
+    "node1": "IDFM:463252",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:463252",
+    "node1": "IDFM:463296",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22106",
+    "node1": "IDFM:463296",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:22106",
+    "node1": "IDFM:22117",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22117",
+    "node1": "IDFM:463154",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:463154",
+    "node1": "IDFM:463266",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22094",
+    "node1": "IDFM:463266",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22094",
+    "node1": "IDFM:463322",
+    "weight": 105
+  },
+  {
+    "node0": "IDFM:463256",
+    "node1": "IDFM:463322",
+    "weight": 152
+  },
+  {
+    "node0": "IDFM:22095",
+    "node1": "IDFM:22170",
+    "weight": 120
+  },
+  {
+    "node0": "IDFM:22170",
+    "node1": "IDFM:22180",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22180",
+    "node1": "IDFM:463268",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:463101",
+    "node1": "IDFM:463268",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22179",
+    "node1": "IDFM:463101",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:22179",
+    "node1": "IDFM:463099",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22162",
+    "node1": "IDFM:463099",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22162",
+    "node1": "IDFM:463140",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22163",
+    "node1": "IDFM:463140",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:22163",
+    "node1": "IDFM:22166",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:22156",
+    "node1": "IDFM:22166",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22156",
+    "node1": "IDFM:463100",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:463100",
+    "node1": "IDFM:463292",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:463103",
+    "node1": "IDFM:463292",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:463103",
+    "node1": "IDFM:463305",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:463186",
+    "node1": "IDFM:463305",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:463105",
+    "node1": "IDFM:463186",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22168",
+    "node1": "IDFM:463105",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:22168",
+    "node1": "IDFM:22169",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:22169",
+    "node1": "IDFM:463147",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:22161",
+    "node1": "IDFM:463147",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22161",
+    "node1": "IDFM:22178",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:22178",
+    "node1": "IDFM:22182",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22181",
+    "node1": "IDFM:22182",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22181",
+    "node1": "IDFM:463127",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:463098",
+    "node1": "IDFM:463127",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:463028",
+    "node1": "IDFM:463098",
+    "weight": 140
+  },
+  {
+    "node0": "IDFM:463128",
+    "node1": "IDFM:463288",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:22174",
+    "node1": "IDFM:463288",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22174",
+    "node1": "IDFM:463004",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:463003",
+    "node1": "IDFM:463004",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22175",
+    "node1": "IDFM:463003",
+    "weight": 83
+  },
+  {
+    "node0": "IDFM:22173",
+    "node1": "IDFM:22175",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22160",
+    "node1": "IDFM:22173",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22158",
+    "node1": "IDFM:22160",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:22155",
+    "node1": "IDFM:22158",
+    "weight": 65
+  },
+  {
+    "node0": "IDFM:22155",
+    "node1": "IDFM:22172",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22172",
+    "node1": "IDFM:462955",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:462948",
+    "node1": "IDFM:462955",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:462948",
+    "node1": "IDFM:463314",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:22176",
+    "node1": "IDFM:463314",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:22176",
+    "node1": "IDFM:463194",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22171",
+    "node1": "IDFM:463194",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:22171",
+    "node1": "IDFM:463005",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:22165",
+    "node1": "IDFM:463005",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:22164",
+    "node1": "IDFM:22165",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22164",
+    "node1": "IDFM:463114",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:463102",
+    "node1": "IDFM:463114",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:463042",
+    "node1": "IDFM:463102",
+    "weight": 122
+  },
+  {
+    "node0": "IDFM:22073",
+    "node1": "IDFM:22167",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:22167",
+    "node1": "IDFM:22177",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:22177",
+    "node1": "IDFM:463169",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:463075",
+    "node1": "IDFM:463169",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:463075",
+    "node1": "IDFM:463128",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22396",
+    "node1": "IDFM:463251",
+    "weight": 106
+  },
+  {
+    "node0": "IDFM:22372",
+    "node1": "IDFM:463251",
+    "weight": 106
+  },
+  {
+    "node0": "IDFM:22372",
+    "node1": "IDFM:22373",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22373",
+    "node1": "IDFM:463235",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:22385",
+    "node1": "IDFM:463235",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22370",
+    "node1": "IDFM:22385",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22370",
+    "node1": "IDFM:463026",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:463026",
+    "node1": "IDFM:463216",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:22391",
+    "node1": "IDFM:463216",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:22366",
+    "node1": "IDFM:22391",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22366",
+    "node1": "IDFM:22386",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22386",
+    "node1": "IDFM:463265",
+    "weight": 104
+  },
+  {
+    "node0": "IDFM:463231",
+    "node1": "IDFM:463265",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22364",
+    "node1": "IDFM:463231",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22364",
+    "node1": "IDFM:463232",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:463232",
+    "node1": "IDFM:463249",
+    "weight": 112
+  },
+  {
+    "node0": "IDFM:22375",
+    "node1": "IDFM:463249",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22375",
+    "node1": "IDFM:463245",
+    "weight": 97
+  },
+  {
+    "node0": "IDFM:22388",
+    "node1": "IDFM:463245",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:22388",
+    "node1": "IDFM:463206",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22390",
+    "node1": "IDFM:463206",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22390",
+    "node1": "IDFM:463255",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:463001",
+    "node1": "IDFM:463255",
+    "weight": 108
+  },
+  {
+    "node0": "IDFM:22367",
+    "node1": "IDFM:463001",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22367",
+    "node1": "IDFM:463033",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22368",
+    "node1": "IDFM:463033",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:22368",
+    "node1": "IDFM:22371",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22371",
+    "node1": "IDFM:463155",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22389",
+    "node1": "IDFM:463155",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22374",
+    "node1": "IDFM:22389",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22374",
+    "node1": "IDFM:463031",
+    "weight": 114
+  },
+  {
+    "node0": "IDFM:463031",
+    "node1": "IDFM:463179",
+    "weight": 124
+  },
+  {
+    "node0": "IDFM:22395",
+    "node1": "IDFM:463179",
+    "weight": 146
+  },
+  {
+    "node0": "IDFM:22365",
+    "node1": "IDFM:463267",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:463224",
+    "node1": "IDFM:463267",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:22398",
+    "node1": "IDFM:463224",
+    "weight": 132
+  },
+  {
+    "node0": "IDFM:22398",
+    "node1": "IDFM:22399",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22399",
+    "node1": "IDFM:463324",
+    "weight": 104
+  },
+  {
+    "node0": "IDFM:463269",
+    "node1": "IDFM:463324",
+    "weight": 145
+  },
+  {
+    "node0": "IDFM:22400",
+    "node1": "IDFM:22401",
+    "weight": 100
+  },
+  {
+    "node0": "IDFM:22401",
+    "node1": "IDFM:463323",
+    "weight": 113
+  },
+  {
+    "node0": "IDFM:463107",
+    "node1": "IDFM:463323",
+    "weight": 97
+  },
+  {
+    "node0": "IDFM:22385",
+    "node1": "IDFM:463107",
+    "weight": 124
+  },
+  {
+    "node0": "IDFM:22393",
+    "node1": "IDFM:463200",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:22393",
+    "node1": "IDFM:22394",
+    "weight": 133
+  },
+  {
+    "node0": "IDFM:22394",
+    "node1": "IDFM:463007",
+    "weight": 121
+  },
+  {
+    "node0": "IDFM:463007",
+    "node1": "IDFM:463152",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:22392",
+    "node1": "IDFM:463152",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22392",
+    "node1": "IDFM:463295",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:463008",
+    "node1": "IDFM:463295",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22384",
+    "node1": "IDFM:463008",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:22384",
+    "node1": "IDFM:463006",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:22387",
+    "node1": "IDFM:463006",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22377",
+    "node1": "IDFM:22387",
+    "weight": 109
+  },
+  {
+    "node0": "IDFM:22377",
+    "node1": "IDFM:463139",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:22382",
+    "node1": "IDFM:463139",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22382",
+    "node1": "IDFM:463145",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22381",
+    "node1": "IDFM:463145",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:22381",
+    "node1": "IDFM:463283",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22376",
+    "node1": "IDFM:463283",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:22376",
+    "node1": "IDFM:22379",
+    "weight": 97
+  },
+  {
+    "node0": "IDFM:22379",
+    "node1": "IDFM:463060",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:22378",
+    "node1": "IDFM:463060",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:22369",
+    "node1": "IDFM:22378",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22369",
+    "node1": "IDFM:463078",
+    "weight": 107
+  },
+  {
+    "node0": "IDFM:463078",
+    "node1": "IDFM:463106",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:463106",
+    "node1": "IDFM:463157",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22383",
+    "node1": "IDFM:463157",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:22365",
+    "node1": "IDFM:22383",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22380",
+    "node1": "IDFM:463224",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22380",
+    "node1": "IDFM:463030",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:463029",
+    "node1": "IDFM:463030",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:22397",
+    "node1": "IDFM:463029",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22397",
+    "node1": "IDFM:463220",
+    "weight": 145
+  },
+  {
+    "node0": "IDFM:22186",
+    "node1": "IDFM:22187",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:22187",
+    "node1": "IDFM:22188",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22188",
+    "node1": "IDFM:22189",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22189",
+    "node1": "IDFM:463162",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22183",
+    "node1": "IDFM:463162",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22183",
+    "node1": "IDFM:463177",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:22192",
+    "node1": "IDFM:463177",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:22192",
+    "node1": "IDFM:463199",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22096",
+    "node1": "IDFM:463199",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:22096",
+    "node1": "IDFM:22194",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22194",
+    "node1": "IDFM:22195",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:22195",
+    "node1": "IDFM:463037",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22197",
+    "node1": "IDFM:463037",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22197",
+    "node1": "IDFM:463115",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22159",
+    "node1": "IDFM:463115",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22159",
+    "node1": "IDFM:462962",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:462962",
+    "node1": "IDFM:463048",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:463048",
+    "node1": "IDFM:463309",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:463146",
+    "node1": "IDFM:463309",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22097",
+    "node1": "IDFM:463146",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:22097",
+    "node1": "IDFM:463195",
+    "weight": 65
+  },
+  {
+    "node0": "IDFM:463172",
+    "node1": "IDFM:463195",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:463172",
+    "node1": "IDFM:463293",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:463241",
+    "node1": "IDFM:463293",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:463168",
+    "node1": "IDFM:463241",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22206",
+    "node1": "IDFM:463168",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22206",
+    "node1": "IDFM:22207",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22207",
+    "node1": "IDFM:463277",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:463209",
+    "node1": "IDFM:463277",
+    "weight": 118
+  },
+  {
+    "node0": "IDFM:22210",
+    "node1": "IDFM:463209",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22210",
+    "node1": "IDFM:22214",
+    "weight": 111
+  },
+  {
+    "node0": "IDFM:22214",
+    "node1": "IDFM:22215",
+    "weight": 99
+  },
+  {
+    "node0": "IDFM:22215",
+    "node1": "IDFM:22216",
+    "weight": 116
+  },
+  {
+    "node0": "IDFM:22211",
+    "node1": "IDFM:22216",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:22211",
+    "node1": "IDFM:22212",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:22212",
+    "node1": "IDFM:463056",
+    "weight": 135
+  },
+  {
+    "node0": "IDFM:21784",
+    "node1": "IDFM:463056",
+    "weight": 163
+  },
+  {
+    "node0": "IDFM:22184",
+    "node1": "IDFM:22205",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22098",
+    "node1": "IDFM:22205",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22098",
+    "node1": "IDFM:22204",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22203",
+    "node1": "IDFM:22204",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:22203",
+    "node1": "IDFM:463000",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:22202",
+    "node1": "IDFM:463000",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22201",
+    "node1": "IDFM:22202",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22200",
+    "node1": "IDFM:22201",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22199",
+    "node1": "IDFM:22200",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22199",
+    "node1": "IDFM:463312",
+    "weight": 118
+  },
+  {
+    "node0": "IDFM:22198",
+    "node1": "IDFM:463312",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:22198",
+    "node1": "IDFM:463058",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:22196",
+    "node1": "IDFM:463058",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:22196",
+    "node1": "IDFM:463244",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:463063",
+    "node1": "IDFM:463244",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:463063",
+    "node1": "IDFM:463151",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:22193",
+    "node1": "IDFM:463151",
+    "weight": 95
+  },
+  {
+    "node0": "IDFM:22193",
+    "node1": "IDFM:463204",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:22191",
+    "node1": "IDFM:463204",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22191",
+    "node1": "IDFM:463201",
+    "weight": 111
+  },
+  {
+    "node0": "IDFM:22190",
+    "node1": "IDFM:463201",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:22190",
+    "node1": "IDFM:463163",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:463135",
+    "node1": "IDFM:463163",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:463135",
+    "node1": "IDFM:463211",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:463051",
+    "node1": "IDFM:463211",
+    "weight": 137
+  },
+  {
+    "node0": "IDFM:22213",
+    "node1": "IDFM:463057",
+    "weight": 120
+  },
+  {
+    "node0": "IDFM:22213",
+    "node1": "IDFM:463167",
+    "weight": 119
+  },
+  {
+    "node0": "IDFM:463166",
+    "node1": "IDFM:463167",
+    "weight": 83
+  },
+  {
+    "node0": "IDFM:463015",
+    "node1": "IDFM:463166",
+    "weight": 100
+  },
+  {
+    "node0": "IDFM:463015",
+    "node1": "IDFM:463225",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:463047",
+    "node1": "IDFM:463225",
+    "weight": 106
+  },
+  {
+    "node0": "IDFM:463047",
+    "node1": "IDFM:463142",
+    "weight": 112
+  },
+  {
+    "node0": "IDFM:22209",
+    "node1": "IDFM:463142",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:22208",
+    "node1": "IDFM:22209",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:22208",
+    "node1": "IDFM:463050",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:463050",
+    "node1": "IDFM:463226",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:22184",
+    "node1": "IDFM:463226",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:463176",
+    "node1": "IDFM:463221",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:463053",
+    "node1": "IDFM:463176",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:21913",
+    "node1": "IDFM:463053",
+    "weight": 115
+  },
+  {
+    "node0": "IDFM:21913",
+    "node1": "IDFM:21936",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:21936",
+    "node1": "IDFM:25084",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:25084",
+    "node1": "IDFM:462942",
+    "weight": 102
+  },
+  {
+    "node0": "IDFM:462942",
+    "node1": "IDFM:463298",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:21934",
+    "node1": "IDFM:463298",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:21916",
+    "node1": "IDFM:21934",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:21916",
+    "node1": "IDFM:463299",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:463054",
+    "node1": "IDFM:463299",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:462963",
+    "node1": "IDFM:463054",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:462963",
+    "node1": "IDFM:463264",
+    "weight": 116
+  },
+  {
+    "node0": "IDFM:21933",
+    "node1": "IDFM:463264",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:21933",
+    "node1": "IDFM:463049",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:463036",
+    "node1": "IDFM:463049",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:21932",
+    "node1": "IDFM:463036",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:21932",
+    "node1": "IDFM:463188",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:463188",
+    "node1": "IDFM:463300",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:21924",
+    "node1": "IDFM:463300",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:21912",
+    "node1": "IDFM:21924",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:21912",
+    "node1": "IDFM:21931",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:21931",
+    "node1": "IDFM:21935",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:21935",
+    "node1": "IDFM:463190",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:463190",
+    "node1": "IDFM:463318",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:463055",
+    "node1": "IDFM:463318",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:21929",
+    "node1": "IDFM:463055",
+    "weight": 118
+  },
+  {
+    "node0": "IDFM:21929",
+    "node1": "IDFM:463290",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:463038",
+    "node1": "IDFM:463290",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:463038",
+    "node1": "IDFM:463238",
+    "weight": 94
+  },
+  {
+    "node0": "IDFM:21923",
+    "node1": "IDFM:463238",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:21923",
+    "node1": "IDFM:462956",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:462956",
+    "node1": "IDFM:463259",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:21940",
+    "node1": "IDFM:463259",
+    "weight": 120
+  },
+  {
+    "node0": "IDFM:21940",
+    "node1": "IDFM:463035",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:463035",
+    "node1": "IDFM:463233",
+    "weight": 121
+  },
+  {
+    "node0": "IDFM:21938",
+    "node1": "IDFM:21939",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:21939",
+    "node1": "IDFM:462914",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:21914",
+    "node1": "IDFM:462914",
+    "weight": 147
+  },
+  {
+    "node0": "IDFM:21914",
+    "node1": "IDFM:21930",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:21930",
+    "node1": "IDFM:463239",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:21922",
+    "node1": "IDFM:463239",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:21922",
+    "node1": "IDFM:21928",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:21915",
+    "node1": "IDFM:21928",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:21915",
+    "node1": "IDFM:463203",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:21908",
+    "node1": "IDFM:463203",
+    "weight": 112
+  },
+  {
+    "node0": "IDFM:21908",
+    "node1": "IDFM:21917",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:21917",
+    "node1": "IDFM:21927",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:21927",
+    "node1": "IDFM:463052",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:463052",
+    "node1": "IDFM:463180",
+    "weight": 109
+  },
+  {
+    "node0": "IDFM:462915",
+    "node1": "IDFM:463180",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:462915",
+    "node1": "IDFM:462957",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:21911",
+    "node1": "IDFM:462957",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:21911",
+    "node1": "IDFM:21926",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:21926",
+    "node1": "IDFM:463144",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:21921",
+    "node1": "IDFM:463144",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:21909",
+    "node1": "IDFM:21921",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:21909",
+    "node1": "IDFM:463133",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:21920",
+    "node1": "IDFM:463133",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:21918",
+    "node1": "IDFM:21920",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:21918",
+    "node1": "IDFM:21925",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:21910",
+    "node1": "IDFM:21925",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:21910",
+    "node1": "IDFM:463325",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:463143",
+    "node1": "IDFM:463325",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22442",
+    "node1": "IDFM:463143",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:21919",
+    "node1": "IDFM:22442",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:21919",
+    "node1": "IDFM:463039",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:463039",
+    "node1": "IDFM:463215",
+    "weight": 65
+  },
+  {
+    "node0": "IDFM:463215",
+    "node1": "IDFM:463279",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:21942",
+    "node1": "IDFM:463279",
+    "weight": 118
+  },
+  {
+    "node0": "IDFM:21942",
+    "node1": "IDFM:21943",
+    "weight": 97
+  },
+  {
+    "node0": "IDFM:21941",
+    "node1": "IDFM:21943",
+    "weight": 142
+  },
+  {
+    "node0": "IDFM:21954",
+    "node1": "IDFM:21955",
+    "weight": 121
+  },
+  {
+    "node0": "IDFM:21959",
+    "node1": "IDFM:463046",
+    "weight": 193
+  },
+  {
+    "node0": "IDFM:463046",
+    "node1": "IDFM:463129",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:21956",
+    "node1": "IDFM:463129",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:21955",
+    "node1": "IDFM:21956",
+    "weight": 102
+  },
+  {
+    "node0": "IDFM:480288",
+    "node1": "IDFM:480290",
+    "weight": 115
+  },
+  {
+    "node0": "IDFM:480288",
+    "node1": "IDFM:480541",
+    "weight": 126
+  },
+  {
+    "node0": "IDFM:480286",
+    "node1": "IDFM:480541",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:462972",
+    "node1": "IDFM:480286",
+    "weight": 150
+  },
+  {
+    "node0": "IDFM:21961",
+    "node1": "IDFM:462972",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:21960",
+    "node1": "IDFM:21961",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:21959",
+    "node1": "IDFM:21960",
+    "weight": 114
+  },
+  {
+    "node0": "IDFM:463045",
+    "node1": "IDFM:463112",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:463112",
+    "node1": "IDFM:463165",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:21957",
+    "node1": "IDFM:463165",
+    "weight": 104
+  },
+  {
+    "node0": "IDFM:21957",
+    "node1": "IDFM:21958",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:21958",
+    "node1": "IDFM:463159",
+    "weight": 208
+  },
+  {
+    "node0": "IDFM:463159",
+    "node1": "IDFM:463284",
+    "weight": 110
+  },
+  {
+    "node0": "IDFM:463064",
+    "node1": "IDFM:463284",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:21962",
+    "node1": "IDFM:463064",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:21962",
+    "node1": "IDFM:480340",
+    "weight": 158
+  },
+  {
+    "node0": "IDFM:480340",
+    "node1": "IDFM:480531",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:480341",
+    "node1": "IDFM:480531",
+    "weight": 128
+  },
+  {
+    "node0": "IDFM:480330",
+    "node1": "IDFM:480341",
+    "weight": 152
+  },
+  {
+    "node0": "IDFM:22006",
+    "node1": "IDFM:463020",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:463020",
+    "node1": "IDFM:463097",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:21981",
+    "node1": "IDFM:463097",
+    "weight": 95
+  },
+  {
+    "node0": "IDFM:21981",
+    "node1": "IDFM:22004",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:22004",
+    "node1": "IDFM:22010",
+    "weight": 109
+  },
+  {
+    "node0": "IDFM:22010",
+    "node1": "IDFM:463138",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:463096",
+    "node1": "IDFM:463138",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:463059",
+    "node1": "IDFM:463096",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:462961",
+    "node1": "IDFM:463059",
+    "weight": 107
+  },
+  {
+    "node0": "IDFM:22011",
+    "node1": "IDFM:462961",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22011",
+    "node1": "IDFM:22013",
+    "weight": 108
+  },
+  {
+    "node0": "IDFM:22013",
+    "node1": "IDFM:463182",
+    "weight": 115
+  },
+  {
+    "node0": "IDFM:22001",
+    "node1": "IDFM:463182",
+    "weight": 128
+  },
+  {
+    "node0": "IDFM:21952",
+    "node1": "IDFM:22001",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:21952",
+    "node1": "IDFM:22012",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:22012",
+    "node1": "IDFM:463027",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:463027",
+    "node1": "IDFM:463280",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22017",
+    "node1": "IDFM:463280",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22016",
+    "node1": "IDFM:22017",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:22014",
+    "node1": "IDFM:22016",
+    "weight": 109
+  },
+  {
+    "node0": "IDFM:22014",
+    "node1": "IDFM:463131",
+    "weight": 253
+  },
+  {
+    "node0": "IDFM:22015",
+    "node1": "IDFM:463002",
+    "weight": 196
+  },
+  {
+    "node0": "IDFM:463002",
+    "node1": "IDFM:463178",
+    "weight": 114
+  },
+  {
+    "node0": "IDFM:463017",
+    "node1": "IDFM:463178",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:22003",
+    "node1": "IDFM:463017",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:22003",
+    "node1": "IDFM:22005",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:22005",
+    "node1": "IDFM:462999",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:462999",
+    "node1": "IDFM:463095",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:463032",
+    "node1": "IDFM:463095",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22007",
+    "node1": "IDFM:463032",
+    "weight": 141
+  },
+  {
+    "node0": "IDFM:22007",
+    "node1": "IDFM:463021",
+    "weight": 121
+  },
+  {
+    "node0": "IDFM:463021",
+    "node1": "IDFM:463191",
+    "weight": 99
+  },
+  {
+    "node0": "IDFM:21903",
+    "node1": "IDFM:463191",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:21903",
+    "node1": "IDFM:21905",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:21905",
+    "node1": "IDFM:22002",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:22002",
+    "node1": "IDFM:22008",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22008",
+    "node1": "IDFM:463018",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:463018",
+    "node1": "IDFM:463289",
+    "weight": 106
+  },
+  {
+    "node0": "IDFM:463023",
+    "node1": "IDFM:463289",
+    "weight": 101
+  },
+  {
+    "node0": "IDFM:22000",
+    "node1": "IDFM:463023",
+    "weight": 95
+  },
+  {
+    "node0": "IDFM:22000",
+    "node1": "IDFM:22009",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22009",
+    "node1": "IDFM:463025",
+    "weight": 169
+  },
+  {
+    "node0": "IDFM:462991",
+    "node1": "IDFM:463286",
+    "weight": 105
+  },
+  {
+    "node0": "IDFM:22025",
+    "node1": "IDFM:463286",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22019",
+    "node1": "IDFM:22025",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:22019",
+    "node1": "IDFM:462946",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:22026",
+    "node1": "IDFM:462946",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22026",
+    "node1": "IDFM:463122",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:22018",
+    "node1": "IDFM:463122",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22018",
+    "node1": "IDFM:22029",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:22029",
+    "node1": "IDFM:22033",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22033",
+    "node1": "IDFM:462989",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:462989",
+    "node1": "IDFM:463246",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:463189",
+    "node1": "IDFM:463246",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:21963",
+    "node1": "IDFM:463189",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:21963",
+    "node1": "IDFM:22032",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22032",
+    "node1": "IDFM:462987",
+    "weight": 83
+  },
+  {
+    "node0": "IDFM:462987",
+    "node1": "IDFM:463068",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:463068",
+    "node1": "IDFM:463070",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:463070",
+    "node1": "IDFM:463228",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22023",
+    "node1": "IDFM:463228",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22023",
+    "node1": "IDFM:22034",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:22034",
+    "node1": "IDFM:22036",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22036",
+    "node1": "IDFM:462985",
+    "weight": 108
+  },
+  {
+    "node0": "IDFM:22035",
+    "node1": "IDFM:463119",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:463119",
+    "node1": "IDFM:463210",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:463210",
+    "node1": "IDFM:463258",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:22021",
+    "node1": "IDFM:463258",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22021",
+    "node1": "IDFM:22028",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22028",
+    "node1": "IDFM:22031",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22027",
+    "node1": "IDFM:22031",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:22027",
+    "node1": "IDFM:463069",
+    "weight": 100
+  },
+  {
+    "node0": "IDFM:462971",
+    "node1": "IDFM:463069",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:21906",
+    "node1": "IDFM:462971",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:21906",
+    "node1": "IDFM:22030",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:22024",
+    "node1": "IDFM:22030",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22024",
+    "node1": "IDFM:463090",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:462986",
+    "node1": "IDFM:463090",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:462986",
+    "node1": "IDFM:463091",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:21994",
+    "node1": "IDFM:463091",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:21994",
+    "node1": "IDFM:463316",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:21902",
+    "node1": "IDFM:463316",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:21902",
+    "node1": "IDFM:463250",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:463250",
+    "node1": "IDFM:463297",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22020",
+    "node1": "IDFM:463297",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:21950",
+    "node1": "IDFM:22020",
+    "weight": 113
+  },
+  {
+    "node0": "IDFM:21950",
+    "node1": "IDFM:22022",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:22022",
+    "node1": "IDFM:22037",
+    "weight": 109
+  },
+  {
+    "node0": "IDFM:463174",
+    "node1": "IDFM:463276",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:462991",
+    "node1": "IDFM:463276",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:21904",
+    "node1": "IDFM:463234",
+    "weight": 114
+  },
+  {
+    "node0": "IDFM:21904",
+    "node1": "IDFM:21985",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:21982",
+    "node1": "IDFM:21985",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:21982",
+    "node1": "IDFM:462958",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:21986",
+    "node1": "IDFM:462958",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:21986",
+    "node1": "IDFM:21987",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:21987",
+    "node1": "IDFM:463202",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:463202",
+    "node1": "IDFM:463315",
+    "weight": 95
+  },
+  {
+    "node0": "IDFM:463084",
+    "node1": "IDFM:463315",
+    "weight": 106
+  },
+  {
+    "node0": "IDFM:21977",
+    "node1": "IDFM:463084",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:21976",
+    "node1": "IDFM:21977",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:21973",
+    "node1": "IDFM:21976",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:21973",
+    "node1": "IDFM:21978",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:21978",
+    "node1": "IDFM:462944",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:21975",
+    "node1": "IDFM:462944",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:21975",
+    "node1": "IDFM:21984",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:21968",
+    "node1": "IDFM:21984",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:21968",
+    "node1": "IDFM:463024",
+    "weight": 170
+  },
+  {
+    "node0": "IDFM:21967",
+    "node1": "IDFM:463077",
+    "weight": 124
+  },
+  {
+    "node0": "IDFM:463077",
+    "node1": "IDFM:463141",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:463141",
+    "node1": "IDFM:463237",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:21983",
+    "node1": "IDFM:463237",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:21983",
+    "node1": "IDFM:462998",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:462994",
+    "node1": "IDFM:462998",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:462967",
+    "node1": "IDFM:462994",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:462959",
+    "node1": "IDFM:462967",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:21970",
+    "node1": "IDFM:462959",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:21970",
+    "node1": "IDFM:21979",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:21969",
+    "node1": "IDFM:21979",
+    "weight": 122
+  },
+  {
+    "node0": "IDFM:21969",
+    "node1": "IDFM:463124",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:463076",
+    "node1": "IDFM:463124",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:21972",
+    "node1": "IDFM:463076",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:21971",
+    "node1": "IDFM:21972",
+    "weight": 112
+  },
+  {
+    "node0": "IDFM:21907",
+    "node1": "IDFM:21971",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:21907",
+    "node1": "IDFM:21974",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:21974",
+    "node1": "IDFM:21988",
+    "weight": 159
+  },
+  {
+    "node0": "IDFM:21988",
+    "node1": "IDFM:21989",
+    "weight": 148
+  },
+  {
+    "node0": "IDFM:463136",
+    "node1": "IDFM:463137",
+    "weight": 120
+  },
+  {
+    "node0": "IDFM:21904",
+    "node1": "IDFM:463137",
+    "weight": 136
+  },
+  {
+    "node0": "IDFM:463071",
+    "node1": "IDFM:463262",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:462990",
+    "node1": "IDFM:463071",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:462990",
+    "node1": "IDFM:462997",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:21945",
+    "node1": "IDFM:21948",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:21946",
+    "node1": "IDFM:21948",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:21946",
+    "node1": "IDFM:21947",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:24687",
+    "node1": "IDFM:463282",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:24687",
+    "node1": "IDFM:463134",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:24683",
+    "node1": "IDFM:463134",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:24683",
+    "node1": "IDFM:463132",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:463074",
+    "node1": "IDFM:463132",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:463034",
+    "node1": "IDFM:463074",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:24680",
+    "node1": "IDFM:24681",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:24680",
+    "node1": "IDFM:24685",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:24685",
+    "node1": "IDFM:463156",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:24686",
+    "node1": "IDFM:463156",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:24682",
+    "node1": "IDFM:24686",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:24682",
+    "node1": "IDFM:24684",
+    "weight": 122
+  },
+  {
+    "node0": "IDFM:463130",
+    "node1": "IDFM:463149",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:463040",
+    "node1": "IDFM:463130",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:463012",
+    "node1": "IDFM:463040",
+    "weight": 104
+  },
+  {
+    "node0": "IDFM:462943",
+    "node1": "IDFM:463012",
+    "weight": 97
+  },
+  {
+    "node0": "IDFM:462943",
+    "node1": "IDFM:463294",
+    "weight": 100
+  },
+  {
+    "node0": "IDFM:463197",
+    "node1": "IDFM:463294",
+    "weight": 99
+  },
+  {
+    "node0": "IDFM:22089",
+    "node1": "IDFM:463197",
+    "weight": 144
+  },
+  {
+    "node0": "IDFM:22089",
+    "node1": "IDFM:463307",
+    "weight": 116
+  },
+  {
+    "node0": "IDFM:22091",
+    "node1": "IDFM:463307",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:22091",
+    "node1": "IDFM:463160",
+    "weight": 83
+  },
+  {
+    "node0": "IDFM:463160",
+    "node1": "IDFM:463218",
+    "weight": 65
+  },
+  {
+    "node0": "IDFM:463218",
+    "node1": "IDFM:463227",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:22075",
+    "node1": "IDFM:463227",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:22075",
+    "node1": "IDFM:463150",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:463010",
+    "node1": "IDFM:463150",
+    "weight": 100
+  },
+  {
+    "node0": "IDFM:463010",
+    "node1": "IDFM:463181",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:463181",
+    "node1": "IDFM:463185",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:463013",
+    "node1": "IDFM:463185",
+    "weight": 88
+  },
+  {
+    "node0": "IDFM:22088",
+    "node1": "IDFM:463013",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22078",
+    "node1": "IDFM:22088",
+    "weight": 91
+  },
+  {
+    "node0": "IDFM:22078",
+    "node1": "IDFM:463217",
+    "weight": 101
+  },
+  {
+    "node0": "IDFM:22099",
+    "node1": "IDFM:463217",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:22099",
+    "node1": "IDFM:22102",
+    "weight": 104
+  },
+  {
+    "node0": "IDFM:22102",
+    "node1": "IDFM:463193",
+    "weight": 131
+  },
+  {
+    "node0": "IDFM:22101",
+    "node1": "IDFM:463170",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:463044",
+    "node1": "IDFM:463170",
+    "weight": 95
+  },
+  {
+    "node0": "IDFM:22100",
+    "node1": "IDFM:463044",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22100",
+    "node1": "IDFM:463257",
+    "weight": 101
+  },
+  {
+    "node0": "IDFM:463121",
+    "node1": "IDFM:463257",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22086",
+    "node1": "IDFM:463121",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22084",
+    "node1": "IDFM:22086",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:22082",
+    "node1": "IDFM:22084",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22082",
+    "node1": "IDFM:22090",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22085",
+    "node1": "IDFM:22090",
+    "weight": 94
+  },
+  {
+    "node0": "IDFM:22085",
+    "node1": "IDFM:463041",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22079",
+    "node1": "IDFM:463041",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22079",
+    "node1": "IDFM:22081",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22081",
+    "node1": "IDFM:22087",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22087",
+    "node1": "IDFM:463080",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:22074",
+    "node1": "IDFM:463080",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:22074",
+    "node1": "IDFM:463019",
+    "weight": 121
+  },
+  {
+    "node0": "IDFM:22083",
+    "node1": "IDFM:463019",
+    "weight": 130
+  },
+  {
+    "node0": "IDFM:22076",
+    "node1": "IDFM:22083",
+    "weight": 99
+  },
+  {
+    "node0": "IDFM:22076",
+    "node1": "IDFM:22080",
+    "weight": 107
+  },
+  {
+    "node0": "IDFM:22077",
+    "node1": "IDFM:22080",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:22077",
+    "node1": "IDFM:22103",
+    "weight": 99
+  },
+  {
+    "node0": "IDFM:22103",
+    "node1": "IDFM:22105",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22104",
+    "node1": "IDFM:22105",
+    "weight": 124
+  },
+  {
+    "node0": "IDFM:22061",
+    "node1": "IDFM:22062",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22042",
+    "node1": "IDFM:22061",
+    "weight": 113
+  },
+  {
+    "node0": "IDFM:22042",
+    "node1": "IDFM:22058",
+    "weight": 109
+  },
+  {
+    "node0": "IDFM:22047",
+    "node1": "IDFM:22058",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:22047",
+    "node1": "IDFM:22048",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22048",
+    "node1": "IDFM:462947",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22056",
+    "node1": "IDFM:462947",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22056",
+    "node1": "IDFM:462980",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:462965",
+    "node1": "IDFM:462980",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:462965",
+    "node1": "IDFM:462968",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:462966",
+    "node1": "IDFM:462968",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:22043",
+    "node1": "IDFM:462966",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22043",
+    "node1": "IDFM:22045",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22045",
+    "node1": "IDFM:463123",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:22057",
+    "node1": "IDFM:463123",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:22057",
+    "node1": "IDFM:463081",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:462969",
+    "node1": "IDFM:463081",
+    "weight": 112
+  },
+  {
+    "node0": "IDFM:22046",
+    "node1": "IDFM:462969",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:22046",
+    "node1": "IDFM:463062",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:22044",
+    "node1": "IDFM:463062",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:22040",
+    "node1": "IDFM:22044",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22040",
+    "node1": "IDFM:22059",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22059",
+    "node1": "IDFM:463205",
+    "weight": 77
+  },
+  {
+    "node0": "IDFM:463065",
+    "node1": "IDFM:463205",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:22052",
+    "node1": "IDFM:463065",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:22052",
+    "node1": "IDFM:22053",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:22041",
+    "node1": "IDFM:22053",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:22041",
+    "node1": "IDFM:463082",
+    "weight": 148
+  },
+  {
+    "node0": "IDFM:463082",
+    "node1": "IDFM:483900",
+    "weight": 112
+  },
+  {
+    "node0": "IDFM:483898",
+    "node1": "IDFM:483900",
+    "weight": 131
+  },
+  {
+    "node0": "IDFM:483903",
+    "node1": "IDFM:483904",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:24679",
+    "node1": "IDFM:483903",
+    "weight": 121
+  },
+  {
+    "node0": "IDFM:24679",
+    "node1": "IDFM:463281",
+    "weight": 156
+  },
+  {
+    "node0": "IDFM:463236",
+    "node1": "IDFM:463281",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:462973",
+    "node1": "IDFM:463236",
+    "weight": 102
+  },
+  {
+    "node0": "IDFM:22054",
+    "node1": "IDFM:462973",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22054",
+    "node1": "IDFM:22055",
+    "weight": 97
+  },
+  {
+    "node0": "IDFM:22055",
+    "node1": "IDFM:463116",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:463089",
+    "node1": "IDFM:463116",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:463089",
+    "node1": "IDFM:463304",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22050",
+    "node1": "IDFM:463304",
+    "weight": 83
+  },
+  {
+    "node0": "IDFM:22050",
+    "node1": "IDFM:463317",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:21964",
+    "node1": "IDFM:463317",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:21964",
+    "node1": "IDFM:21965",
+    "weight": 117
+  },
+  {
+    "node0": "IDFM:21965",
+    "node1": "IDFM:463164",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22060",
+    "node1": "IDFM:463164",
+    "weight": 99
+  },
+  {
+    "node0": "IDFM:22060",
+    "node1": "IDFM:463311",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:462950",
+    "node1": "IDFM:463311",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:21980",
+    "node1": "IDFM:462950",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:21980",
+    "node1": "IDFM:22049",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22049",
+    "node1": "IDFM:22051",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:22038",
+    "node1": "IDFM:22051",
+    "weight": 94
+  },
+  {
+    "node0": "IDFM:22038",
+    "node1": "IDFM:463173",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22039",
+    "node1": "IDFM:463173",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22039",
+    "node1": "IDFM:462964",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:462964",
+    "node1": "IDFM:463321",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:462949",
+    "node1": "IDFM:463321",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:462949",
+    "node1": "IDFM:463261",
+    "weight": 104
+  },
+  {
+    "node0": "IDFM:463153",
+    "node1": "IDFM:463261",
+    "weight": 99
+  },
+  {
+    "node0": "IDFM:463153",
+    "node1": "IDFM:463219",
+    "weight": 136
+  },
+  {
+    "node0": "IDFM:22237",
+    "node1": "IDFM:463214",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:463213",
+    "node1": "IDFM:463214",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:463213",
+    "node1": "IDFM:463260",
+    "weight": 95
+  },
+  {
+    "node0": "IDFM:463085",
+    "node1": "IDFM:463260",
+    "weight": 97
+  },
+  {
+    "node0": "IDFM:22222",
+    "node1": "IDFM:463085",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:22222",
+    "node1": "IDFM:22230",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22157",
+    "node1": "IDFM:22230",
+    "weight": 99
+  },
+  {
+    "node0": "IDFM:22157",
+    "node1": "IDFM:22229",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:22217",
+    "node1": "IDFM:22229",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22217",
+    "node1": "IDFM:22226",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22226",
+    "node1": "IDFM:463198",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22093",
+    "node1": "IDFM:463198",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:22093",
+    "node1": "IDFM:22224",
+    "weight": 102
+  },
+  {
+    "node0": "IDFM:22218",
+    "node1": "IDFM:22224",
+    "weight": 124
+  },
+  {
+    "node0": "IDFM:22218",
+    "node1": "IDFM:22225",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:22129",
+    "node1": "IDFM:22225",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:22129",
+    "node1": "IDFM:22227",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22227",
+    "node1": "IDFM:462952",
+    "weight": 101
+  },
+  {
+    "node0": "IDFM:22220",
+    "node1": "IDFM:462952",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:22220",
+    "node1": "IDFM:22244",
+    "weight": 117
+  },
+  {
+    "node0": "IDFM:22244",
+    "node1": "IDFM:463212",
+    "weight": 90
+  },
+  {
+    "node0": "IDFM:462976",
+    "node1": "IDFM:463212",
+    "weight": 113
+  },
+  {
+    "node0": "IDFM:22241",
+    "node1": "IDFM:462976",
+    "weight": 138
+  },
+  {
+    "node0": "IDFM:22241",
+    "node1": "IDFM:463126",
+    "weight": 92
+  },
+  {
+    "node0": "IDFM:463126",
+    "node1": "IDFM:463302",
+    "weight": 136
+  },
+  {
+    "node0": "IDFM:463109",
+    "node1": "IDFM:463207",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:462953",
+    "node1": "IDFM:463207",
+    "weight": 117
+  },
+  {
+    "node0": "IDFM:462953",
+    "node1": "IDFM:463086",
+    "weight": 160
+  },
+  {
+    "node0": "IDFM:463086",
+    "node1": "IDFM:463278",
+    "weight": 122
+  },
+  {
+    "node0": "IDFM:462978",
+    "node1": "IDFM:463278",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:462975",
+    "node1": "IDFM:462978",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:22227",
+    "node1": "IDFM:22231",
+    "weight": 101
+  },
+  {
+    "node0": "IDFM:22219",
+    "node1": "IDFM:22231",
+    "weight": 107
+  },
+  {
+    "node0": "IDFM:22219",
+    "node1": "IDFM:22238",
+    "weight": 107
+  },
+  {
+    "node0": "IDFM:22234",
+    "node1": "IDFM:22238",
+    "weight": 170
+  },
+  {
+    "node0": "IDFM:22232",
+    "node1": "IDFM:22234",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:22232",
+    "node1": "IDFM:22233",
+    "weight": 123
+  },
+  {
+    "node0": "IDFM:462975",
+    "node1": "IDFM:463253",
+    "weight": 82
+  },
+  {
+    "node0": "IDFM:463066",
+    "node1": "IDFM:463253",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:462970",
+    "node1": "IDFM:463066",
+    "weight": 106
+  },
+  {
+    "node0": "IDFM:462970",
+    "node1": "IDFM:474397",
+    "weight": 130
+  },
+  {
+    "node0": "IDFM:463011",
+    "node1": "IDFM:474397",
+    "weight": 108
+  },
+  {
+    "node0": "IDFM:22185",
+    "node1": "IDFM:463011",
+    "weight": 109
+  },
+  {
+    "node0": "IDFM:22185",
+    "node1": "IDFM:463320",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:463303",
+    "node1": "IDFM:463320",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:463083",
+    "node1": "IDFM:463303",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:462954",
+    "node1": "IDFM:463083",
+    "weight": 100
+  },
+  {
+    "node0": "IDFM:462954",
+    "node1": "IDFM:463184",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:463184",
+    "node1": "IDFM:463229",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:22223",
+    "node1": "IDFM:463229",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:22221",
+    "node1": "IDFM:22223",
+    "weight": 94
+  },
+  {
+    "node0": "IDFM:22221",
+    "node1": "IDFM:22235",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:22235",
+    "node1": "IDFM:22236",
+    "weight": 100
+  },
+  {
+    "node0": "IDFM:22236",
+    "node1": "IDFM:463087",
+    "weight": 105
+  },
+  {
+    "node0": "IDFM:22240",
+    "node1": "IDFM:22242",
+    "weight": 100
+  },
+  {
+    "node0": "IDFM:22240",
+    "node1": "IDFM:463301",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:22239",
+    "node1": "IDFM:463301",
+    "weight": 151
+  },
+  {
+    "node0": "IDFM:22239",
+    "node1": "IDFM:22243",
+    "weight": 106
+  },
+  {
+    "node0": "IDFM:22243",
+    "node1": "IDFM:462977",
+    "weight": 102
+  },
+  {
+    "node0": "IDFM:462951",
+    "node1": "IDFM:462977",
+    "weight": 111
+  },
+  {
+    "node0": "IDFM:22228",
+    "node1": "IDFM:462951",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22228",
+    "node1": "IDFM:478395",
+    "weight": 95
+  },
+  {
+    "node0": "IDFM:463253",
+    "node1": "IDFM:478395",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:462996",
+    "node1": "IDFM:463308",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:462992",
+    "node1": "IDFM:463308",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:22136",
+    "node1": "IDFM:462992",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22136",
+    "node1": "IDFM:22145",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:22145",
+    "node1": "IDFM:463306",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:463161",
+    "node1": "IDFM:463306",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:463158",
+    "node1": "IDFM:463161",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:463158",
+    "node1": "IDFM:463208",
+    "weight": 74
+  },
+  {
+    "node0": "IDFM:22147",
+    "node1": "IDFM:463208",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22142",
+    "node1": "IDFM:22147",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22134",
+    "node1": "IDFM:22142",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:22134",
+    "node1": "IDFM:22153",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:22153",
+    "node1": "IDFM:463022",
+    "weight": 79
+  },
+  {
+    "node0": "IDFM:463022",
+    "node1": "IDFM:463183",
+    "weight": 95
+  },
+  {
+    "node0": "IDFM:463093",
+    "node1": "IDFM:463183",
+    "weight": 97
+  },
+  {
+    "node0": "IDFM:22152",
+    "node1": "IDFM:463093",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22132",
+    "node1": "IDFM:22152",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22132",
+    "node1": "IDFM:463310",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22141",
+    "node1": "IDFM:463310",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:463092",
+    "node1": "IDFM:463118",
+    "weight": 103
+  },
+  {
+    "node0": "IDFM:463118",
+    "node1": "IDFM:463242",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22151",
+    "node1": "IDFM:463242",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22151",
+    "node1": "IDFM:463291",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:22135",
+    "node1": "IDFM:463291",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22135",
+    "node1": "IDFM:462996",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22148",
+    "node1": "IDFM:22149",
+    "weight": 93
+  },
+  {
+    "node0": "IDFM:22148",
+    "node1": "IDFM:462979",
+    "weight": 73
+  },
+  {
+    "node0": "IDFM:462979",
+    "node1": "IDFM:463313",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:463072",
+    "node1": "IDFM:463313",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:463072",
+    "node1": "IDFM:463171",
+    "weight": 64
+  },
+  {
+    "node0": "IDFM:22146",
+    "node1": "IDFM:463171",
+    "weight": 76
+  },
+  {
+    "node0": "IDFM:22092",
+    "node1": "IDFM:22146",
+    "weight": 89
+  },
+  {
+    "node0": "IDFM:22092",
+    "node1": "IDFM:22150",
+    "weight": 72
+  },
+  {
+    "node0": "IDFM:22137",
+    "node1": "IDFM:22150",
+    "weight": 61
+  },
+  {
+    "node0": "IDFM:22137",
+    "node1": "IDFM:462995",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:462993",
+    "node1": "IDFM:462995",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22139",
+    "node1": "IDFM:462993",
+    "weight": 78
+  },
+  {
+    "node0": "IDFM:22138",
+    "node1": "IDFM:22139",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:22138",
+    "node1": "IDFM:22143",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:22143",
+    "node1": "IDFM:463016",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22131",
+    "node1": "IDFM:463016",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:22131",
+    "node1": "IDFM:463104",
+    "weight": 86
+  },
+  {
+    "node0": "IDFM:22144",
+    "node1": "IDFM:463104",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22144",
+    "node1": "IDFM:22154",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:22140",
+    "node1": "IDFM:22154",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:22140",
+    "node1": "IDFM:26602",
+    "weight": 102
+  },
+  {
+    "node0": "IDFM:26602",
+    "node1": "IDFM:483313",
+    "weight": 136
+  },
+  {
+    "node0": "IDFM:483313",
+    "node1": "IDFM:483314",
+    "weight": 131
+  },
+  {
+    "node0": "IDFM:22133",
+    "node1": "IDFM:463073",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:22133",
+    "node1": "IDFM:462974",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:462974",
+    "node1": "IDFM:463148",
+    "weight": 70
+  },
+  {
+    "node0": "IDFM:22130",
+    "node1": "IDFM:463148",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:22130",
+    "node1": "IDFM:22149",
+    "weight": 119
+  },
+  {
+    "node0": "IDFM:483277",
+    "node1": "IDFM:483279",
+    "weight": 87
+  },
+  {
+    "node0": "IDFM:463222",
+    "node1": "IDFM:483277",
+    "weight": 144
+  },
+  {
+    "node0": "IDFM:463092",
+    "node1": "IDFM:463222",
+    "weight": 102
+  },
+  {
+    "node0": "IDFM:21990",
+    "node1": "IDFM:463079",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:21990",
+    "node1": "IDFM:462945",
+    "weight": 62
+  },
+  {
+    "node0": "IDFM:21997",
+    "node1": "IDFM:462945",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:21997",
+    "node1": "IDFM:462960",
+    "weight": 84
+  },
+  {
+    "node0": "IDFM:462960",
+    "node1": "IDFM:463187",
+    "weight": 85
+  },
+  {
+    "node0": "IDFM:21998",
+    "node1": "IDFM:463187",
+    "weight": 66
+  },
+  {
+    "node0": "IDFM:21991",
+    "node1": "IDFM:21998",
+    "weight": 81
+  },
+  {
+    "node0": "IDFM:21991",
+    "node1": "IDFM:463192",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:463192",
+    "node1": "IDFM:463254",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:463254",
+    "node1": "IDFM:463319",
+    "weight": 67
+  },
+  {
+    "node0": "IDFM:21949",
+    "node1": "IDFM:463319",
+    "weight": 94
+  },
+  {
+    "node0": "IDFM:21949",
+    "node1": "IDFM:463223",
+    "weight": 137
+  },
+  {
+    "node0": "IDFM:21995",
+    "node1": "IDFM:463287",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:463110",
+    "node1": "IDFM:463287",
+    "weight": 98
+  },
+  {
+    "node0": "IDFM:21996",
+    "node1": "IDFM:463110",
+    "weight": 69
+  },
+  {
+    "node0": "IDFM:21937",
+    "node1": "IDFM:21996",
+    "weight": 68
+  },
+  {
+    "node0": "IDFM:21937",
+    "node1": "IDFM:463108",
+    "weight": 96
+  },
+  {
+    "node0": "IDFM:21992",
+    "node1": "IDFM:463108",
+    "weight": 75
+  },
+  {
+    "node0": "IDFM:21992",
+    "node1": "IDFM:463061",
+    "weight": 60
+  },
+  {
+    "node0": "IDFM:21966",
+    "node1": "IDFM:463061",
+    "weight": 104
+  },
+  {
+    "node0": "IDFM:21999",
+    "node1": "IDFM:463263",
+    "weight": 71
+  },
+  {
+    "node0": "IDFM:21993",
+    "node1": "IDFM:463263",
+    "weight": 80
+  },
+  {
+    "node0": "IDFM:21951",
+    "node1": "IDFM:21993",
+    "weight": 63
+  },
+  {
+    "node0": "IDFM:21951",
+    "node1": "IDFM:21995",
+    "weight": 60
+  }
+]

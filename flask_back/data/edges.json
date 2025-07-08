@@ -1,0 +1,1892 @@
+[
+  {
+    "node0": "Porte Dauphine::2",
+    "node1": "Victor Hugo::2",
+    "weight": 121
+  },
+  {
+    "node0": "Charles de Gaulle - Etoile::2",
+    "node1": "Victor Hugo::2",
+    "weight": 110
+  },
+  {
+    "node0": "Charles de Gaulle - Etoile::2",
+    "node1": "Ternes::2",
+    "weight": 76
+  },
+  {
+    "node0": "Courcelles::2",
+    "node1": "Ternes::2",
+    "weight": 69
+  },
+  {
+    "node0": "Courcelles::2",
+    "node1": "Monceau::2",
+    "weight": 62
+  },
+  {
+    "node0": "Monceau::2",
+    "node1": "Villiers::2",
+    "weight": 80
+  },
+  {
+    "node0": "Rome::2",
+    "node1": "Villiers::2",
+    "weight": 86
+  },
+  {
+    "node0": "Place de Clichy::2",
+    "node1": "Rome::2",
+    "weight": 81
+  },
+  {
+    "node0": "Blanche::2",
+    "node1": "Place de Clichy::2",
+    "weight": 83
+  },
+  {
+    "node0": "Blanche::2",
+    "node1": "Pigalle::2",
+    "weight": 74
+  },
+  {
+    "node0": "Anvers::2",
+    "node1": "Pigalle::2",
+    "weight": 80
+  },
+  {
+    "node0": "Anvers::2",
+    "node1": "Barbès - Rochechouart::2",
+    "weight": 84
+  },
+  {
+    "node0": "Barbès - Rochechouart::2",
+    "node1": "La Chapelle::2",
+    "weight": 100
+  },
+  {
+    "node0": "La Chapelle::2",
+    "node1": "Stalingrad::2",
+    "weight": 77
+  },
+  {
+    "node0": "Jaurès::2",
+    "node1": "Stalingrad::2",
+    "weight": 90
+  },
+  {
+    "node0": "Colonel Fabien::2",
+    "node1": "Jaurès::2",
+    "weight": 74
+  },
+  {
+    "node0": "Belleville::2",
+    "node1": "Colonel Fabien::2",
+    "weight": 87
+  },
+  {
+    "node0": "Belleville::2",
+    "node1": "Couronnes::2",
+    "weight": 77
+  },
+  {
+    "node0": "Couronnes::2",
+    "node1": "Ménilmontant::2",
+    "weight": 72
+  },
+  {
+    "node0": "Ménilmontant::2",
+    "node1": "Père Lachaise::2",
+    "weight": 79
+  },
+  {
+    "node0": "Philippe Auguste::2",
+    "node1": "Père Lachaise::2",
+    "weight": 82
+  },
+  {
+    "node0": "Alexandre Dumas::2",
+    "node1": "Philippe Auguste::2",
+    "weight": 69
+  },
+  {
+    "node0": "Alexandre Dumas::2",
+    "node1": "Avron::2",
+    "weight": 70
+  },
+  {
+    "node0": "Avron::2",
+    "node1": "Nation::2",
+    "weight": 132
+  },
+  {
+    "node0": "Charles de Gaulle - Etoile::6",
+    "node1": "Kléber::6",
+    "weight": 121
+  },
+  {
+    "node0": "Boissière::6",
+    "node1": "Kléber::6",
+    "weight": 67
+  },
+  {
+    "node0": "Boissière::6",
+    "node1": "Trocadéro::6",
+    "weight": 61
+  },
+  {
+    "node0": "Passy::6",
+    "node1": "Trocadéro::6",
+    "weight": 87
+  },
+  {
+    "node0": "Bir-Hakeim::6",
+    "node1": "Passy::6",
+    "weight": 64
+  },
+  {
+    "node0": "Bir-Hakeim::6",
+    "node1": "Dupleix::6",
+    "weight": 67
+  },
+  {
+    "node0": "Dupleix::6",
+    "node1": "La Motte-Picquet - Grenelle::6",
+    "weight": 61
+  },
+  {
+    "node0": "Cambronne::6",
+    "node1": "La Motte-Picquet - Grenelle::6",
+    "weight": 68
+  },
+  {
+    "node0": "Cambronne::6",
+    "node1": "Sèvres-Lecourbe::6",
+    "weight": 69
+  },
+  {
+    "node0": "Pasteur::6",
+    "node1": "Sèvres-Lecourbe::6",
+    "weight": 76
+  },
+  {
+    "node0": "Montparnasse Bienvenue::6",
+    "node1": "Pasteur::6",
+    "weight": 84
+  },
+  {
+    "node0": "Edgar Quinet::6",
+    "node1": "Montparnasse Bienvenue::6",
+    "weight": 76
+  },
+  {
+    "node0": "Edgar Quinet::6",
+    "node1": "Raspail::6",
+    "weight": 79
+  },
+  {
+    "node0": "Denfert-Rochereau::6",
+    "node1": "Raspail::6",
+    "weight": 65
+  },
+  {
+    "node0": "Denfert-Rochereau::6",
+    "node1": "Saint-Jacques::6",
+    "weight": 64
+  },
+  {
+    "node0": "Glacière::6",
+    "node1": "Saint-Jacques::6",
+    "weight": 70
+  },
+  {
+    "node0": "Corvisart::6",
+    "node1": "Glacière::6",
+    "weight": 80
+  },
+  {
+    "node0": "Corvisart::6",
+    "node1": "Place d'Italie::6",
+    "weight": 88
+  },
+  {
+    "node0": "Nationale::6",
+    "node1": "Place d'Italie::6",
+    "weight": 67
+  },
+  {
+    "node0": "Chevaleret::6",
+    "node1": "Nationale::6",
+    "weight": 65
+  },
+  {
+    "node0": "Chevaleret::6",
+    "node1": "Quai de la Gare::6",
+    "weight": 60
+  },
+  {
+    "node0": "Bercy::6",
+    "node1": "Quai de la Gare::6",
+    "weight": 91
+  },
+  {
+    "node0": "Bercy::6",
+    "node1": "Dugommier::6",
+    "weight": 73
+  },
+  {
+    "node0": "Daumesnil::6",
+    "node1": "Dugommier::6",
+    "weight": 66
+  },
+  {
+    "node0": "Bel-Air::6",
+    "node1": "Daumesnil::6",
+    "weight": 65
+  },
+  {
+    "node0": "Bel-Air::6",
+    "node1": "Picpus::6",
+    "weight": 70
+  },
+  {
+    "node0": "Nation::6",
+    "node1": "Picpus::6",
+    "weight": 115
+  },
+  {
+    "node0": "Mairie d'Ivry::7",
+    "node1": "Pierre et Marie Curie::7",
+    "weight": 126
+  },
+  {
+    "node0": "Pierre et Marie Curie::7",
+    "node1": "Porte d'Ivry::7",
+    "weight": 93
+  },
+  {
+    "node0": "Porte d'Ivry::7",
+    "node1": "Porte de Choisy::7",
+    "weight": 77
+  },
+  {
+    "node0": "Porte d'Italie::7",
+    "node1": "Porte de Choisy::7",
+    "weight": 71
+  },
+  {
+    "node0": "Maison Blanche::7",
+    "node1": "Porte d'Italie::7",
+    "weight": 80
+  },
+  {
+    "node0": "Maison Blanche::7",
+    "node1": "Tolbiac::7",
+    "weight": 76
+  },
+  {
+    "node0": "Place d'Italie::7",
+    "node1": "Tolbiac::7",
+    "weight": 83
+  },
+  {
+    "node0": "Les Gobelins::7",
+    "node1": "Place d'Italie::7",
+    "weight": 86
+  },
+  {
+    "node0": "Censier - Daubenton::7",
+    "node1": "Les Gobelins::7",
+    "weight": 86
+  },
+  {
+    "node0": "Censier - Daubenton::7",
+    "node1": "Place Monge::7",
+    "weight": 67
+  },
+  {
+    "node0": "Jussieu::7",
+    "node1": "Place Monge::7",
+    "weight": 82
+  },
+  {
+    "node0": "Jussieu::7",
+    "node1": "Sully - Morland::7",
+    "weight": 106
+  },
+  {
+    "node0": "Pont Marie (Cité des Arts)::7",
+    "node1": "Sully - Morland::7",
+    "weight": 75
+  },
+  {
+    "node0": "Châtelet::7",
+    "node1": "Pont Marie (Cité des Arts)::7",
+    "weight": 90
+  },
+  {
+    "node0": "Châtelet::7",
+    "node1": "Pont Neuf::7",
+    "weight": 87
+  },
+  {
+    "node0": "Palais Royal - Musée du Louvre::7",
+    "node1": "Pont Neuf::7",
+    "weight": 105
+  },
+  {
+    "node0": "Palais Royal - Musée du Louvre::7",
+    "node1": "Pyramides::7",
+    "weight": 72
+  },
+  {
+    "node0": "Opéra::7",
+    "node1": "Pyramides::7",
+    "weight": 91
+  },
+  {
+    "node0": "Chaussée d'Antin - La Fayette::7",
+    "node1": "Opéra::7",
+    "weight": 92
+  },
+  {
+    "node0": "Chaussée d'Antin - La Fayette::7",
+    "node1": "Le Peletier::7",
+    "weight": 78
+  },
+  {
+    "node0": "Cadet::7",
+    "node1": "Le Peletier::7",
+    "weight": 75
+  },
+  {
+    "node0": "Cadet::7",
+    "node1": "Poissonnière::7",
+    "weight": 61
+  },
+  {
+    "node0": "Gare de l'Est::7",
+    "node1": "Poissonnière::7",
+    "weight": 109
+  },
+  {
+    "node0": "Château Landon::7",
+    "node1": "Gare de l'Est::7",
+    "weight": 77
+  },
+  {
+    "node0": "Château Landon::7",
+    "node1": "Louis Blanc::7",
+    "weight": 83
+  },
+  {
+    "node0": "Louis Blanc::7",
+    "node1": "Stalingrad::7",
+    "weight": 86
+  },
+  {
+    "node0": "Riquet::7",
+    "node1": "Stalingrad::7",
+    "weight": 76
+  },
+  {
+    "node0": "Crimée::7",
+    "node1": "Riquet::7",
+    "weight": 64
+  },
+  {
+    "node0": "Corentin Cariou::7",
+    "node1": "Crimée::7",
+    "weight": 73
+  },
+  {
+    "node0": "Corentin Cariou::7",
+    "node1": "Porte de la Villette::7",
+    "weight": 88
+  },
+  {
+    "node0": "Aubervilliers-Pantin Quatre Chemins::7",
+    "node1": "Porte de la Villette::7",
+    "weight": 118
+  },
+  {
+    "node0": "Aubervilliers-Pantin Quatre Chemins::7",
+    "node1": "Fort d'Aubervilliers::7",
+    "weight": 129
+  },
+  {
+    "node0": "Fort d'Aubervilliers::7",
+    "node1": "La Courneuve - 8 Mai 1945::7",
+    "weight": 119
+  },
+  {
+    "node0": "Le Kremlin-Bicêtre::7",
+    "node1": "Maison Blanche::7",
+    "weight": 128
+  },
+  {
+    "node0": "Le Kremlin-Bicêtre::7",
+    "node1": "Villejuif Léo Lagrange::7",
+    "weight": 89
+  },
+  {
+    "node0": "Villejuif Léo Lagrange::7",
+    "node1": "Villejuif Paul Vaillant-Couturier::7",
+    "weight": 108
+  },
+  {
+    "node0": "Villejuif - Louis Aragon::7",
+    "node1": "Villejuif Paul Vaillant-Couturier::7",
+    "weight": 122
+  },
+  {
+    "node0": "Balard::8",
+    "node1": "Lourmel::8",
+    "weight": 100
+  },
+  {
+    "node0": "Boucicaut::8",
+    "node1": "Lourmel::8",
+    "weight": 62
+  },
+  {
+    "node0": "Boucicaut::8",
+    "node1": "Félix Faure::8",
+    "weight": 64
+  },
+  {
+    "node0": "Commerce::8",
+    "node1": "Félix Faure::8",
+    "weight": 69
+  },
+  {
+    "node0": "Commerce::8",
+    "node1": "La Motte-Picquet - Grenelle::8",
+    "weight": 82
+  },
+  {
+    "node0": "La Motte-Picquet - Grenelle::8",
+    "node1": "École Militaire::8",
+    "weight": 107
+  },
+  {
+    "node0": "La Tour-Maubourg::8",
+    "node1": "École Militaire::8",
+    "weight": 66
+  },
+  {
+    "node0": "Invalides::8",
+    "node1": "La Tour-Maubourg::8",
+    "weight": 87
+  },
+  {
+    "node0": "Concorde::8",
+    "node1": "Invalides::8",
+    "weight": 99
+  },
+  {
+    "node0": "Concorde::8",
+    "node1": "Madeleine::8",
+    "weight": 83
+  },
+  {
+    "node0": "Madeleine::8",
+    "node1": "Opéra::8",
+    "weight": 70
+  },
+  {
+    "node0": "Opéra::8",
+    "node1": "Richelieu - Drouot::8",
+    "weight": 80
+  },
+  {
+    "node0": "Grands Boulevards::8",
+    "node1": "Richelieu - Drouot::8",
+    "weight": 75
+  },
+  {
+    "node0": "Bonne Nouvelle::8",
+    "node1": "Grands Boulevards::8",
+    "weight": 62
+  },
+  {
+    "node0": "Bonne Nouvelle::8",
+    "node1": "Strasbourg - Saint-Denis::8",
+    "weight": 62
+  },
+  {
+    "node0": "République::8",
+    "node1": "Strasbourg - Saint-Denis::8",
+    "weight": 111
+  },
+  {
+    "node0": "Filles du Calvaire::8",
+    "node1": "République::8",
+    "weight": 78
+  },
+  {
+    "node0": "Filles du Calvaire::8",
+    "node1": "Saint-Sébastien - Froissart::8",
+    "weight": 60
+  },
+  {
+    "node0": "Chemin Vert::8",
+    "node1": "Saint-Sébastien - Froissart::8",
+    "weight": 70
+  },
+  {
+    "node0": "Bastille::8",
+    "node1": "Chemin Vert::8",
+    "weight": 68
+  },
+  {
+    "node0": "Bastille::8",
+    "node1": "Ledru-Rollin::8",
+    "weight": 68
+  },
+  {
+    "node0": "Faidherbe - Chaligny::8",
+    "node1": "Ledru-Rollin::8",
+    "weight": 86
+  },
+  {
+    "node0": "Faidherbe - Chaligny::8",
+    "node1": "Reuilly - Diderot::8",
+    "weight": 72
+  },
+  {
+    "node0": "Montgallet::8",
+    "node1": "Reuilly - Diderot::8",
+    "weight": 74
+  },
+  {
+    "node0": "Daumesnil::8",
+    "node1": "Montgallet::8",
+    "weight": 79
+  },
+  {
+    "node0": "Daumesnil::8",
+    "node1": "Michel Bizot::8",
+    "weight": 74
+  },
+  {
+    "node0": "Michel Bizot::8",
+    "node1": "Porte Dorée::8",
+    "weight": 81
+  },
+  {
+    "node0": "Porte Dorée::8",
+    "node1": "Porte de Charenton::8",
+    "weight": 83
+  },
+  {
+    "node0": "Liberté::8",
+    "node1": "Porte de Charenton::8",
+    "weight": 108
+  },
+  {
+    "node0": "Charenton - Écoles::8",
+    "node1": "Liberté::8",
+    "weight": 93
+  },
+  {
+    "node0": "Charenton - Écoles::8",
+    "node1": "Ecole Vétérinaire de Maisons-Alfort::8",
+    "weight": 111
+  },
+  {
+    "node0": "Ecole Vétérinaire de Maisons-Alfort::8",
+    "node1": "Maisons-Alfort - Stade::8",
+    "weight": 102
+  },
+  {
+    "node0": "Maisons-Alfort - Les Juilliottes::8",
+    "node1": "Maisons-Alfort - Stade::8",
+    "weight": 105
+  },
+  {
+    "node0": "Créteil - L'Échat::8",
+    "node1": "Maisons-Alfort - Les Juilliottes::8",
+    "weight": 101
+  },
+  {
+    "node0": "Créteil - L'Échat::8",
+    "node1": "Créteil - Université::8",
+    "weight": 81
+  },
+  {
+    "node0": "Créteil - Préfecture::8",
+    "node1": "Créteil - Université::8",
+    "weight": 127
+  },
+  {
+    "node0": "Créteil - Préfecture::8",
+    "node1": "Pointe du Lac::8",
+    "weight": 143
+  },
+  {
+    "node0": "Croix de Chavaux::9",
+    "node1": "Mairie de Montreuil::9",
+    "weight": 113
+  },
+  {
+    "node0": "Croix de Chavaux::9",
+    "node1": "Robespierre::9",
+    "weight": 97
+  },
+  {
+    "node0": "Porte de Montreuil::9",
+    "node1": "Robespierre::9",
+    "weight": 116
+  },
+  {
+    "node0": "Maraîchers::9",
+    "node1": "Porte de Montreuil::9",
+    "weight": 76
+  },
+  {
+    "node0": "Buzenval::9",
+    "node1": "Maraîchers::9",
+    "weight": 63
+  },
+  {
+    "node0": "Buzenval::9",
+    "node1": "Nation::9",
+    "weight": 98
+  },
+  {
+    "node0": "Nation::9",
+    "node1": "Rue des Boulets::9",
+    "weight": 78
+  },
+  {
+    "node0": "Charonne::9",
+    "node1": "Rue des Boulets::9",
+    "weight": 74
+  },
+  {
+    "node0": "Charonne::9",
+    "node1": "Voltaire::9",
+    "weight": 75
+  },
+  {
+    "node0": "Saint-Ambroise::9",
+    "node1": "Voltaire::9",
+    "weight": 80
+  },
+  {
+    "node0": "Oberkampf::9",
+    "node1": "Saint-Ambroise::9",
+    "weight": 81
+  },
+  {
+    "node0": "Oberkampf::9",
+    "node1": "République::9",
+    "weight": 81
+  },
+  {
+    "node0": "République::9",
+    "node1": "Strasbourg - Saint-Denis::9",
+    "weight": 104
+  },
+  {
+    "node0": "Bonne Nouvelle::9",
+    "node1": "Strasbourg - Saint-Denis::9",
+    "weight": 77
+  },
+  {
+    "node0": "Bonne Nouvelle::9",
+    "node1": "Grands Boulevards::9",
+    "weight": 75
+  },
+  {
+    "node0": "Grands Boulevards::9",
+    "node1": "Richelieu - Drouot::9",
+    "weight": 68
+  },
+  {
+    "node0": "Chaussée d'Antin - La Fayette::9",
+    "node1": "Richelieu - Drouot::9",
+    "weight": 65
+  },
+  {
+    "node0": "Chaussée d'Antin - La Fayette::9",
+    "node1": "Havre-Caumartin::9",
+    "weight": 80
+  },
+  {
+    "node0": "Havre-Caumartin::9",
+    "node1": "Saint-Augustin::9",
+    "weight": 79
+  },
+  {
+    "node0": "Miromesnil::9",
+    "node1": "Saint-Augustin::9",
+    "weight": 92
+  },
+  {
+    "node0": "Miromesnil::9",
+    "node1": "Saint-Philippe du Roule::9",
+    "weight": 73
+  },
+  {
+    "node0": "Franklin D. Roosevelt::9",
+    "node1": "Saint-Philippe du Roule::9",
+    "weight": 72
+  },
+  {
+    "node0": "Alma - Marceau::9",
+    "node1": "Franklin D. Roosevelt::9",
+    "weight": 102
+  },
+  {
+    "node0": "Alma - Marceau::9",
+    "node1": "Iéna::9",
+    "weight": 79
+  },
+  {
+    "node0": "Iéna::9",
+    "node1": "Trocadéro::9",
+    "weight": 85
+  },
+  {
+    "node0": "Rue de la Pompe::9",
+    "node1": "Trocadéro::9",
+    "weight": 79
+  },
+  {
+    "node0": "La Muette::9",
+    "node1": "Rue de la Pompe::9",
+    "weight": 115
+  },
+  {
+    "node0": "La Muette::9",
+    "node1": "Ranelagh::9",
+    "weight": 73
+  },
+  {
+    "node0": "Jasmin::9",
+    "node1": "Ranelagh::9",
+    "weight": 65
+  },
+  {
+    "node0": "Jasmin::9",
+    "node1": "Michel-Ange - Auteuil::9",
+    "weight": 94
+  },
+  {
+    "node0": "Michel-Ange - Auteuil::9",
+    "node1": "Michel-Ange - Molitor::9",
+    "weight": 66
+  },
+  {
+    "node0": "Exelmans::9",
+    "node1": "Michel-Ange - Molitor::9",
+    "weight": 60
+  },
+  {
+    "node0": "Exelmans::9",
+    "node1": "Porte de Saint-Cloud::9",
+    "weight": 79
+  },
+  {
+    "node0": "Marcel Sembat::9",
+    "node1": "Porte de Saint-Cloud::9",
+    "weight": 132
+  },
+  {
+    "node0": "Billancourt::9",
+    "node1": "Marcel Sembat::9",
+    "weight": 85
+  },
+  {
+    "node0": "Billancourt::9",
+    "node1": "Pont de Sèvres::9",
+    "weight": 99
+  },
+  {
+    "node0": "Bibliothèque François Mitterrand::14",
+    "node1": "Olympiades::14",
+    "weight": 101
+  },
+  {
+    "node0": "Châtelet::14",
+    "node1": "Gare de Lyon::14",
+    "weight": 200
+  },
+  {
+    "node0": "Bercy::14",
+    "node1": "Gare de Lyon::14",
+    "weight": 88
+  },
+  {
+    "node0": "Bercy::14",
+    "node1": "Cour Saint-Emilion::14",
+    "weight": 97
+  },
+  {
+    "node0": "Bibliothèque François Mitterrand::14",
+    "node1": "Cour Saint-Emilion::14",
+    "weight": 97
+  },
+  {
+    "node0": "Mairie de Saint-Ouen::14",
+    "node1": "Saint-Ouen::14",
+    "weight": 133
+  },
+  {
+    "node0": "Porte de Clichy::14",
+    "node1": "Saint-Ouen::14",
+    "weight": 127
+  },
+  {
+    "node0": "Pont Cardinet::14",
+    "node1": "Porte de Clichy::14",
+    "weight": 95
+  },
+  {
+    "node0": "Pont Cardinet::14",
+    "node1": "Saint-Lazare::14",
+    "weight": 154
+  },
+  {
+    "node0": "Madeleine::14",
+    "node1": "Saint-Lazare::14",
+    "weight": 90
+  },
+  {
+    "node0": "Madeleine::14",
+    "node1": "Pyramides::14",
+    "weight": 97
+  },
+  {
+    "node0": "Châtelet::14",
+    "node1": "Pyramides::14",
+    "weight": 112
+  },
+  {
+    "node0": "Campo-Formio::5",
+    "node1": "Place d'Italie::5",
+    "weight": 131
+  },
+  {
+    "node0": "Campo-Formio::5",
+    "node1": "Saint-Marcel::5",
+    "weight": 62
+  },
+  {
+    "node0": "Gare d'Austerlitz::5",
+    "node1": "Saint-Marcel::5",
+    "weight": 95
+  },
+  {
+    "node0": "Gare d'Austerlitz::5",
+    "node1": "Quai de la Rapée::5",
+    "weight": 99
+  },
+  {
+    "node0": "Bastille::5",
+    "node1": "Quai de la Rapée::5",
+    "weight": 108
+  },
+  {
+    "node0": "Bastille::5",
+    "node1": "Bréguet-Sabin::5",
+    "weight": 71
+  },
+  {
+    "node0": "Bréguet-Sabin::5",
+    "node1": "Richard-Lenoir::5",
+    "weight": 76
+  },
+  {
+    "node0": "Oberkampf::5",
+    "node1": "Richard-Lenoir::5",
+    "weight": 85
+  },
+  {
+    "node0": "Oberkampf::5",
+    "node1": "République::5",
+    "weight": 100
+  },
+  {
+    "node0": "Jacques Bonsergent::5",
+    "node1": "République::5",
+    "weight": 83
+  },
+  {
+    "node0": "Gare de l'Est::5",
+    "node1": "Jacques Bonsergent::5",
+    "weight": 104
+  },
+  {
+    "node0": "Gare de l'Est::5",
+    "node1": "Gare du Nord::5",
+    "weight": 118
+  },
+  {
+    "node0": "Gare du Nord::5",
+    "node1": "Stalingrad::5",
+    "weight": 134
+  },
+  {
+    "node0": "Jaurès::5",
+    "node1": "Stalingrad::5",
+    "weight": 68
+  },
+  {
+    "node0": "Jaurès::5",
+    "node1": "Laumière::5",
+    "weight": 77
+  },
+  {
+    "node0": "Laumière::5",
+    "node1": "Ourcq::5",
+    "weight": 77
+  },
+  {
+    "node0": "Ourcq::5",
+    "node1": "Porte de Pantin::5",
+    "weight": 80
+  },
+  {
+    "node0": "Hoche::5",
+    "node1": "Porte de Pantin::5",
+    "weight": 92
+  },
+  {
+    "node0": "Hoche::5",
+    "node1": "Église de Pantin::5",
+    "weight": 97
+  },
+  {
+    "node0": "Bobigny-Pantin - Raymond Queneau::5",
+    "node1": "Église de Pantin::5",
+    "weight": 111
+  },
+  {
+    "node0": "Bobigny Pablo Picasso::5",
+    "node1": "Bobigny-Pantin - Raymond Queneau::5",
+    "weight": 225
+  },
+  {
+    "node0": "Gambetta::3",
+    "node1": "Père Lachaise::3",
+    "weight": 109
+  },
+  {
+    "node0": "Père Lachaise::3",
+    "node1": "Rue Saint-Maur::3",
+    "weight": 82
+  },
+  {
+    "node0": "Parmentier::3",
+    "node1": "Rue Saint-Maur::3",
+    "weight": 69
+  },
+  {
+    "node0": "Parmentier::3",
+    "node1": "République::3",
+    "weight": 95
+  },
+  {
+    "node0": "République::3",
+    "node1": "Temple::3",
+    "weight": 65
+  },
+  {
+    "node0": "Arts et Métiers::3",
+    "node1": "Temple::3",
+    "weight": 65
+  },
+  {
+    "node0": "Arts et Métiers::3",
+    "node1": "Réaumur - Sébastopol::3",
+    "weight": 68
+  },
+  {
+    "node0": "Réaumur - Sébastopol::3",
+    "node1": "Sentier::3",
+    "weight": 66
+  },
+  {
+    "node0": "Bourse::3",
+    "node1": "Sentier::3",
+    "weight": 73
+  },
+  {
+    "node0": "Bourse::3",
+    "node1": "Quatre Septembre::3",
+    "weight": 70
+  },
+  {
+    "node0": "Opéra::3",
+    "node1": "Quatre Septembre::3",
+    "weight": 74
+  },
+  {
+    "node0": "Havre-Caumartin::3",
+    "node1": "Opéra::3",
+    "weight": 73
+  },
+  {
+    "node0": "Havre-Caumartin::3",
+    "node1": "Saint-Lazare::3",
+    "weight": 82
+  },
+  {
+    "node0": "Europe::3",
+    "node1": "Saint-Lazare::3",
+    "weight": 79
+  },
+  {
+    "node0": "Europe::3",
+    "node1": "Villiers::3",
+    "weight": 92
+  },
+  {
+    "node0": "Malesherbes::3",
+    "node1": "Villiers::3",
+    "weight": 94
+  },
+  {
+    "node0": "Malesherbes::3",
+    "node1": "Wagram::3",
+    "weight": 65
+  },
+  {
+    "node0": "Pereire::3",
+    "node1": "Wagram::3",
+    "weight": 62
+  },
+  {
+    "node0": "Pereire::3",
+    "node1": "Porte de Champerret::3",
+    "weight": 79
+  },
+  {
+    "node0": "Louise Michel::3",
+    "node1": "Porte de Champerret::3",
+    "weight": 85
+  },
+  {
+    "node0": "Anatole France::3",
+    "node1": "Louise Michel::3",
+    "weight": 71
+  },
+  {
+    "node0": "Anatole France::3",
+    "node1": "Pont de Levallois - Bécon::3",
+    "weight": 95
+  },
+  {
+    "node0": "Gambetta::3",
+    "node1": "Porte de Bagnolet::3",
+    "weight": 90
+  },
+  {
+    "node0": "Gallieni::3",
+    "node1": "Porte de Bagnolet::3",
+    "weight": 94
+  },
+  {
+    "node0": "Michel-Ange - Molitor::10",
+    "node1": "Porte d'Auteuil::10",
+    "weight": 114
+  },
+  {
+    "node0": "Chardon Lagache::10",
+    "node1": "Michel-Ange - Molitor::10",
+    "weight": 73
+  },
+  {
+    "node0": "Chardon Lagache::10",
+    "node1": "Mirabeau::10",
+    "weight": 72
+  },
+  {
+    "node0": "Javel - André Citroën::10",
+    "node1": "Mirabeau::10",
+    "weight": 81
+  },
+  {
+    "node0": "Charles Michels::10",
+    "node1": "Javel - André Citroën::10",
+    "weight": 82
+  },
+  {
+    "node0": "Avenue Émile Zola::10",
+    "node1": "Charles Michels::10",
+    "weight": 83
+  },
+  {
+    "node0": "Avenue Émile Zola::10",
+    "node1": "La Motte-Picquet - Grenelle::10",
+    "weight": 80
+  },
+  {
+    "node0": "La Motte-Picquet - Grenelle::10",
+    "node1": "Ségur::10",
+    "weight": 109
+  },
+  {
+    "node0": "Duroc::10",
+    "node1": "Ségur::10",
+    "weight": 97
+  },
+  {
+    "node0": "Duroc::10",
+    "node1": "Vaneau::10",
+    "weight": 79
+  },
+  {
+    "node0": "Sèvres - Babylone::10",
+    "node1": "Vaneau::10",
+    "weight": 72
+  },
+  {
+    "node0": "Mabillon::10",
+    "node1": "Sèvres - Babylone::10",
+    "weight": 86
+  },
+  {
+    "node0": "Mabillon::10",
+    "node1": "Odéon::10",
+    "weight": 84
+  },
+  {
+    "node0": "Cluny - La Sorbonne::10",
+    "node1": "Odéon::10",
+    "weight": 60
+  },
+  {
+    "node0": "Cluny - La Sorbonne::10",
+    "node1": "Maubert - Mutualité::10",
+    "weight": 60
+  },
+  {
+    "node0": "Cardinal Lemoine::10",
+    "node1": "Maubert - Mutualité::10",
+    "weight": 76
+  },
+  {
+    "node0": "Cardinal Lemoine::10",
+    "node1": "Jussieu::10",
+    "weight": 71
+  },
+  {
+    "node0": "Gare d'Austerlitz::10",
+    "node1": "Jussieu::10",
+    "weight": 146
+  },
+  {
+    "node0": "Javel - André Citroën::10",
+    "node1": "Église d'Auteuil::10",
+    "weight": 112
+  },
+  {
+    "node0": "Michel-Ange - Auteuil::10",
+    "node1": "Église d'Auteuil::10",
+    "weight": 77
+  },
+  {
+    "node0": "Michel-Ange - Auteuil::10",
+    "node1": "Porte d'Auteuil::10",
+    "weight": 103
+  },
+  {
+    "node0": "Boulogne Jean Jaurès::10",
+    "node1": "Porte d'Auteuil::10",
+    "weight": 159
+  },
+  {
+    "node0": "Boulogne Jean Jaurès::10",
+    "node1": "Boulogne Pont de Saint-Cloud::10",
+    "weight": 134
+  },
+  {
+    "node0": "Boulogne Jean Jaurès::10",
+    "node1": "Michel-Ange - Molitor::10",
+    "weight": 136
+  },
+  {
+    "node0": "Porte des Lilas::3B",
+    "node1": "Saint-Fargeau::3B",
+    "weight": 76
+  },
+  {
+    "node0": "Pelleport::3B",
+    "node1": "Saint-Fargeau::3B",
+    "weight": 76
+  },
+  {
+    "node0": "Gambetta::3B",
+    "node1": "Pelleport::3B",
+    "weight": 62
+  },
+  {
+    "node0": "Danube::7B",
+    "node1": "Pré-Saint-Gervais::7B",
+    "weight": 60
+  },
+  {
+    "node0": "Botzaris::7B",
+    "node1": "Danube::7B",
+    "weight": 92
+  },
+  {
+    "node0": "Botzaris::7B",
+    "node1": "Buttes Chaumont::7B",
+    "weight": 70
+  },
+  {
+    "node0": "Bolivar::7B",
+    "node1": "Buttes Chaumont::7B",
+    "weight": 78
+  },
+  {
+    "node0": "Bolivar::7B",
+    "node1": "Jaurès::7B",
+    "weight": 62
+  },
+  {
+    "node0": "Jaurès::7B",
+    "node1": "Louis Blanc::7B",
+    "weight": 83
+  },
+  {
+    "node0": "Botzaris::7B",
+    "node1": "Place des Fêtes::7B",
+    "weight": 86
+  },
+  {
+    "node0": "Place des Fêtes::7B",
+    "node1": "Pré-Saint-Gervais::7B",
+    "weight": 122
+  },
+  {
+    "node0": "Bérault::1",
+    "node1": "Château de Vincennes::1",
+    "weight": 102
+  },
+  {
+    "node0": "Bérault::1",
+    "node1": "Saint-Mandé::1",
+    "weight": 83
+  },
+  {
+    "node0": "Porte de Vincennes::1",
+    "node1": "Saint-Mandé::1",
+    "weight": 101
+  },
+  {
+    "node0": "Nation::1",
+    "node1": "Porte de Vincennes::1",
+    "weight": 93
+  },
+  {
+    "node0": "Nation::1",
+    "node1": "Reuilly - Diderot::1",
+    "weight": 104
+  },
+  {
+    "node0": "Gare de Lyon::1",
+    "node1": "Reuilly - Diderot::1",
+    "weight": 99
+  },
+  {
+    "node0": "Bastille::1",
+    "node1": "Gare de Lyon::1",
+    "weight": 137
+  },
+  {
+    "node0": "Bastille::1",
+    "node1": "Saint-Paul (Le Marais)::1",
+    "weight": 118
+  },
+  {
+    "node0": "Hôtel de Ville::1",
+    "node1": "Saint-Paul (Le Marais)::1",
+    "weight": 85
+  },
+  {
+    "node0": "Châtelet::1",
+    "node1": "Hôtel de Ville::1",
+    "weight": 76
+  },
+  {
+    "node0": "Châtelet::1",
+    "node1": "Louvre - Rivoli::1",
+    "weight": 72
+  },
+  {
+    "node0": "Louvre - Rivoli::1",
+    "node1": "Palais Royal - Musée du Louvre::1",
+    "weight": 62
+  },
+  {
+    "node0": "Palais Royal - Musée du Louvre::1",
+    "node1": "Tuileries::1",
+    "weight": 77
+  },
+  {
+    "node0": "Concorde::1",
+    "node1": "Tuileries::1",
+    "weight": 67
+  },
+  {
+    "node0": "Champs-Élysées - Clemenceau::1",
+    "node1": "Concorde::1",
+    "weight": 97
+  },
+  {
+    "node0": "Champs-Élysées - Clemenceau::1",
+    "node1": "Franklin D. Roosevelt::1",
+    "weight": 80
+  },
+  {
+    "node0": "Franklin D. Roosevelt::1",
+    "node1": "George V::1",
+    "weight": 79
+  },
+  {
+    "node0": "Charles de Gaulle - Etoile::1",
+    "node1": "George V::1",
+    "weight": 80
+  },
+  {
+    "node0": "Argentine::1",
+    "node1": "Charles de Gaulle - Etoile::1",
+    "weight": 79
+  },
+  {
+    "node0": "Argentine::1",
+    "node1": "Porte Maillot::1",
+    "weight": 86
+  },
+  {
+    "node0": "Les Sablons::1",
+    "node1": "Porte Maillot::1",
+    "weight": 101
+  },
+  {
+    "node0": "Les Sablons::1",
+    "node1": "Pont de Neuilly::1",
+    "weight": 87
+  },
+  {
+    "node0": "Esplanade de la Défense::1",
+    "node1": "Pont de Neuilly::1",
+    "weight": 99
+  },
+  {
+    "node0": "Esplanade de la Défense::1",
+    "node1": "La Défense (Grande Arche)::1",
+    "weight": 107
+  },
+  {
+    "node0": "Corentin Celton::12",
+    "node1": "Mairie d'Issy::12",
+    "weight": 105
+  },
+  {
+    "node0": "Corentin Celton::12",
+    "node1": "Porte de Versailles::12",
+    "weight": 106
+  },
+  {
+    "node0": "Convention::12",
+    "node1": "Porte de Versailles::12",
+    "weight": 106
+  },
+  {
+    "node0": "Convention::12",
+    "node1": "Vaugirard::12",
+    "weight": 73
+  },
+  {
+    "node0": "Vaugirard::12",
+    "node1": "Volontaires::12",
+    "weight": 73
+  },
+  {
+    "node0": "Pasteur::12",
+    "node1": "Volontaires::12",
+    "weight": 62
+  },
+  {
+    "node0": "Falguière::12",
+    "node1": "Pasteur::12",
+    "weight": 75
+  },
+  {
+    "node0": "Falguière::12",
+    "node1": "Montparnasse Bienvenue::12",
+    "weight": 80
+  },
+  {
+    "node0": "Montparnasse Bienvenue::12",
+    "node1": "Notre-Dame des Champs::12",
+    "weight": 87
+  },
+  {
+    "node0": "Notre-Dame des Champs::12",
+    "node1": "Rennes::12",
+    "weight": 69
+  },
+  {
+    "node0": "Rennes::12",
+    "node1": "Sèvres - Babylone::12",
+    "weight": 62
+  },
+  {
+    "node0": "Rue du Bac::12",
+    "node1": "Sèvres - Babylone::12",
+    "weight": 76
+  },
+  {
+    "node0": "Rue du Bac::12",
+    "node1": "Solférino::12",
+    "weight": 65
+  },
+  {
+    "node0": "Assemblée Nationale::12",
+    "node1": "Solférino::12",
+    "weight": 61
+  },
+  {
+    "node0": "Assemblée Nationale::12",
+    "node1": "Concorde::12",
+    "weight": 96
+  },
+  {
+    "node0": "Concorde::12",
+    "node1": "Madeleine::12",
+    "weight": 94
+  },
+  {
+    "node0": "Madeleine::12",
+    "node1": "Saint-Lazare::12",
+    "weight": 115
+  },
+  {
+    "node0": "Saint-Lazare::12",
+    "node1": "Trinité - d'Estienne d'Orves::12",
+    "weight": 75
+  },
+  {
+    "node0": "Notre-Dame-de-Lorette::12",
+    "node1": "Trinité - d'Estienne d'Orves::12",
+    "weight": 66
+  },
+  {
+    "node0": "Notre-Dame-de-Lorette::12",
+    "node1": "Saint-Georges::12",
+    "weight": 88
+  },
+  {
+    "node0": "Pigalle::12",
+    "node1": "Saint-Georges::12",
+    "weight": 80
+  },
+  {
+    "node0": "Abbesses::12",
+    "node1": "Pigalle::12",
+    "weight": 62
+  },
+  {
+    "node0": "Abbesses::12",
+    "node1": "Lamarck - Caulaincourt::12",
+    "weight": 75
+  },
+  {
+    "node0": "Jules Joffrin::12",
+    "node1": "Lamarck - Caulaincourt::12",
+    "weight": 96
+  },
+  {
+    "node0": "Jules Joffrin::12",
+    "node1": "Marcadet - Poissonniers::12",
+    "weight": 72
+  },
+  {
+    "node0": "Marcadet - Poissonniers::12",
+    "node1": "Marx Dormoy::12",
+    "weight": 100
+  },
+  {
+    "node0": "Marx Dormoy::12",
+    "node1": "Porte de la Chapelle::12",
+    "weight": 91
+  },
+  {
+    "node0": "Front Populaire::12",
+    "node1": "Porte de la Chapelle::12",
+    "weight": 152
+  },
+  {
+    "node0": "Aimé Césaire::12",
+    "node1": "Front Populaire::12",
+    "weight": 116
+  },
+  {
+    "node0": "Aimé Césaire::12",
+    "node1": "Mairie d'Aubervilliers::12",
+    "weight": 109
+  },
+  {
+    "node0": "Châtillon-Montrouge::13",
+    "node1": "Malakoff - Rue Etienne Dolet::13",
+    "weight": 92
+  },
+  {
+    "node0": "Malakoff - Plateau de Vanves::13",
+    "node1": "Malakoff - Rue Etienne Dolet::13",
+    "weight": 102
+  },
+  {
+    "node0": "Malakoff - Plateau de Vanves::13",
+    "node1": "Porte de Vanves::13",
+    "weight": 91
+  },
+  {
+    "node0": "Plaisance::13",
+    "node1": "Porte de Vanves::13",
+    "weight": 96
+  },
+  {
+    "node0": "Pernety::13",
+    "node1": "Plaisance::13",
+    "weight": 66
+  },
+  {
+    "node0": "Gaîté::13",
+    "node1": "Pernety::13",
+    "weight": 87
+  },
+  {
+    "node0": "Gaîté::13",
+    "node1": "Montparnasse Bienvenue::13",
+    "weight": 89
+  },
+  {
+    "node0": "Duroc::13",
+    "node1": "Montparnasse Bienvenue::13",
+    "weight": 92
+  },
+  {
+    "node0": "Duroc::13",
+    "node1": "Saint-François-Xavier::13",
+    "weight": 74
+  },
+  {
+    "node0": "Saint-François-Xavier::13",
+    "node1": "Varenne::13",
+    "weight": 70
+  },
+  {
+    "node0": "Invalides::13",
+    "node1": "Varenne::13",
+    "weight": 68
+  },
+  {
+    "node0": "Champs-Élysées - Clemenceau::13",
+    "node1": "Invalides::13",
+    "weight": 106
+  },
+  {
+    "node0": "Champs-Élysées - Clemenceau::13",
+    "node1": "Miromesnil::13",
+    "weight": 105
+  },
+  {
+    "node0": "Miromesnil::13",
+    "node1": "Saint-Lazare::13",
+    "weight": 127
+  },
+  {
+    "node0": "Liège::13",
+    "node1": "Saint-Lazare::13",
+    "weight": 96
+  },
+  {
+    "node0": "Liège::13",
+    "node1": "Place de Clichy::13",
+    "weight": 80
+  },
+  {
+    "node0": "La Fourche::13",
+    "node1": "Place de Clichy::13",
+    "weight": 77
+  },
+  {
+    "node0": "Guy Môquet::13",
+    "node1": "La Fourche::13",
+    "weight": 98
+  },
+  {
+    "node0": "Guy Môquet::13",
+    "node1": "Porte de Saint-Ouen::13",
+    "weight": 78
+  },
+  {
+    "node0": "Garibaldi::13",
+    "node1": "Porte de Saint-Ouen::13",
+    "weight": 114
+  },
+  {
+    "node0": "Garibaldi::13",
+    "node1": "Mairie de Saint-Ouen::13",
+    "weight": 96
+  },
+  {
+    "node0": "Carrefour Pleyel::13",
+    "node1": "Mairie de Saint-Ouen::13",
+    "weight": 109
+  },
+  {
+    "node0": "Carrefour Pleyel::13",
+    "node1": "Saint-Denis - Porte de Paris::13",
+    "weight": 144
+  },
+  {
+    "node0": "Basilique de Saint-Denis::13",
+    "node1": "Saint-Denis - Porte de Paris::13",
+    "weight": 98
+  },
+  {
+    "node0": "Basilique de Saint-Denis::13",
+    "node1": "Saint-Denis - Université::13",
+    "weight": 118
+  },
+  {
+    "node0": "Asnières - Gennevilliers Les Courtilles::13",
+    "node1": "Les Agnettes::13",
+    "weight": 95
+  },
+  {
+    "node0": "Gabriel Péri::13",
+    "node1": "Les Agnettes::13",
+    "weight": 108
+  },
+  {
+    "node0": "Gabriel Péri::13",
+    "node1": "Mairie de Clichy::13",
+    "weight": 165
+  },
+  {
+    "node0": "Mairie de Clichy::13",
+    "node1": "Porte de Clichy::13",
+    "weight": 114
+  },
+  {
+    "node0": "Brochant::13",
+    "node1": "Porte de Clichy::13",
+    "weight": 97
+  },
+  {
+    "node0": "Brochant::13",
+    "node1": "La Fourche::13",
+    "weight": 97
+  },
+  {
+    "node0": "Montparnasse Bienvenue::4",
+    "node1": "Saint-Placide::4",
+    "weight": 85
+  },
+  {
+    "node0": "Saint-Placide::4",
+    "node1": "Saint-Sulpice::4",
+    "weight": 69
+  },
+  {
+    "node0": "Saint-Germain-des-Prés::4",
+    "node1": "Saint-Sulpice::4",
+    "weight": 77
+  },
+  {
+    "node0": "Odéon::4",
+    "node1": "Saint-Germain-des-Prés::4",
+    "weight": 67
+  },
+  {
+    "node0": "Odéon::4",
+    "node1": "Saint-Michel::4",
+    "weight": 73
+  },
+  {
+    "node0": "Cité::4",
+    "node1": "Saint-Michel::4",
+    "weight": 62
+  },
+  {
+    "node0": "Châtelet::4",
+    "node1": "Cité::4",
+    "weight": 79
+  },
+  {
+    "node0": "Châtelet::4",
+    "node1": "Les Halles::4",
+    "weight": 81
+  },
+  {
+    "node0": "Etienne Marcel::4",
+    "node1": "Les Halles::4",
+    "weight": 72
+  },
+  {
+    "node0": "Etienne Marcel::4",
+    "node1": "Réaumur - Sébastopol::4",
+    "weight": 69
+  },
+  {
+    "node0": "Réaumur - Sébastopol::4",
+    "node1": "Strasbourg - Saint-Denis::4",
+    "weight": 69
+  },
+  {
+    "node0": "Château d'Eau::4",
+    "node1": "Strasbourg - Saint-Denis::4",
+    "weight": 66
+  },
+  {
+    "node0": "Château d'Eau::4",
+    "node1": "Gare de l'Est::4",
+    "weight": 76
+  },
+  {
+    "node0": "Gare de l'Est::4",
+    "node1": "Gare du Nord::4",
+    "weight": 94
+  },
+  {
+    "node0": "Barbès - Rochechouart::4",
+    "node1": "Gare du Nord::4",
+    "weight": 108
+  },
+  {
+    "node0": "Barbès - Rochechouart::4",
+    "node1": "Château Rouge::4",
+    "weight": 71
+  },
+  {
+    "node0": "Château Rouge::4",
+    "node1": "Marcadet - Poissonniers::4",
+    "weight": 64
+  },
+  {
+    "node0": "Marcadet - Poissonniers::4",
+    "node1": "Simplon::4",
+    "weight": 60
+  },
+  {
+    "node0": "Porte de Clignancourt::4",
+    "node1": "Simplon::4",
+    "weight": 83
+  },
+  {
+    "node0": "Alésia::4",
+    "node1": "Porte d'Orléans::4",
+    "weight": 85
+  },
+  {
+    "node0": "Alésia::4",
+    "node1": "Mouton-Duvernet::4",
+    "weight": 60
+  },
+  {
+    "node0": "Denfert-Rochereau::4",
+    "node1": "Mouton-Duvernet::4",
+    "weight": 60
+  },
+  {
+    "node0": "Denfert-Rochereau::4",
+    "node1": "Raspail::4",
+    "weight": 84
+  },
+  {
+    "node0": "Raspail::4",
+    "node1": "Vavin::4",
+    "weight": 78
+  },
+  {
+    "node0": "Montparnasse Bienvenue::4",
+    "node1": "Vavin::4",
+    "weight": 60
+  },
+  {
+    "node0": "Mairie de Montrouge::4",
+    "node1": "Porte d'Orléans::4",
+    "weight": 102
+  },
+  {
+    "node0": "Barbara::4",
+    "node1": "Mairie de Montrouge::4",
+    "weight": 140
+  },
+  {
+    "node0": "Bagneux - Lucie Aubrac::4",
+    "node1": "Barbara::4",
+    "weight": 109
+  },
+  {
+    "node0": "Châtelet::11",
+    "node1": "Hôtel de Ville::11",
+    "weight": 84
+  },
+  {
+    "node0": "Hôtel de Ville::11",
+    "node1": "Rambuteau::11",
+    "weight": 61
+  },
+  {
+    "node0": "Arts et Métiers::11",
+    "node1": "Rambuteau::11",
+    "weight": 71
+  },
+  {
+    "node0": "Arts et Métiers::11",
+    "node1": "République::11",
+    "weight": 90
+  },
+  {
+    "node0": "Goncourt::11",
+    "node1": "République::11",
+    "weight": 77
+  },
+  {
+    "node0": "Belleville::11",
+    "node1": "Goncourt::11",
+    "weight": 68
+  },
+  {
+    "node0": "Belleville::11",
+    "node1": "Pyrénées::11",
+    "weight": 90
+  },
+  {
+    "node0": "Jourdain::11",
+    "node1": "Pyrénées::11",
+    "weight": 60
+  },
+  {
+    "node0": "Jourdain::11",
+    "node1": "Place des Fêtes::11",
+    "weight": 60
+  },
+  {
+    "node0": "Place des Fêtes::11",
+    "node1": "Télégraphe::11",
+    "weight": 65
+  },
+  {
+    "node0": "Porte des Lilas::11",
+    "node1": "Télégraphe::11",
+    "weight": 87
+  },
+  {
+    "node0": "Mairie des Lilas::11",
+    "node1": "Porte des Lilas::11",
+    "weight": 104
+  }
+]
