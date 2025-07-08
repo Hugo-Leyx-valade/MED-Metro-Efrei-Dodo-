@@ -94,11 +94,24 @@ const lineColors = {
 }
 
 // 🔁 ID uniforme (majuscule)
-function normalizeId(id) {
-  const key = id.toLowerCase().replace(/[\s\-']/g, '_')
-  // Trouve une station avec un nom qui commence par cette forme
-  const match = Object.keys(stations.value).find(k => k.startsWith(key))
-  return match
+// Mapping: nom normalisé → ID réel
+const nameToId = {}
+for (const [id, station] of Object.entries(stations.value)) {
+  if (station.name) {
+    const cleanName = station.name.toLowerCase().replace(/[\s\-']/g, '_')
+    nameToId[cleanName] = id
+  }
+}
+
+// Fonction de normalisation :
+function normalizeId(name) {
+  const clean = name.toLowerCase().replace(/[\s\-']/g, '_')
+  return nameToId[clean] || null
+}
+function normalizeName(name) {
+  return name.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // enlever accents
+    .replace(/[\s\-']/g, '_') // remplacer espaces, tirets, apostrophes par _
 }
 const getLineColor = (line) => lineColors[line] || lineColors.default
 const getDynamicRadius = (zoom) => Math.max(1.5, zoom - 8) * 0.9
@@ -114,7 +127,9 @@ onMounted(async () => {
 async function fetchData() {
   const nodesRes = await fetch('http://localhost:5001/api/nodesV2')
   stations.value = await nodesRes.json()
-
+  for (const key of Object.keys(stations.value)) {
+    normalizedStationKeys[normalizeName(key)] = key
+  }
   const edgesRes = await fetch('http://localhost:5001/api/edgesV2')
   edges.value = await edgesRes.json()
 
@@ -219,28 +234,56 @@ async function fetchPath() {
   }
 }
 
-async function fetchACPM() {
-  console.log('→ Chargement ACPM...') // debug
+const normalizedStationKeys = {}
 
-  if (!leafletMap.value || !acpmLayer.value) return
+function findStationKey(nameWithoutSuffix) {
+  const normName = normalizeName(nameWithoutSuffix)
+  for (const normKey in normalizedStationKeys) {
+    if (normKey.startsWith(normName)) {
+      return normalizedStationKeys[normKey]
+    }
+  }
+  return null
+}
+
+async function fetchACPM() {
+  console.log('→ Chargement ACPM...')
+
+  if (!leafletMap.value || !acpmLayer.value) {
+    console.warn('Carte ou couche ACPM non initialisée')
+    return
+  }
 
   const res = await fetch('http://localhost:5001/api/acpmV2')
   const data = await res.json()
-  console.log('Réponse ACPM:', data) // debug
+  console.log('Réponse ACPM:', data)
 
   acpmEdges.value = data.mst || []
-  console.log(acpmEdges)
   totalWeight.value = acpmEdges.value.reduce((sum, edge) => sum + edge.weight, 0)
   acpmLayer.value.clearLayers()
 
   for (const edge of acpmEdges.value) {
-    const stationA = stations.value[normalizeId(edge.node0)]
-    const stationB = stations.value[normalizeId(edge.node1)]
+    const keyA = findStationKey(edge.node0)
+    const keyB = findStationKey(edge.node1)
 
-    if (!stationA || !stationB) {
+    if (!keyA || !keyB) {
       console.warn('Station manquante pour l’edge', edge)
       continue
     }
+
+    const stationA = stations.value[keyA]
+    const stationB = stations.value[keyB]
+
+    if (!stationA || !stationB) {
+      console.warn('Station non trouvée pour clés', keyA, keyB)
+      continue
+    }
+    if (!stationA.latitude || !stationA.longitude || !stationB.latitude || !stationB.longitude) {
+      console.warn('Coordonnées invalides', stationA, stationB)
+      continue
+    }
+
+    console.log('Ajout segment entre:', keyA, keyB)
 
     const segment = L.polyline([[stationA.latitude, stationA.longitude], [stationB.latitude, stationB.longitude]], {
       color: 'red',
@@ -251,6 +294,8 @@ async function fetchACPM() {
     acpmLayer.value.addLayer(segment)
   }
 }
+
+
 
 
 function resetPath() {
