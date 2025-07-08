@@ -1,0 +1,11 @@
+node_modules/
+dist/
+# Logs
+logs
+npm-debug.log*
+# Dependency directories
+jspm_packages/
+# Optional npm cache directory
+*.txt
+venv/backend/data/graphe_temporel.json
+flask_back/data/graphe_temporel.json
