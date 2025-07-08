@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import heapq
 from collections import defaultdict
+from pathlib import Path
 
 app = Flask(__name__)
 CORS(app)
@@ -16,7 +17,7 @@ def to_graph_edges():
     """
     Converts a text file to a graph representation.
     """
-    txt_file = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
+    txt_file = Path("./data/version 1/output.txt") 
     with open(txt_file, 'r') as f:
         lines = f.readlines()
     
@@ -50,8 +51,8 @@ def to_graph_nodes():
     """
     Converts a text file to a graph representation.
     """
-    txt_file_nodes = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\output.txt"
-    txt_file_positions = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\version 1\\pospoints.txt"  # Remplacez par le chemin réel
+    txt_file_nodes = Path("./data/version 1/output.txt")
+    txt_file_positions = Path("./data/version 1/pospoints.txt")  # Remplacez par le chemin réel
 
     station_positions = load_station_positions(txt_file_positions)
 
@@ -267,7 +268,7 @@ def afficher_stations_par_ligne(gtfs_folder, nom_ligne, mode_transport):
 
 import pandas as pd
 def charger_stations():
-    gtfs_folder = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\"
+    gtfs_folder = Path("./data/")
     stops = pd.read_csv(f"{gtfs_folder}stops.txt")
     stop_times = pd.read_csv(f"{gtfs_folder}stop_times.txt")
     trips = pd.read_csv(f"{gtfs_folder}trips.txt")
@@ -313,7 +314,7 @@ import pandas as pd
 
 def compter_stations():
     # Chargement des fichiers
-    gtfs_folder = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\"  # Chemin vers le dossier GTFS
+    gtfs_folder = Path("./data/")  # Chemin vers le dossier GTFS
     stops = pd.read_csv(f"{gtfs_folder}stops.txt")
     stop_times = pd.read_csv(f"{gtfs_folder}/stop_times.txt")
     trips = pd.read_csv(f"{gtfs_folder}/trips.txt")
@@ -347,7 +348,7 @@ import os
 from collections import defaultdict
 
 def recuperer_edges_metro_sans_doublons():
-    gtfs_folder = "C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\"
+    gtfs_folder = Path("./data/")
     stop_times = pd.read_csv(os.path.join(gtfs_folder, "stop_times.txt"))
     trips = pd.read_csv(os.path.join(gtfs_folder, "trips.txt"))
     routes = pd.read_csv(os.path.join(gtfs_folder, "routes.txt"))
@@ -396,13 +397,13 @@ def recuperer_edges_metro_sans_doublons():
 import json
 @app.route('/api/edgesV2', methods=['GET'])
 def charger_json_edges():
-    with open("C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\nodes.json", 'r', encoding='utf-8') as f:
+    with open(Path("./data/nodes.json"), 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
 @app.route('/api/nodesV2', methods=['GET'])
 def charger_json_nodes():
-    with open("C:\\Users\\jungk\\Documents\\projet\\MED-Metro-Efrei-Dodo-\\backend\\data\\nodes.json", 'r', encoding='utf-8') as f:
+    with open(Path("./data/edges.json"), 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data
 
